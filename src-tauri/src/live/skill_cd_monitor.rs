@@ -1,3 +1,7 @@
+use crate::database::now_ms;
+use crate::live::commands_models::SkillCdState;
+use crate::live::entity_attr_store::EntityAttrStore;
+use crate::live::opcodes_process::ParsedSkillCd;
 use log::{info, warn};
 use serde::Deserialize;
 use std::collections::{HashMap, HashSet};
@@ -47,6 +51,108 @@ static SKILL_EFFECT_TAGS: LazyLock<HashMap<i32, Vec<i32>>> = LazyLock::new(|| {
         HashMap::new()
     })
 });
+
+#[derive(Debug, Default)]
+pub struct SkillCdMonitor {
+    /// Skill cooldown map keyed by skill level ID.
+    pub skill_cd_map: HashMap<i32, SkillCdState>,
+    /// Ordered list of monitored skill IDs.
+    pub monitored_skill_ids: Vec<i32>,
+}
+
+impl SkillCdMonitor {
+    pub(crate) fn new() -> Self {
+        Self {
+            skill_cd_map: HashMap::new(),
+            monitored_skill_ids: Vec::new(),
+        }
+    }
+
+    pub(crate) fn recalculate_cached_skill_cds(&mut self, attr_store: &EntityAttrStore) {
+        let (attr_skill_cd, attr_skill_cd_pct, attr_cd_accelerate_pct) = attr_store.cd_inputs();
+        for cd in self.skill_cd_map.values_mut() {
+            if cd.duration > 0 {
+                let (calculated_duration, cd_accelerate_rate) = calculate_skill_cd(
+                    cd.duration as f32,
+                    cd.skill_level_id,
+                    attr_store.temp_attrs(),
+                    attr_skill_cd,
+                    attr_skill_cd_pct,
+                    attr_cd_accelerate_pct,
+                );
+                cd.calculated_duration = calculated_duration.round() as i32;
+                cd.cd_accelerate_rate = cd_accelerate_rate;
+            } else {
+                cd.calculated_duration = cd.duration;
+                cd.cd_accelerate_rate = 0.0;
+            }
+        }
+    }
+
+    pub(crate) fn build_filtered_skill_cds(&self) -> Vec<SkillCdState> {
+        if self.monitored_skill_ids.is_empty() {
+            return Vec::new();
+        }
+        let mut filtered = Vec::with_capacity(self.monitored_skill_ids.len());
+        for monitored_skill_id in &self.monitored_skill_ids {
+            if let Some(cd) = self
+                .skill_cd_map
+                .values()
+                .filter(|cd| cd.skill_level_id / 100 == *monitored_skill_id)
+                .max_by_key(|cd| cd.received_at)
+                .cloned()
+            {
+                filtered.push(cd);
+            }
+        }
+        filtered
+    }
+
+    pub(crate) fn apply_skill_cd_updates(
+        &mut self,
+        skill_cds: &[ParsedSkillCd],
+        attr_store: &EntityAttrStore,
+    ) {
+        let now = now_ms();
+        for cd in skill_cds {
+            let Some(id) = cd.skill_level_id else {
+                continue;
+            };
+            if !self.monitored_skill_ids.contains(&(id / 100)) {
+                continue;
+            }
+
+            let duration = cd.duration.unwrap_or(0);
+            let (attr_skill_cd, attr_skill_cd_pct, attr_cd_accelerate_pct) = attr_store.cd_inputs();
+            let (calculated_duration, cd_accelerate_rate) = if duration > 0 {
+                calculate_skill_cd(
+                    duration as f32,
+                    id,
+                    attr_store.temp_attrs(),
+                    attr_skill_cd,
+                    attr_skill_cd_pct,
+                    attr_cd_accelerate_pct,
+                )
+            } else {
+                (duration as f32, 0.0)
+            };
+
+            self.skill_cd_map.insert(
+                id,
+                SkillCdState {
+                    skill_level_id: id,
+                    begin_time: cd.begin_time.unwrap_or(0),
+                    duration,
+                    skill_cd_type: cd.skill_cd_type.unwrap_or(0),
+                    valid_cd_time: cd.valid_cd_time.unwrap_or(0),
+                    received_at: now,
+                    calculated_duration: calculated_duration.round() as i32,
+                    cd_accelerate_rate,
+                },
+            );
+        }
+    }
+}
 
 fn locate_meter_data_file(relative_path: &str) -> Option<PathBuf> {
     let mut p = PathBuf::from(relative_path);
@@ -122,7 +228,7 @@ fn temp_attr_matches(def: &CdTempAttrDef, skill_id: i32, skill_tags: &HashSet<i3
     }
 }
 
-pub fn calculate_skill_cd(
+fn calculate_skill_cd(
     base_cd: f32,
     skill_level_id: i32,
     temp_attr_values: &HashMap<i32, i32>,

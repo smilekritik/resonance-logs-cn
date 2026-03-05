@@ -1,5 +1,5 @@
 pub mod buff_names;
-pub mod cd_calc;
+pub mod buff_monitor;
 pub mod commands;
 pub mod commands_models;
 pub mod counter_tracker;
@@ -12,4 +12,5 @@ pub mod live_main;
 pub mod opcodes_models;
 pub mod opcodes_process;
 pub mod scene_names;
+pub mod skill_cd_monitor;
 pub mod state;

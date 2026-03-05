@@ -104,7 +104,7 @@ impl BattleStateMachine {
 
     pub fn check_for_wipe(
         &mut self,
-        active_buffs: &mut HashMap<i32, crate::live::state::ActiveBuff>,
+        active_buffs: &mut HashMap<i32, crate::live::buff_monitor::ActiveBuff>,
     ) -> Option<EncounterResetReason> {
         if let Some(buff_uuid) = active_buffs
             .iter()
