@@ -168,7 +168,6 @@
   <div class="rounded-lg border border-border/60 bg-card/40 p-4 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.02)] space-y-3">
     <div class="space-y-1">
       <div class="text-sm font-medium text-foreground">添加计数器</div>
-      <p class="text-xs text-muted-foreground">计数器会始终在 Overlay 自定义面板区显示</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
       {#each counterRules as rule (rule.ruleId)}

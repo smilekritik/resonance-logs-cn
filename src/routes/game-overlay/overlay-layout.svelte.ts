@@ -1,0 +1,328 @@
+import {
+  DEFAULT_OVERLAY_POSITIONS,
+  DEFAULT_OVERLAY_SIZES,
+} from "./overlay-constants";
+import { activeProfile, updateActiveProfile } from "./overlay-profile.svelte.js";
+import { iconDisplayBuffs, overlayRuntime } from "./overlay-runtime.svelte.js";
+import type { DragTarget, ResizeTarget } from "./overlay-types";
+import {
+  ensureBuffGroups,
+  ensureIndividualMonitorAllGroup,
+  ensureOverlayPositions,
+  ensureOverlaySizes,
+} from "./overlay-utils";
+
+type OverlayPositionKey = keyof Omit<
+  typeof DEFAULT_OVERLAY_POSITIONS,
+  "iconBuffPositions"
+>;
+type OverlaySizeKey = keyof Omit<typeof DEFAULT_OVERLAY_SIZES, "iconBuffSizes">;
+
+function clampGroupScale(value: number) {
+  return Math.max(0.5, Math.min(2.5, value));
+}
+
+function clampIconSize(value: number) {
+  return Math.max(24, Math.min(120, Math.round(value)));
+}
+
+function updateOverlaySizes(
+  updater: (
+    sizes: ReturnType<typeof ensureOverlaySizes>,
+  ) => ReturnType<typeof ensureOverlaySizes>,
+) {
+  updateActiveProfile((profile) => ({
+    ...profile,
+    overlaySizes: updater(ensureOverlaySizes(profile)),
+  }));
+}
+
+function updateOverlayPositions(
+  updater: (
+    positions: ReturnType<typeof ensureOverlayPositions>,
+  ) => ReturnType<typeof ensureOverlayPositions>,
+) {
+  updateActiveProfile((profile) => ({
+    ...profile,
+    overlayPositions: updater(ensureOverlayPositions(profile)),
+  }));
+}
+
+function updateBuffGroups(
+  updater: (
+    groups: ReturnType<typeof ensureBuffGroups>,
+  ) => ReturnType<typeof ensureBuffGroups>,
+) {
+  updateActiveProfile((profile) => ({
+    ...profile,
+    buffGroups: updater(ensureBuffGroups(profile)),
+  }));
+}
+
+function updateIndividualAllGroup(
+  updater: (
+    group: NonNullable<ReturnType<typeof ensureIndividualMonitorAllGroup>>,
+  ) => NonNullable<ReturnType<typeof ensureIndividualMonitorAllGroup>>,
+) {
+  updateActiveProfile((profile) => {
+    const group = ensureIndividualMonitorAllGroup(profile);
+    if (!group) return profile;
+    return {
+      ...profile,
+      individualMonitorAllGroup: updater(group),
+    };
+  });
+}
+
+export function setOverlayWindow(
+  currentWindow: typeof overlayRuntime.currentWindow,
+) {
+  overlayRuntime.currentWindow = currentWindow;
+}
+
+export function getOverlayPositions() {
+  const profile = activeProfile();
+  if (!profile) return DEFAULT_OVERLAY_POSITIONS;
+  return ensureOverlayPositions(profile);
+}
+
+export function getOverlaySizes() {
+  const profile = activeProfile();
+  if (!profile) return DEFAULT_OVERLAY_SIZES;
+  return ensureOverlaySizes(profile);
+}
+
+export function getGroupPosition(
+  key: OverlayPositionKey,
+) {
+  return getOverlayPositions()[key];
+}
+
+export function getIconBuffPosition(baseId: number) {
+  const positions = getOverlayPositions();
+  const cached = positions.iconBuffPositions[baseId];
+  if (cached) return cached;
+  const idx = iconDisplayBuffs().findIndex((buff) => buff.baseId === baseId);
+  return {
+    x: 40 + (idx % 8) * 58,
+    y: 310 + Math.floor(idx / 8) * 64,
+  };
+}
+
+export function getGroupScale(
+  key: OverlaySizeKey,
+): number {
+  return getOverlaySizes()[key];
+}
+
+export function setGroupScale(
+  key: OverlaySizeKey,
+  value: number,
+) {
+  const nextValue = clampGroupScale(value);
+  updateOverlaySizes((sizes) => ({
+    ...sizes,
+    [key]: nextValue,
+  }));
+}
+
+export function getIconBuffSize(baseId: number): number {
+  return getOverlaySizes().iconBuffSizes[baseId] ?? 44;
+}
+
+export function setIconBuffSize(baseId: number, value: number) {
+  const nextValue = clampIconSize(value);
+  updateOverlaySizes((sizes) => ({
+    ...sizes,
+    iconBuffSizes: {
+      ...sizes.iconBuffSizes,
+      [baseId]: nextValue,
+    },
+  }));
+}
+
+export function setGroupPosition(
+  key: OverlayPositionKey,
+  nextPos: { x: number; y: number },
+) {
+  updateOverlayPositions((positions) => ({
+    ...positions,
+    [key]: nextPos,
+  }));
+}
+
+export function setIconBuffPosition(
+  baseId: number,
+  nextPos: { x: number; y: number },
+) {
+  updateOverlayPositions((positions) => ({
+    ...positions,
+    iconBuffPositions: {
+      ...positions.iconBuffPositions,
+      [baseId]: nextPos,
+    },
+  }));
+}
+
+export function setBuffGroupPosition(
+  groupId: string,
+  nextPos: { x: number; y: number },
+) {
+  updateBuffGroups((groups) =>
+    groups.map((group) =>
+      group.id === groupId ? { ...group, position: nextPos } : group,
+    ),
+  );
+}
+
+export function setBuffGroupIconSize(groupId: string, value: number) {
+  const nextValue = clampIconSize(value);
+  updateBuffGroups((groups) =>
+    groups.map((group) =>
+      group.id === groupId ? { ...group, iconSize: nextValue } : group,
+    ),
+  );
+}
+
+export function setIndividualAllGroupPosition(nextPos: { x: number; y: number }) {
+  updateIndividualAllGroup((group) => ({
+    ...group,
+    position: nextPos,
+  }));
+}
+
+export function setIndividualAllGroupIconSize(value: number) {
+  const nextValue = clampIconSize(value);
+  updateIndividualAllGroup((group) => ({
+    ...group,
+    iconSize: nextValue,
+  }));
+}
+
+export function startDrag(
+  e: PointerEvent,
+  target: DragTarget,
+  startPos: { x: number; y: number },
+) {
+  if (!overlayRuntime.isEditing || e.button !== 0) return;
+  e.preventDefault();
+  e.stopPropagation();
+  overlayRuntime.dragState = {
+    target,
+    startX: e.clientX,
+    startY: e.clientY,
+    startPos,
+  };
+}
+
+export function startResize(
+  e: PointerEvent,
+  target: ResizeTarget,
+  startValue: number,
+) {
+  if (!overlayRuntime.isEditing || e.button !== 0) return;
+  e.preventDefault();
+  e.stopPropagation();
+  overlayRuntime.resizeState = {
+    target,
+    startX: e.clientX,
+    startY: e.clientY,
+    startValue,
+  };
+}
+
+export function onGlobalPointerMove(e: PointerEvent) {
+  if (overlayRuntime.resizeState) {
+    const delta =
+      e.clientX - overlayRuntime.resizeState.startX +
+      (e.clientY - overlayRuntime.resizeState.startY);
+    if (overlayRuntime.resizeState.target.kind === "group") {
+      setGroupScale(
+        overlayRuntime.resizeState.target.key,
+        overlayRuntime.resizeState.startValue + delta / 300,
+      );
+    } else if (overlayRuntime.resizeState.target.kind === "individualAllGroup") {
+      setIndividualAllGroupIconSize(overlayRuntime.resizeState.startValue + delta / 2);
+    } else if (overlayRuntime.resizeState.target.kind === "buffGroup") {
+      setBuffGroupIconSize(
+        overlayRuntime.resizeState.target.groupId,
+        overlayRuntime.resizeState.startValue + delta / 2,
+      );
+    } else {
+      setIconBuffSize(
+        overlayRuntime.resizeState.target.baseId,
+        overlayRuntime.resizeState.startValue + delta / 2,
+      );
+    }
+    return;
+  }
+
+  if (!overlayRuntime.dragState) return;
+  const nextPos = {
+    x: Math.max(
+      0,
+      Math.min(
+        window.innerWidth - 20,
+        overlayRuntime.dragState.startPos.x +
+          (e.clientX - overlayRuntime.dragState.startX),
+      ),
+    ),
+    y: Math.max(
+      0,
+      Math.min(
+        window.innerHeight - 20,
+        overlayRuntime.dragState.startPos.y +
+          (e.clientY - overlayRuntime.dragState.startY),
+      ),
+    ),
+  };
+  if (overlayRuntime.dragState.target.kind === "group") {
+    setGroupPosition(overlayRuntime.dragState.target.key, nextPos);
+  } else if (overlayRuntime.dragState.target.kind === "individualAllGroup") {
+    setIndividualAllGroupPosition(nextPos);
+  } else if (overlayRuntime.dragState.target.kind === "buffGroup") {
+    setBuffGroupPosition(overlayRuntime.dragState.target.groupId, nextPos);
+  } else {
+    setIconBuffPosition(overlayRuntime.dragState.target.baseId, nextPos);
+  }
+}
+
+export function onGlobalPointerUp() {
+  overlayRuntime.dragState = null;
+  overlayRuntime.resizeState = null;
+}
+
+export async function setEditMode(editing: boolean) {
+  overlayRuntime.isEditing = editing;
+  if (overlayRuntime.currentWindow) {
+    await overlayRuntime.currentWindow.setIgnoreCursorEvents(!editing);
+  }
+}
+
+export function onWindowDragPointerDown(e: PointerEvent) {
+  if (!overlayRuntime.isEditing || e.button !== 0 || !overlayRuntime.currentWindow) {
+    return;
+  }
+  const el = e.target as HTMLElement | null;
+  if (el?.closest("button,a,input,textarea,select")) return;
+  e.preventDefault();
+  void overlayRuntime.currentWindow.startDragging();
+}
+
+export function resetOverlaySizes() {
+  updateOverlaySizes(() => ({ ...DEFAULT_OVERLAY_SIZES }));
+}
+
+export function resetOverlayPositions() {
+  updateActiveProfile((profile) => ({
+    ...profile,
+    overlayPositions: { ...DEFAULT_OVERLAY_POSITIONS },
+    buffGroups: ensureBuffGroups(profile).map((group) => ({
+      ...group,
+      position: { x: 40, y: 40 },
+    })),
+    individualMonitorAllGroup: profile.individualMonitorAllGroup
+      ? { ...profile.individualMonitorAllGroup, position: { x: 40, y: 40 } }
+      : null,
+  }));
+}

@@ -145,7 +145,6 @@
 
       <div class="rounded-lg border border-border/60 bg-muted/20 p-3 space-y-2">
         <div class="text-sm font-medium text-foreground">行顺序</div>
-        <p class="text-xs text-muted-foreground">仅支持属性行排序，Overlay 中按此顺序展示</p>
         {#if rowList.length === 0}
           <div class="text-xs text-muted-foreground">暂无可排序项</div>
         {/if}
