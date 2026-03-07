@@ -12,9 +12,20 @@
   },
   {
     "ruleId": 2,
-    "name": "幻想冲击层数",
+    "name": "幻想冲击层数-30-冰法",
     "trigger": {
       "damageBySkillKey": [2203110203]
+    },
+    "linkedBuffId": 3002011,
+    "threshold": 30,
+    "onBuffAdd": "resetAndFreeze",
+    "onBuffRemove": "startCount"
+  },
+  {
+    "ruleId": 3,
+    "name": "幻想冲击层数-30-吉他",
+    "trigger": {
+      "damageBySkillKey": [2203111103]
     },
     "linkedBuffId": 3002011,
     "threshold": 30,

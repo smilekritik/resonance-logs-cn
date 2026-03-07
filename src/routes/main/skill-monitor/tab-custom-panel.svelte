@@ -45,13 +45,6 @@
     setCustomPanelProgressColor,
   }: Props = $props();
 
-  function formatTrigger(rule: CounterRulePreset): string {
-    if (rule.trigger === "anyDamage") return "任意伤害";
-    if ("damageBySkillKey" in rule.trigger) {
-      return `技能伤害触发（${rule.trigger.damageBySkillKey.join(", ")}）`;
-    }
-    return `自身目标技能触发（${rule.trigger.damageBySkillKeySelfTarget.join(", ")}）`;
-  }
 </script>
 
 <div class="space-y-6">
@@ -185,11 +178,6 @@
             <div class="text-xs {exists ? 'text-primary' : 'text-muted-foreground'}">
               {exists ? "已添加" : "点击添加"}
             </div>
-          </div>
-          <div class="mt-1 text-xs text-muted-foreground space-y-0.5">
-            <div>触发：{formatTrigger(rule)}</div>
-            <div>关联 Buff：{rule.linkedBuffId}</div>
-            <div>阈值：{rule.threshold ?? "无"}</div>
           </div>
         </button>
       {/each}

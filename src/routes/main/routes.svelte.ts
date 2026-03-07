@@ -12,7 +12,7 @@ import SwordsIcon from "virtual:icons/lucide/swords";
 export const TOOL_ROUTES = {
   "/main/dps": { label: "DPS检测", icon: ActivityIcon },
   "/main/module-calc": { label: "模组计算", icon: CalculatorIcon },
-  "/main/skill-monitor": { label: "技能监控", icon: SwordsIcon },
+  "/main/skill-monitor": { label: "实时监控", icon: SwordsIcon },
 };
 
 // Sub-routes for DPS tool (tabs in the right panel)

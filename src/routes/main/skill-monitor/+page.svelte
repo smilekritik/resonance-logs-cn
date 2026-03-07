@@ -1039,8 +1039,8 @@
   <div class="rounded-lg border border-border/60 bg-card/40 p-4 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.02)] space-y-2">
     <SettingsSwitch
       bind:checked={SETTINGS.skillMonitor.state.enabled}
-      label="启用技能监控"
-      description="开启后将实时推送技能CD数据到悬浮窗口"
+      label="启用实时监控"
+      description="开启后将实时推送监控数据到悬浮窗口"
     />
   </div>
 
@@ -1089,7 +1089,7 @@
           : 'bg-muted/30 text-foreground border-border/60 hover:bg-muted/50'}"
         onclick={() => (activeTab = "overlay")}
       >
-        Overlay
+        启用窗口
       </button>
     </div>
   </div>
