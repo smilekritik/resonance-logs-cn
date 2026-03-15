@@ -51,6 +51,8 @@ const BUFF_CATEGORY_CATALOG: Record<
   alchemy: { label: "炼金", buffIds: [] },
 };
 
+const FOOD_NAME_KEYWORDS = ["物攻", "魔攻", "护甲", "耐力", "生命恢复"];
+
 function resolveBuffCategories(
   defaultName: string,
   iconKey: string | null,
@@ -58,13 +60,13 @@ function resolveBuffCategories(
   const categories: BuffCategoryKey[] = [];
   if (
     iconKey?.startsWith("buff_food_up") &&
-    (defaultName.startsWith("物攻") || defaultName.startsWith("魔攻"))
+    FOOD_NAME_KEYWORDS.some((keyword) => defaultName.includes(keyword))
   ) {
     categories.push("food");
   }
   if (
     iconKey?.startsWith("buff_agentia_up") &&
-    defaultName.startsWith("元素强度")
+    defaultName.includes("元素强度")
   ) {
     categories.push("alchemy");
   }
