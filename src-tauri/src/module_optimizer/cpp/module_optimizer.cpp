@@ -47,6 +47,7 @@ struct ClusteredBeamModule {
     int primary_slot = Constants::CUDA_ATTR_DIM;
     int primary_power = 0;
     int max_special_power = 0;
+    int constraint_contribution = 0;
     int total_attr_value = 0;
 };
 
@@ -189,6 +190,15 @@ std::vector<int> BuildMinAttrRequirementsDense(
     return min_attr_requirements;
 }
 
+bool HasActiveConstraints(const std::vector<int>& min_attr_requirements) {
+    for (int slot = 0; slot < Constants::CUDA_ATTR_DIM; ++slot) {
+        if (min_attr_requirements[slot] > 0) {
+            return true;
+        }
+    }
+    return false;
+}
+
 std::vector<DenseModuleData> BuildDenseModuleData(const std::vector<ModuleInfo>& modules) {
     std::vector<DenseModuleData> dense_modules(modules.size());
     for (size_t module_idx = 0; module_idx < modules.size(); ++module_idx) {
@@ -282,7 +292,8 @@ std::vector<ClusteredBeamModule> BuildClusteredBeamModules(
     const std::vector<ModuleInfo>& modules,
     const std::vector<DenseModuleData>& dense_modules,
     const std::vector<int>& slot_value_power,
-    int sort_strategy) {
+    int sort_strategy,
+    const std::vector<int>& min_attr_requirements) {
 
     std::vector<ClusteredBeamModule> clustered;
     clustered.reserve(modules.size());
@@ -295,6 +306,9 @@ std::vector<ClusteredBeamModule> BuildClusteredBeamModules(
         item.total_attr_value = dense_modules[module_idx].total_attr_value;
 
         for (int slot = 0; slot < Constants::CUDA_ATTR_DIM; ++slot) {
+            if (min_attr_requirements[slot] > 0) {
+                item.constraint_contribution += item.dense.slot_values[slot];
+            }
             const int slot_value = std::min(item.dense.slot_values[slot], 20);
             const int slot_power = slot_value_power[slot * 21 + slot_value];
             if (Constants::CUDA_SLOT_IS_SPECIAL[slot]) {
@@ -335,6 +349,21 @@ std::vector<ClusteredBeamModule> BuildClusteredBeamModules(
                 }
                 if (lhs.primary_power != rhs.primary_power) {
                     return lhs.primary_power > rhs.primary_power;
+                }
+                return lhs.original_index < rhs.original_index;
+            });
+        break;
+    case 3:
+        std::sort(clustered.begin(), clustered.end(),
+            [](const ClusteredBeamModule& lhs, const ClusteredBeamModule& rhs) {
+                if (lhs.constraint_contribution != rhs.constraint_contribution) {
+                    return lhs.constraint_contribution > rhs.constraint_contribution;
+                }
+                if (lhs.primary_power != rhs.primary_power) {
+                    return lhs.primary_power > rhs.primary_power;
+                }
+                if (lhs.total_attr_value != rhs.total_attr_value) {
+                    return lhs.total_attr_value > rhs.total_attr_value;
                 }
                 return lhs.original_index < rhs.original_index;
             });
@@ -497,9 +526,11 @@ LightweightSolution LocalSearchImproveByIndicesLocal(
     const std::vector<DenseModuleData>& dense_modules,
     const std::vector<ModuleInfo>& all_modules,
     int iterations,
-    const std::vector<int>& slot_value_power) {
+    const std::vector<int>& slot_value_power,
+    const std::vector<int>& min_attr_requirements) {
 
     LightweightSolution best_solution = solution;
+    const bool has_constraints = HasActiveConstraints(min_attr_requirements);
 
     std::random_device rd;
     std::mt19937 gen(rd());
@@ -534,6 +565,15 @@ LightweightSolution LocalSearchImproveByIndicesLocal(
                 int new_score = CalculateDenseScoreByIndices(
                     new_indices, dense_modules, slot_value_power);
                 if (new_score > best_solution.score) {
+                    if (has_constraints) {
+                        DenseSlotArray new_slot_sums = {};
+                        for (size_t idx : new_indices) {
+                            AddSlotArrays(new_slot_sums, dense_modules[idx].slot_values);
+                        }
+                        if (!MeetsMinAttrRequirements(new_slot_sums, min_attr_requirements)) {
+                            continue;
+                        }
+                    }
                     best_solution = LightweightSolution(new_indices, new_score);
                     improved = true;
                     break;
@@ -658,7 +698,12 @@ std::vector<LightweightSolution> RunSingleBeam(
     ProgressContext* progress) {
 
     const auto clustered_modules =
-        BuildClusteredBeamModules(modules, dense_modules_raw, slot_value_power, sort_strategy);
+        BuildClusteredBeamModules(
+            modules,
+            dense_modules_raw,
+            slot_value_power,
+            sort_strategy,
+            min_attr_requirements);
 
     std::vector<ModuleInfo> beam_modules;
     beam_modules.reserve(clustered_modules.size());
@@ -835,7 +880,8 @@ std::vector<LightweightSolution> RunSingleBeam(
             dense_modules,
             beam_modules,
             kBeamLocalSearchIterations,
-            slot_value_power);
+            slot_value_power,
+            min_attr_requirements);
 
         std::vector<size_t> original_indices;
         original_indices.reserve(improved_solution.module_indices.size());
@@ -1211,16 +1257,16 @@ std::vector<ModuleSolution> ModuleOptimizerCpp::StrategyBeamSearch(
     const auto slot_value_power = BuildSlotValuePower(target_attributes, exclude_attributes);
     const auto dense_modules_raw = BuildDenseModuleData(modules);
     const auto min_attr_requirements = BuildMinAttrRequirementsDense(min_attr_sum_requirements);
-    constexpr int kBeamStrategyCount = 3;
+    const int strategy_count = HasActiveConstraints(min_attr_requirements) ? 4 : 3;
     ProgressContext* progress_ctx = ResolveProgressContext(progress);
     progress_ctx->set_processed(0);
     progress_ctx->set_total(
-        static_cast<std::uint64_t>(kBeamStrategyCount * std::max(1, combination_size - 1)));
-    auto pool = std::make_unique<SimpleThreadPool>(static_cast<size_t>(std::min(worker_count, kBeamStrategyCount)));
+        static_cast<std::uint64_t>(strategy_count * std::max(1, combination_size - 1)));
+    auto pool = std::make_unique<SimpleThreadPool>(static_cast<size_t>(std::min(worker_count, strategy_count)));
     std::vector<std::future<std::vector<LightweightSolution>>> futures;
-    futures.reserve(kBeamStrategyCount);
+    futures.reserve(strategy_count);
 
-    for (int strategy = 0; strategy < kBeamStrategyCount; ++strategy) {
+    for (int strategy = 0; strategy < strategy_count; ++strategy) {
         futures.push_back(pool->enqueue(
             [&, strategy]() {
                 return RunSingleBeam(
