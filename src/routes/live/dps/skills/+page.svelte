@@ -100,8 +100,9 @@
         (skill): TopLevelSkillItem => ({ kind: "skill", row: skill }),
       ),
     ].sort((a, b) => {
-      const aVal = numericValue(a.row[sortKey]);
-      const bVal = numericValue(b.row[sortKey]);
+      const key = sortKey as keyof SkillDisplayRow & keyof RecountGroup;
+      const aVal = numericValue(a.row[key]);
+      const bVal = numericValue(b.row[key]);
       return sortDesc ? bVal - aVal : aVal - bVal;
     });
 
