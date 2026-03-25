@@ -666,7 +666,7 @@ export const CUSTOM_THEME_COLOR_LABELS: Record<string, { label: string; descript
 
 const DEFAULT_SETTINGS = {
   app: {
-    language: "system" as AppLanguage,
+    language: "zh-CN" as AppLanguage,
   },
   accessibility: {
     blur: false,

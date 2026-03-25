@@ -641,6 +641,7 @@ const literal = {
   "Show Your Name - Class": "显示你的名称 - 职业",
   "Show Your Name - Spec": "显示你的名称 - 专精",
   "Show your season strength": "显示你的赛季强度",
+  "Select the interface language. Changes are applied immediately.": "选择界面语言。更改将立即生效。",
   "Simplified Chinese": "简体中文",
   "Size Presets": "尺寸Presets",
   "Skill": "技能",

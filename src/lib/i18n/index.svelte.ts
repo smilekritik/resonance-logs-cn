@@ -61,11 +61,12 @@ export function resolveAppLanguage(language: AppLanguage, systemLanguage?: strin
 }
 
 function touch(language: SupportedLanguage) {
+  if (i18nState.language === language) return;
   i18nState.language = language;
   i18nState.version += 1;
 }
 
-export async function initI18n(language: AppLanguage = "system") {
+export async function initI18n(language: AppLanguage = "zh-CN") {
   const resolved = resolveAppLanguage(language);
   if (!i18nState.initialized) {
     await i18next.init({

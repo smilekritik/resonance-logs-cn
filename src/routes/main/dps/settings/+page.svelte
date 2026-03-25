@@ -5,6 +5,7 @@
    */
   import * as Tabs from "$lib/components/ui/tabs/index.js";
   import { tl } from "$lib/i18n/index.svelte";
+  import AppSettings from "./app.svelte";
   import LiveSettings from "./live.svelte";
   import NetworkSettings from "./network.svelte";
   import ShortcutsSettings from "./shortcuts.svelte";
@@ -12,6 +13,7 @@
   import DebugSettings from "./debug.svelte";
 
   const settingsTabs = [
+    { id: "app", label: "Application" },
     { id: "live", label: "Live" },
     { id: "network", label: "Network" },
     { id: "shortcuts", label: "Shortcuts" },
@@ -19,7 +21,7 @@
     { id: "debug", label: "Debug" },
   ];
 
-  let activeTab = $state("live");
+  let activeTab = $state("app");
 </script>
 
 <div class="space-y-4">
@@ -30,6 +32,7 @@
       {/each}
     </Tabs.List>
 
+    <AppSettings />
     <LiveSettings />
     <NetworkSettings />
     <ShortcutsSettings />
