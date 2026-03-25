@@ -1,0 +1,5475 @@
+{
+  "90001": {
+    "Id": 90001,
+    "Name": "AllSubBulletSize",
+    "Desc": "AllSubBulletSize",
+    "AttrType": 200,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90002": {
+    "Id": 90002,
+    "Name": "BoyceEffectResourceManagement",
+    "Desc": "BoyceEffectResourceManagement",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 2,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90003": {
+    "Id": 90003,
+    "Name": "ProjectileAmount",
+    "Desc": "ProjectileAmount",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 3,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90004": {
+    "Id": 90004,
+    "Name": "Frost MageStaffIce OrbExplosionSize",
+    "Desc": "Frost MageStaffIce OrbExplosionSize",
+    "AttrType": 200,
+    "LogicType": 1,
+    "AttrParams": [
+      1216
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90005": {
+    "Id": 90005,
+    "Name": "AllHasCombat ResourceDeduction Reduction",
+    "Desc": "AllHasCombat ResourceDeduction Reduction",
+    "AttrType": 302,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90006": {
+    "Id": 90006,
+    "Name": "Combat FormulaAttack PowerExtraBonus",
+    "Desc": "Combat FormulaAttack PowerExtraBonus",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90007": {
+    "Id": 90007,
+    "Name": "Combat FormulaFinalExtraBonus",
+    "Desc": "Combat FormulaFinalExtraBonus",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90008": {
+    "Id": 90008,
+    "Name": "【Exaltation】Duration",
+    "Desc": "【Exaltation】Duration",
+    "AttrType": 501,
+    "LogicType": 3,
+    "AttrParams": [
+      14
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90009": {
+    "Id": 90009,
+    "Name": "【Ignition】BuffStackUpLimit Change",
+    "Desc": "【Ignition】BuffStackUpLimit Change",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      4501
+    ],
+    "LowerLimit": -999,
+    "UpperLimit": 999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90010": {
+    "Id": 90010,
+    "Name": "【Ignition】BuffDurationPercentChange",
+    "Desc": "【Ignition】BuffDurationPercentChange",
+    "AttrType": 501,
+    "LogicType": 4,
+    "AttrParams": [
+      4501
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90011": {
+    "Id": 90011,
+    "Name": "【Projectile】AmountAdd",
+    "Desc": "【Projectile】AmountAdd",
+    "AttrType": 1,
+    "LogicType": 3,
+    "AttrParams": [
+      48
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90012": {
+    "Id": 90012,
+    "Name": "【Trap】AmountAdd",
+    "Desc": "【Trap】AmountAdd",
+    "AttrType": 1,
+    "LogicType": 3,
+    "AttrParams": [
+      44
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90013": {
+    "Id": 90013,
+    "Name": "【Rage】SkillsConsumeRageReduce",
+    "Desc": "【Rage】SkillsConsumeRageReduce",
+    "AttrType": 302,
+    "LogicType": 2,
+    "AttrParams": [
+      13001
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90014": {
+    "Id": 90014,
+    "Name": "【Trap】Repeated EffectCount",
+    "Desc": "【Trap】Repeated EffectCount",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90015": {
+    "Id": 90015,
+    "Name": "Equipment FortitudebuffDurationAdd",
+    "Desc": "Equipment FortitudebuffDurationAdd",
+    "AttrType": 502,
+    "LogicType": 4,
+    "AttrParams": [
+      20015101
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90016": {
+    "Id": 90016,
+    "Name": "TrapReadyMarkerAttribute",
+    "Desc": "TrapReadyMarkerAttribute",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 1,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90017": {
+    "Id": 90017,
+    "Name": "AbnormalAccumulateTotalEfficiency",
+    "Desc": "AbnormalAccumulateTotalEfficiency",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90018": {
+    "Id": 90018,
+    "Name": "Nature WardExtraBonus",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90019": {
+    "Id": 90019,
+    "Name": "Crit HealingAttribute",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90020": {
+    "Id": 90020,
+    "Name": "HundredDivideHundredBlockMarker",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90021": {
+    "Id": 90021,
+    "Name": "LuckyBlockDamage Reduction",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "Trigger Lucky Block, the Defense effect of this block +{*tempAttr.up*}.<br>Lucky Block: When attacked, both block and luck take effect.",
+    "AttrIcon": ""
+  },
+  "90022": {
+    "Id": 90022,
+    "Name": "2201300ExtraSuppress",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90023": {
+    "Id": 90023,
+    "Name": "（Deprecated）ExtraBlockChance",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90024": {
+    "Id": 90024,
+    "Name": "GuardbladeProvokedEffect",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90025": {
+    "Id": 90025,
+    "Name": "Forest RingEnergyObtainSpeed",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90026": {
+    "Id": 90026,
+    "Name": "2204170SpecialTriggerWaterAttributeDMG",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90027": {
+    "Id": 90027,
+    "Name": "2205180SkyfallmeanwhileTriggerLuckyandCriticalWhen，SkillsDMGincrease",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90028": {
+    "Id": 90028,
+    "Name": "LongSpearBraveEnergyObtainSpeed",
+    "Desc": "",
+    "AttrType": 301,
+    "LogicType": 2,
+    "AttrParams": [
+      14011
+    ],
+    "LowerLimit": -9999,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90029": {
+    "Id": 90029,
+    "Name": "LongSpearSharp (Talent)Effectincrease",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90030": {
+    "Id": 90030,
+    "Name": "LongSpearTearTimeextend",
+    "Desc": "",
+    "AttrType": 502,
+    "LogicType": 4,
+    "AttrParams": [
+      2205071
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90031": {
+    "Id": 90031,
+    "Name": "InitialnotCriticalEffectExtraCritical",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90032": {
+    "Id": 90032,
+    "Name": "LongSpearSharp (Talent)Cap",
+    "Desc": "",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      31501
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90033": {
+    "Id": 90033,
+    "Name": "IaidoInstanceTimeDMGSameUpTimeDMG",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90034": {
+    "Id": 90034,
+    "Name": "【BowArrow】PhotonCombat ResourceConsumeReduceEfficiency",
+    "Desc": "",
+    "AttrType": 302,
+    "LogicType": 2,
+    "AttrParams": [
+      22001
+    ],
+    "LowerLimit": -999999,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90035": {
+    "Id": 90035,
+    "Name": "CriticalAddIgnoreViewDefense",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90036": {
+    "Id": 90036,
+    "Name": "TearSkillsMultiplierincrease",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90037": {
+    "Id": 90037,
+    "Name": "FullMoonSkillsDoubleCooldownEffect",
+    "Desc": "",
+    "AttrType": 100,
+    "LogicType": 1,
+    "AttrParams": [
+      1117
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90038": {
+    "Id": 90038,
+    "Name": "StaffWater BladeCounter",
+    "Desc": "StaffWater BladeCounter",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 1,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90039": {
+    "Id": 90039,
+    "Name": "Hit Pointzoom in",
+    "Desc": "Hit Pointzoom in",
+    "AttrType": 505,
+    "LogicType": 1,
+    "AttrParams": [
+      300014,
+      300030
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90040": {
+    "Id": 90040,
+    "Name": "BoyceCooperative EffectTimeextend",
+    "Desc": "BoyceCooperative EffectTimeextend",
+    "AttrType": 502,
+    "LogicType": 4,
+    "AttrParams": [
+      25301
+    ],
+    "LowerLimit": -9999,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90041": {
+    "Id": 90041,
+    "Name": "TinaNature WardObtainEfficiencyincrease",
+    "Desc": "TinaNature WardObtainEfficiencyincrease",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90042": {
+    "Id": 90042,
+    "Name": "DodgenotConsumeCountChance",
+    "Desc": "",
+    "AttrType": 350,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90043": {
+    "Id": 90043,
+    "Name": "【TimeNeedSkills】Cooldown",
+    "Desc": "TimeNeedSkillsCooldown",
+    "AttrType": 100,
+    "LogicType": 3,
+    "AttrParams": [
+      4
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90044": {
+    "Id": 90044,
+    "Name": "【MainNeedSkills】Cooldown",
+    "Desc": "MainNeedSkillsCooldown",
+    "AttrType": 100,
+    "LogicType": 3,
+    "AttrParams": [
+      3
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90045": {
+    "Id": 90045,
+    "Name": "【FinalExtremeSkills】Cooldown",
+    "Desc": "FinalExtremeSkillsCooldown",
+    "AttrType": 100,
+    "LogicType": 3,
+    "AttrParams": [
+      5
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90046": {
+    "Id": 90046,
+    "Name": "ClassResourceObtainEfficiency",
+    "Desc": "ClassResourceObtainEfficiency",
+    "AttrType": 301,
+    "LogicType": 2,
+    "AttrParams": [
+      20001
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 1000000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90047": {
+    "Id": 90047,
+    "Name": "ArmorChargebuffDurationextend",
+    "Desc": "ArmorChargebuffDurationextend",
+    "AttrType": 501,
+    "LogicType": 4,
+    "AttrParams": [
+      20024101
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90048": {
+    "Id": 90048,
+    "Name": "DodgeChargeTimereduce",
+    "Desc": "DodgeChargeTimereduce",
+    "AttrType": 352,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90049": {
+    "Id": 90049,
+    "Name": "（Deprecated）FinalBlockChanceincrease",
+    "Desc": "FinalBlockChanceincrease",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90050": {
+    "Id": 90050,
+    "Name": "20096001Effectenhance",
+    "Desc": "20096001Effectenhance",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90051": {
+    "Id": 90051,
+    "Name": "WeaponinBackwardPlatformWhenReduceSkillscd",
+    "Desc": "WeaponinBackwardPlatformWhenReduceSkillscd",
+    "AttrType": 103,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": -99999,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90052": {
+    "Id": 90052,
+    "Name": "2200101ExistStore30%DMG",
+    "Desc": "2200101ExistStore30%DMG",
+    "AttrType": 2,
+    "LogicType": 5,
+    "AttrParams": [
+      12642
+    ],
+    "LowerLimit": -9999,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90053": {
+    "Id": 90053,
+    "Name": "【MainNeedSkills】CooldownPinValue",
+    "Desc": "MainNeedSkillsCooldown",
+    "AttrType": 101,
+    "LogicType": 3,
+    "AttrParams": [
+      3
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90054": {
+    "Id": 90054,
+    "Name": "WeaponinForwardPlatformWhenReduceSkillsCDTen ThousandDivideCompare",
+    "Desc": "WeaponinForwardPlatformWhenReduceSkillsCD",
+    "AttrType": 103,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90055": {
+    "Id": 90055,
+    "Name": "WeaponinBackwardPlatformWhenReduceSkillsCDTen ThousandDivideCompare",
+    "Desc": "WeaponinBackwardPlatformWhenReduceSkillsCD",
+    "AttrType": 104,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90056": {
+    "Id": 90056,
+    "Name": "WeaponinForwardPlatformWhenReduceSkillsCDPinValue",
+    "Desc": "WeaponinForwardPlatformWhenReduceSkillsCD",
+    "AttrType": 105,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90057": {
+    "Id": 90057,
+    "Name": "WeaponinBackwardPlatformWhenReduceSkillsCDPinValue",
+    "Desc": "WeaponinBackwardPlatformWhenReduceSkillsCD",
+    "AttrType": 106,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90058": {
+    "Id": 90058,
+    "Name": "AddGrass SlideofChargeCap",
+    "Desc": "",
+    "AttrType": 352,
+    "LogicType": 1,
+    "AttrParams": [
+      1505
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 3,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90059": {
+    "Id": 90059,
+    "Name": "TataCombat ResourceObtainEfficiency",
+    "Desc": "TataCombat ResourceObtainEfficiency",
+    "AttrType": 301,
+    "LogicType": 2,
+    "AttrParams": [
+      13001
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90060": {
+    "Id": 90060,
+    "Name": "3000120TataImprove Quality1SkillsCombat ResourceDeductRatio",
+    "Desc": "Tata1SkillsCombat ResourceDeductRatio",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      1610
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90061": {
+    "Id": 90061,
+    "Name": "3000410Tina1SkillsCD Reduction",
+    "Desc": "Tina1SkillsCD Reduction",
+    "AttrType": 100,
+    "LogicType": 1,
+    "AttrParams": [
+      1405
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90062": {
+    "Id": 90062,
+    "Name": "【SpecializationValue】ObtainEfficiency",
+    "Desc": "【SpecializationValue】ObtainEfficiency",
+    "AttrType": 301,
+    "LogicType": 2,
+    "AttrParams": [
+      20001
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90063": {
+    "Id": 90063,
+    "Name": "【Nature Ward】Duration",
+    "Desc": "【Nature Ward】Duration",
+    "AttrType": 501,
+    "LogicType": 3,
+    "AttrParams": [
+      26
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90064": {
+    "Id": 90064,
+    "Name": "【Domain】SkillscdTen ThousandDivideCompare",
+    "Desc": "【Domain】SkillscdTen ThousandDivideCompare",
+    "AttrType": 100,
+    "LogicType": 3,
+    "AttrParams": [
+      50
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90065": {
+    "Id": 90065,
+    "Name": "2000010Assault Blessing，CauseDMGincrease",
+    "Desc": "CauseDMGincrease",
+    "AttrType": 2,
+    "LogicType": 5,
+    "AttrParams": [
+      12632
+    ],
+    "LowerLimit": -9999,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90066": {
+    "Id": 90066,
+    "Name": "2100010Mystic Blessing，CauseDMGincrease",
+    "Desc": "CauseDMGincrease",
+    "AttrType": 2,
+    "LogicType": 5,
+    "AttrParams": [
+      12632
+    ],
+    "LowerLimit": -9999,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90067": {
+    "Id": 90067,
+    "Name": "2200010CharacterFightAddProtect，CauseDMGincrease",
+    "Desc": "CauseDMGincrease",
+    "AttrType": 2,
+    "LogicType": 5,
+    "AttrParams": [
+      12632
+    ],
+    "LowerLimit": -9999,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90068": {
+    "Id": 90068,
+    "Name": "AddReduceAttributeactionBonus",
+    "Desc": "AddReduceAttributeactionBonus",
+    "AttrType": 506,
+    "LogicType": 3,
+    "AttrParams": [
+      1004
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90069": {
+    "Id": 90069,
+    "Name": "【Dual Axes1Skills】CD Reduction",
+    "Desc": "【Dual Axes1Skills】CD Reduction",
+    "AttrType": 100,
+    "LogicType": 1,
+    "AttrParams": [
+      1609,
+      1610
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 3000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90070": {
+    "Id": 90070,
+    "Name": "【Blessing】buffofDurationAdd",
+    "Desc": "【Blessing】buffofDurationAdd",
+    "AttrType": 502,
+    "LogicType": 3,
+    "AttrParams": [
+      13
+    ],
+    "LowerLimit": 99999,
+    "UpperLimit": 0,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90071": {
+    "Id": 90071,
+    "Name": "ProtectionAddProtect-BreakFlow",
+    "Desc": "AddAttributeMultiplier",
+    "AttrType": 507,
+    "LogicType": 1,
+    "AttrParams": [
+      10402
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90072": {
+    "Id": 90072,
+    "Name": "ExtraHealPinValue",
+    "Desc": "ExtraHealPinValue",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": -9999999,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90073": {
+    "Id": 90073,
+    "Name": "IcicleConsumeResourceReduce",
+    "Desc": "IcicleConsumeResourceReduce",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      1242
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90074": {
+    "Id": 90074,
+    "Name": "ComboFlowResourcePoint",
+    "Desc": "ComboFlowResourcePoint",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 5,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90075": {
+    "Id": 90075,
+    "Name": "TalentBurstCD Reduction",
+    "Desc": "TalentBurstCD Reduction",
+    "AttrType": 100,
+    "LogicType": 3,
+    "AttrParams": [
+      8
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90076": {
+    "Id": 90076,
+    "Name": "TalentBurstChargeEfficiency",
+    "Desc": "TalentBurstChargeEfficiency",
+    "AttrType": 301,
+    "LogicType": 2,
+    "AttrParams": [
+      20001
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90077": {
+    "Id": 90077,
+    "Name": "Controlledreduce",
+    "Desc": "Controlledreduce",
+    "AttrType": 501,
+    "LogicType": 3,
+    "AttrParams": [
+      1006
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90078": {
+    "Id": 90078,
+    "Name": "StateDurationBonus",
+    "Desc": "StateDurationBonus",
+    "AttrType": 501,
+    "LogicType": 3,
+    "AttrParams": [
+      10
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90079": {
+    "Id": 90079,
+    "Name": "ControlDurationBonus",
+    "Desc": "ControlDurationBonus",
+    "AttrType": 501,
+    "LogicType": 3,
+    "AttrParams": [
+      1006
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90080": {
+    "Id": 90080,
+    "Name": "BuffDurationBonus",
+    "Desc": "BuffDurationBonus",
+    "AttrType": 501,
+    "LogicType": 3,
+    "AttrParams": [
+      1004
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90081": {
+    "Id": 90081,
+    "Name": "【Rainbow Bridge】Duration",
+    "Desc": "[Rainbow Bridge]Duration",
+    "AttrType": 501,
+    "LogicType": 3,
+    "AttrParams": [
+      18
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90082": {
+    "Id": 90082,
+    "Name": "2200080AccumulateMultiplyDMG Boost",
+    "Desc": "2200080AccumulateMultiplyDMG Boost",
+    "AttrType": 2,
+    "LogicType": 5,
+    "AttrParams": [
+      12632
+    ],
+    "LowerLimit": -9999,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90083": {
+    "Id": 90083,
+    "Name": "【Inspire】ProvideofAttributeBonusRatio",
+    "Desc": "【Inspire】ProvideofAttributeBonusRatio",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90084": {
+    "Id": 90084,
+    "Name": "【Heal】SkillsCD Reduction",
+    "Desc": "【Heal】SkillsCD Reduction",
+    "AttrType": 101,
+    "LogicType": 3,
+    "AttrParams": [
+      1003
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90085": {
+    "Id": 90085,
+    "Name": "【Inspire】EffectExtraincrease",
+    "Desc": "【Inspire】EffectExtraincrease",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90086": {
+    "Id": 90086,
+    "Name": "【Suppress】EffectOnOff",
+    "Desc": "【Suppress】EffectOnOff",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 1,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90087": {
+    "Id": 90087,
+    "Name": "Talent SkillCD Reduction",
+    "Desc": "Talent SkillCD Reduction",
+    "AttrType": 100,
+    "LogicType": 3,
+    "AttrParams": [
+      6
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90088": {
+    "Id": 90088,
+    "Name": "Tina2SkillsCD Reduction",
+    "Desc": "Tina2SkillsCD Reduction",
+    "AttrType": 100,
+    "LogicType": 1,
+    "AttrParams": [
+      1407
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90089": {
+    "Id": 90089,
+    "Name": "MainCitySkillsnotEnergyUnleashConfig",
+    "Desc": "MainCitySkillsnotEnergyUnleashConfig",
+    "AttrType": 509,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": -1,
+    "UpperLimit": 1,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90090": {
+    "Id": 90090,
+    "Name": "MainCitySkillscanUnleashConfig",
+    "Desc": "MainCitySkillscanUnleashConfig",
+    "AttrType": 509,
+    "LogicType": 1,
+    "AttrParams": [
+      1222,
+      1223
+    ],
+    "LowerLimit": -1,
+    "UpperLimit": 1,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90091": {
+    "Id": 90091,
+    "Name": "ShieldTalent Skill",
+    "Desc": "ShieldTalent Skill",
+    "AttrType": 509,
+    "LogicType": 3,
+    "AttrParams": [
+      6,
+      8
+    ],
+    "LowerLimit": -1,
+    "UpperLimit": 1,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90092": {
+    "Id": 90092,
+    "Name": "【NaturalGrace】BuffStackUpLimit Change",
+    "Desc": "【NaturalGrace】BuffStackUpLimit Change",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      2202051
+    ],
+    "LowerLimit": -999,
+    "UpperLimit": 999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90093": {
+    "Id": 90093,
+    "Name": "【HealChain】BuffStackUpLimit Change",
+    "Desc": "【HealChain】BuffStackUpLimit Change",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      2202091
+    ],
+    "LowerLimit": -999,
+    "UpperLimit": 999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90094": {
+    "Id": 90094,
+    "Name": "【HealSeed】BuffStackUpLimit Change",
+    "Desc": "【HealSeed】BuffStackUpLimit Change",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      2202311
+    ],
+    "LowerLimit": -999,
+    "UpperLimit": 999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90095": {
+    "Id": 90095,
+    "Name": "NewHandAllowUnleashAssist",
+    "Desc": "NewHandAllowUnleashAssist",
+    "AttrType": 509,
+    "LogicType": 1,
+    "AttrParams": [
+      4006,
+      4030
+    ],
+    "LowerLimit": -1,
+    "UpperLimit": 1,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90096": {
+    "Id": 90096,
+    "Name": "【SweepShotTypeTransformMech】CD Reduction",
+    "Desc": "【SweepShotTypeTransformMech】CD Reduction",
+    "AttrType": 100,
+    "LogicType": 1,
+    "AttrParams": [
+      706002,
+      706003,
+      706004
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90097": {
+    "Id": 90097,
+    "Name": "【Falcon Toss (Leap)】notConsumeEnergy",
+    "Desc": "【Falcon Toss (Leap)】notConsumeEnergy",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      1425
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90098": {
+    "Id": 90098,
+    "Name": "LongSpearSharp (Talent)DeductCompareRate",
+    "Desc": "LongSpearSharp (Talent)DeductCompareRate",
+    "AttrType": 302,
+    "LogicType": 2,
+    "AttrParams": [
+      14001
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90099": {
+    "Id": 90099,
+    "Name": "Vanguard SpecStackCap",
+    "Desc": "Vanguard SpecStackCap",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      2205301
+    ],
+    "LowerLimit": -999,
+    "UpperLimit": 999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90100": {
+    "Id": 90100,
+    "Name": "Guardblade-Nature WardSlamConsumedecrease",
+    "Desc": "Guardblade-Nature WardSlamConsumedecrease",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      1922
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90101": {
+    "Id": 90101,
+    "Name": "IaidoScytheEffectResourceManagement",
+    "Desc": "IaidoScytheEffectResourceManagement",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 5,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90102": {
+    "Id": 90102,
+    "Name": "LongSpearMulti-HitAttackResourceManagement",
+    "Desc": "LongSpearMulti-HitAttackResourceManagement",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 3,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90103": {
+    "Id": 90103,
+    "Name": "【Sharp (Talent)】BuffStackUpLimit Change",
+    "Desc": "【Sharp (Talent)】BuffStackUpLimit Change",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      31501
+    ],
+    "LowerLimit": -999,
+    "UpperLimit": 999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90104": {
+    "Id": 90104,
+    "Name": "OliveiraReplacement SkillBDMGraise",
+    "Desc": "OliveiraReplacement SkillBDMGraise",
+    "AttrType": 102,
+    "LogicType": 1,
+    "AttrParams": [
+      1722
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90105": {
+    "Id": 90105,
+    "Name": "Resonance SkillsofCooldownshorten",
+    "Desc": "Resonance SkillsofCooldownshorten",
+    "AttrType": 100,
+    "LogicType": 3,
+    "AttrParams": [
+      8
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90106": {
+    "Id": 90106,
+    "Name": "1701",
+    "Desc": "OtherDMG BoostAttributeBonus",
+    "AttrType": 706,
+    "LogicType": 1,
+    "AttrParams": [
+      1701
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90107": {
+    "Id": 90107,
+    "Name": "1701",
+    "Desc": "ObjectDamageAttributeBonus",
+    "AttrType": 707,
+    "LogicType": 1,
+    "AttrParams": [
+      1701
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90108": {
+    "Id": 90108,
+    "Name": "1701",
+    "Desc": "MethodDamageAttributeBonus",
+    "AttrType": 708,
+    "LogicType": 1,
+    "AttrParams": [
+      1701
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90109": {
+    "Id": 90109,
+    "Name": "1701",
+    "Desc": "HealAttributeBonus",
+    "AttrType": 704,
+    "LogicType": 1,
+    "AttrParams": [
+      1701
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90110": {
+    "Id": 90110,
+    "Name": "1701",
+    "Desc": "DMG BoostAttributeBonus",
+    "AttrType": 705,
+    "LogicType": 1,
+    "AttrParams": [
+      1701
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90111": {
+    "Id": 90111,
+    "Name": "【Iaido】ConsumeThunder SigilofSkillsDMGincrease",
+    "Desc": "【Iaido】ConsumeThunder SigilofSkillsDMGincrease",
+    "AttrType": 705,
+    "LogicType": 1,
+    "AttrParams": [
+      1714,
+      1715,
+      1717,
+      1718,
+      1724,
+      1735,
+      1736
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90112": {
+    "Id": 90112,
+    "Name": "Iaido1715MoonstrikeDMGincrease",
+    "Desc": "Iaido1715MoonstrikeDMGincrease",
+    "AttrType": 705,
+    "LogicType": 1,
+    "AttrParams": [
+      1715
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90113": {
+    "Id": 90113,
+    "Name": "Iaido1717FlashDMGincrease",
+    "Desc": "Iaido1717FlashDMGincrease",
+    "AttrType": 705,
+    "LogicType": 1,
+    "AttrParams": [
+      1717
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90114": {
+    "Id": 90114,
+    "Name": "Iaido1718Raijin DashDMGincrease",
+    "Desc": "Iaido1717Raijin DashDMGincrease",
+    "AttrType": 705,
+    "LogicType": 1,
+    "AttrParams": [
+      1718
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90115": {
+    "Id": 90115,
+    "Name": "Guardblade1922Nature WardSlamDMGincrease",
+    "Desc": "Guardblade1922Nature WardSlamDMGincrease",
+    "AttrType": 705,
+    "LogicType": 1,
+    "AttrParams": [
+      1922
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90116": {
+    "Id": 90116,
+    "Name": "【Iaido】Special AttackHaste%increase",
+    "Desc": "【Iaido】Special AttackHaste%increase",
+    "AttrType": 700,
+    "LogicType": 1,
+    "AttrParams": [
+      1715
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90117": {
+    "Id": 90117,
+    "Name": "【Iaido】ConsumeThunder SigilofCriticalincrease",
+    "Desc": "【Iaido】ConsumeThunder SigilofCriticalincrease",
+    "AttrType": 702,
+    "LogicType": 1,
+    "AttrParams": [
+      1714,
+      1715,
+      1717,
+      1718,
+      1724
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90118": {
+    "Id": 90118,
+    "Name": "【Iaido】ConsumeThunder SigilofCrit DMGincrease",
+    "Desc": "【Iaido】ConsumeThunder SigilofCrit DMGincrease",
+    "AttrType": 703,
+    "LogicType": 1,
+    "AttrParams": [
+      1714,
+      1715,
+      1717,
+      1718,
+      1724
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90119": {
+    "Id": 90119,
+    "Name": "Iaido1717FlashCriticalincrease",
+    "Desc": "",
+    "AttrType": 702,
+    "LogicType": 1,
+    "AttrParams": [
+      1717
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90120": {
+    "Id": 90120,
+    "Name": "Iaido1718Raijin DashCriticalincrease",
+    "Desc": "",
+    "AttrType": 702,
+    "LogicType": 1,
+    "AttrParams": [
+      1718
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90121": {
+    "Id": 90121,
+    "Name": "IaidorotateScytheAmountCap",
+    "Desc": "IaidorotateScytheAmountCap",
+    "AttrType": 800,
+    "LogicType": 7,
+    "AttrParams": [
+      179903
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90122": {
+    "Id": 90122,
+    "Name": "HundredDivideHundredHitMarker",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90123": {
+    "Id": 90123,
+    "Name": "【Falcon Toss (Leap)】Speed+",
+    "Desc": "【Falcon Toss (Leap)】Speed+",
+    "AttrType": 700,
+    "LogicType": 1,
+    "AttrParams": [
+      1425
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90124": {
+    "Id": 90124,
+    "Name": "【Falcon Toss (Leap)】ClearCooldown",
+    "Desc": "【Falcon Toss (Leap)】ClearCooldown",
+    "AttrType": 100,
+    "LogicType": 1,
+    "AttrParams": [
+      1425
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90125": {
+    "Id": 90125,
+    "Name": "【Sword and Shield】notConsumeHolyOrder",
+    "Desc": "【Sword and Shield】notConsumeHolyOrder",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      2405,
+      2406,
+      2412,
+      2421
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90126": {
+    "Id": 90126,
+    "Name": "【Sword and Shield】JudgmentnotConsumeRadiantEnergy",
+    "Desc": "【Sword and Shield】JudgmentnotConsumeRadiantEnergy",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      2410,
+      2411
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90127": {
+    "Id": 90127,
+    "Name": "【Sword and Shield】HolyOrderSelfRecovery (Talent)Haste",
+    "Desc": "【Sword and Shield】HolyOrderSelfRecovery (Talent)Haste",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90128": {
+    "Id": 90128,
+    "Name": "【Sword and Shield】Heroic Shield BashbuffStacking",
+    "Desc": "【Sword and Shield】Heroic Shield BashbuffStacking",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      55418
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90129": {
+    "Id": 90129,
+    "Name": "【Iaido】Blade Intent (Talent)Value",
+    "Desc": "【Iaido】Blade Intent (Talent)Value",
+    "AttrType": 301,
+    "LogicType": 2,
+    "AttrParams": [
+      12051
+    ],
+    "LowerLimit": -9999,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90130": {
+    "Id": 90130,
+    "Name": "【Sword and Shield】Heroic Shield BashDefenseEffectincrease",
+    "Desc": "【Sword and Shield】Heroic Shield BashDefenseEffectincrease",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90131": {
+    "Id": 90131,
+    "Name": "MagicStaffNaturalRecovery (Talent)speed up",
+    "Desc": "MagicStaffNaturalRecovery (Talent)speed up",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90132": {
+    "Id": 90132,
+    "Name": "LongSpearNaturalRecovery (Talent)speed up",
+    "Desc": "LongSpearNaturalRecovery (Talent)speed up",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90133": {
+    "Id": 90133,
+    "Name": "Ultimate！ThunderThunderSkyPrison Pullcd",
+    "Desc": "Ultimate！ThunderThunderSkyPrison Pullcd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3902
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90134": {
+    "Id": 90134,
+    "Name": "Ultimate！AbsolutetoIceFrostShockwavecd",
+    "Desc": "Ultimate！AbsolutetoIceFrostShockwavecd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3906
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90135": {
+    "Id": 90135,
+    "Name": "Ultimate！TimeHasteMethodOrdercd",
+    "Desc": "Ultimate！TimeHasteMethodOrdercd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3921
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90136": {
+    "Id": 90136,
+    "Name": "ThunderstormInstanceAllowUnleashThunderSpear",
+    "Desc": "ThunderstormInstanceAllowUnleashThunderSpear",
+    "AttrType": 509,
+    "LogicType": 1,
+    "AttrParams": [
+      4011
+    ],
+    "LowerLimit": -1,
+    "UpperLimit": 1,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90137": {
+    "Id": 90137,
+    "Name": "StaffIce CrystalEnergy Consumptiondecrease",
+    "Desc": "StaffIce CrystalEnergy Consumptiondecrease",
+    "AttrType": 302,
+    "LogicType": 2,
+    "AttrParams": [
+      12001
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 9999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90138": {
+    "Id": 90138,
+    "Name": "ScytheMoon ShadowEffectResourceManagement",
+    "Desc": "ScytheMoon ShadowEffectResourceManagement",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 2,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90139": {
+    "Id": 90139,
+    "Name": "【Life Bloom】notConsumeEnergy",
+    "Desc": "【Life Bloom】notConsumeEnergy",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      1507
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90140": {
+    "Id": 90140,
+    "Name": "IaidoScytheThunder SigilObtainSpeed",
+    "Desc": "IaidoScytheThunder SigilObtainSpeed",
+    "AttrType": 301,
+    "LogicType": 2,
+    "AttrParams": [
+      12041
+    ],
+    "LowerLimit": -9999,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90141": {
+    "Id": 90141,
+    "Name": "【Revenge】notConsumeEnergy",
+    "Desc": "【Revenge】notConsumeEnergy",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      1937
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90142": {
+    "Id": 90142,
+    "Name": "LongSpear-Falcon Toss (Leap)、Sharp Impact (Crash Down)DMGAdd",
+    "Desc": "LongSpear-Falcon Toss (Leap)、Sharp Impact (Crash Down)DMGAdd",
+    "AttrType": 705,
+    "LogicType": 1,
+    "AttrParams": [
+      1425,
+      1431
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90143": {
+    "Id": 90143,
+    "Name": "【Gale Thrust】notConsumeEnergy",
+    "Desc": "【Gale Thrust】notConsumeEnergy",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      1418
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90144": {
+    "Id": 90144,
+    "Name": "MagicStaff-Ice CrystalEnergyResourceObtainEfficiency",
+    "Desc": "MagicStaff-Ice CrystalEnergyResourceObtainEfficiency",
+    "AttrType": 301,
+    "LogicType": 2,
+    "AttrParams": [
+      12001
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90145": {
+    "Id": 90145,
+    "Name": "【Iaido】LookBreak SlashTriggerChance",
+    "Desc": "【Iaido】LookBreak SlashTriggerChance",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90146": {
+    "Id": 90146,
+    "Name": "【LightCast Barrier】Cap",
+    "Desc": "【LightCast Barrier】Cap",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      55416
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90147": {
+    "Id": 90147,
+    "Name": "【Provoked】buffTime",
+    "Desc": "【Provoked】buffTime",
+    "AttrType": 502,
+    "LogicType": 4,
+    "AttrParams": [
+      2201311
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90148": {
+    "Id": 90148,
+    "Name": "TogetherAliveSealRecordconvertFull",
+    "Desc": "TogetherAliveSealRecordconvertFull",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90149": {
+    "Id": 90149,
+    "Name": "Grove WishtoHPLowestofTargetCauseofHealing Effect+",
+    "Desc": "Grove WishtoHPLowestofTargetCauseofHealing Effect+",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90150": {
+    "Id": 90150,
+    "Name": "【Guardblade】SandstoneofGripcd",
+    "Desc": "【Guardblade】SandstoneofGripcd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      1926
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 45000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90151": {
+    "Id": 90151,
+    "Name": "【Sword and Shield】Lightforged BodyNature WardEfficiency",
+    "Desc": "【Sword and Shield】Lightforged BodyNature WardEfficiency",
+    "AttrType": 301,
+    "LogicType": 2,
+    "AttrParams": [
+      27001
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90152": {
+    "Id": 90152,
+    "Name": "WaitFixed-EyeBallKingcd",
+    "Desc": "WaitFixed-EyeBallKingcd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3919
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90153": {
+    "Id": 90153,
+    "Name": "Arcane! Flash Executioncd",
+    "Desc": "Arcane! Flash Executioncd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3922
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90154": {
+    "Id": 90154,
+    "Name": "Arcane! Furious Hammercd",
+    "Desc": "Arcane! Furious Hammercd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3923
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90155": {
+    "Id": 90155,
+    "Name": "Stunt! Gale of Silencecd",
+    "Desc": "Stunt! Gale of Silencecd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3924
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90156": {
+    "Id": 90156,
+    "Name": "Stunt! Invisible Impactcd",
+    "Desc": "Stunt! Invisible Impactcd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3925
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90157": {
+    "Id": 90157,
+    "Name": "Ultimate！SwiftQuickVortexFlowcd",
+    "Desc": "Ultimate！SwiftQuickVortexFlowcd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3926
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90158": {
+    "Id": 90158,
+    "Name": "Special Move！RoarCommandcd",
+    "Desc": "Special Move！RoarCommandcd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3927
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90159": {
+    "Id": 90159,
+    "Name": "Stunt! Predator Slashcd",
+    "Desc": "Stunt! Predator Slashcd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3928
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90160": {
+    "Id": 90160,
+    "Name": "Special Move！ShrinkShellDefensecd",
+    "Desc": "Special Move！ShrinkShellDefensecd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3929
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90161": {
+    "Id": 90161,
+    "Name": "Special Move！LargeEarthofShieldcd",
+    "Desc": "Special Move！LargeEarthofShieldcd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3930
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90162": {
+    "Id": 90162,
+    "Name": "Ultimate！TenacityBarriercd",
+    "Desc": "Ultimate！TenacityBarriercd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3931
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90163": {
+    "Id": 90163,
+    "Name": "Special Move！TetanusStrikecd",
+    "Desc": "Special Move！TetanusStrikecd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3932
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90164": {
+    "Id": 90164,
+    "Name": "Special Move！DemoralizeRoarcd",
+    "Desc": "Special Move！DemoralizeRoarcd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3933
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90165": {
+    "Id": 90165,
+    "Name": "Stunt! Blink Ambushcd",
+    "Desc": "Stunt! Blink Ambushcd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3934
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90166": {
+    "Id": 90166,
+    "Name": "Ultimate！ThunderToothcd",
+    "Desc": "Ultimate！ThunderToothcd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3935
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90167": {
+    "Id": 90167,
+    "Name": "WaitFixed-FishPersonEliteMethodMastercd",
+    "Desc": "WaitFixed-FishPersonEliteMethodMastercd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3936
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90168": {
+    "Id": 90168,
+    "Name": "WaitFixed-FishPersonEliteBattleSoldiercd",
+    "Desc": "WaitFixed-FishPersonEliteBattleSoldiercd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3937
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90169": {
+    "Id": 90169,
+    "Name": "WaitFixed-SpiderKingcd",
+    "Desc": "WaitFixed-SpiderKingcd",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      3938
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90170": {
+    "Id": 90170,
+    "Name": "【LongSpear】ClassSkillsDMGAdd",
+    "Desc": "【LongSpear】ClassSkillsDMGAdd",
+    "AttrType": 707,
+    "LogicType": 1,
+    "AttrParams": [
+      1424,
+      1431,
+      1422,
+      1427,
+      1421,
+      1425,
+      1430,
+      1432
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90171": {
+    "Id": 90171,
+    "Name": "MagicStaffEnergyObtainSpeed",
+    "Desc": "MagicStaffEnergyObtainSpeed",
+    "AttrType": 301,
+    "LogicType": 2,
+    "AttrParams": [
+      12001
+    ],
+    "LowerLimit": -9999,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90172": {
+    "Id": 90172,
+    "Name": "【Wild Bloom】notConsumeEnergy",
+    "Desc": "【Wild Bloom】notConsumeEnergy",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      1518,
+      1541
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90173": {
+    "Id": 90173,
+    "Name": "MainCityToyandMountcanUnleashConfig",
+    "Desc": "MainCityToycanUnleashConfig",
+    "AttrType": 509,
+    "LogicType": 3,
+    "AttrParams": [
+      86
+    ],
+    "LowerLimit": -1,
+    "UpperLimit": 1,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90174": {
+    "Id": 90174,
+    "Name": "SpecialJudgeDMGOnlyEnergyfor1Marker",
+    "Desc": "SpecialJudgeDMGOnlyEnergyfor1Marker",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 1,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90175": {
+    "Id": 90175,
+    "Name": "【Forest Ring 】notConsumeEnergy",
+    "Desc": "【Forest Ring 】notConsumeEnergy",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      1518,
+      1507,
+      1509,
+      1519,
+      1522,
+      1523,
+      1520,
+      1521,
+      1531,
+      1529,
+      1524
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90176": {
+    "Id": 90176,
+    "Name": "GuitarHandAmplified BeatEffectManagement",
+    "Desc": "GuitarHandAmplified BeatEffectManagement",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 2,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90177": {
+    "Id": 90177,
+    "Name": "【Sword and Shield】Heroic Shield BashStacksAdd",
+    "Desc": "Heroic Shield BashbuffStacksAdd",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      55402
+    ],
+    "LowerLimit": -999,
+    "UpperLimit": 999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90179": {
+    "Id": 90179,
+    "Name": "StaffLaserLightEnergy Consumption",
+    "Desc": "StaffLaserLightEnergy Consumption",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      1241
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90180": {
+    "Id": 90180,
+    "Name": "LongSpear-Spiral、Breach PursuitDMGAdd",
+    "Desc": "LongSpear-Spiral、Breach PursuitDMGAdd",
+    "AttrType": 706,
+    "LogicType": 1,
+    "AttrParams": [
+      1421,
+      1422,
+      1427
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90181": {
+    "Id": 90181,
+    "Name": "Instant EdgeConsume",
+    "Desc": "Instant EdgeConsume",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      1424
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90182": {
+    "Id": 90182,
+    "Name": "Forest RingHealTypeSkillsCD Reduction",
+    "Desc": "Forest RingHealTypeSkillsCD Reduction",
+    "AttrType": 100,
+    "LogicType": 1,
+    "AttrParams": [
+      1522,
+      1523,
+      1521,
+      1529
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90183": {
+    "Id": 90183,
+    "Name": "【Provoked】BuffStackUpLimit Change",
+    "Desc": "【Provoked】BuffStackUpLimit Change",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      2201311
+    ],
+    "LowerLimit": -999,
+    "UpperLimit": 999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90184": {
+    "Id": 90184,
+    "Name": "LongSpear-WindRingDMG",
+    "Desc": "LongSpear-WindRingDMG",
+    "AttrType": 706,
+    "LogicType": 1,
+    "AttrParams": [
+      1430,
+      1432
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90185": {
+    "Id": 90185,
+    "Name": "LongSpear-WindRingDMG",
+    "Desc": "LongSpear-WindRingDMG",
+    "AttrType": 302,
+    "LogicType": 4,
+    "AttrParams": [
+      31901
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90186": {
+    "Id": 90186,
+    "Name": "【Nourish】BuffStackUpLimit Change",
+    "Desc": "【Nourish】BuffStackUpLimit Change",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      21404
+    ],
+    "LowerLimit": -999,
+    "UpperLimit": 999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90187": {
+    "Id": 90187,
+    "Name": "【Rage Burst】notConsumeEnergy",
+    "Desc": "【Rage Burst】notConsumeEnergy",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      1925,
+      1940
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90188": {
+    "Id": 90188,
+    "Name": "【Sword and Shield】HolySealRecordStacksAdd",
+    "Desc": "HolySealRecordStacksAdd",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      2206241
+    ],
+    "LowerLimit": -999,
+    "UpperLimit": 999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90189": {
+    "Id": 90189,
+    "Name": "【Falcon Toss (Leap)】ChargeCap",
+    "Desc": "【Falcon Toss (Leap)】ChargeCap",
+    "AttrType": 352,
+    "LogicType": 1,
+    "AttrParams": [
+      1425
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 2,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90190": {
+    "Id": 90190,
+    "Name": "LongSpear08EffectResourceManagement",
+    "Desc": "LongSpear08EffectResourceManagement",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 2,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90191": {
+    "Id": 90191,
+    "Name": "LongSpear05EffectResourceManagement",
+    "Desc": "LongSpear05EffectResourceManagement",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 2,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90192": {
+    "Id": 90192,
+    "Name": "Forest RingSpecializationSkillsSecondSing",
+    "Desc": "Forest RingSpecializationSkillsSecondSing",
+    "AttrType": 710,
+    "LogicType": 1,
+    "AttrParams": [
+      1521,
+      1523
+    ],
+    "LowerLimit": -9999,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90193": {
+    "Id": 90193,
+    "Name": "Life BloomInstant Cast",
+    "Desc": "Life BloomInstant Cast",
+    "AttrType": 710,
+    "LogicType": 1,
+    "AttrParams": [
+      1507
+    ],
+    "LowerLimit": -9999,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90194": {
+    "Id": 90194,
+    "Name": "MagicStaffNaturalRecovery (Talent)speed up",
+    "Desc": "MagicStaffNaturalRecovery (Talent)speed up",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90195": {
+    "Id": 90195,
+    "Name": "LongSpearNaturalRecovery (Talent)speed up",
+    "Desc": "LongSpearNaturalRecovery (Talent)speed up",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90196": {
+    "Id": 90196,
+    "Name": "Blade Intent (Talent)NaturalRecovery (Talent)",
+    "Desc": "Blade Intent (Talent)NaturalRecovery (Talent)",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90197": {
+    "Id": 90197,
+    "Name": "Forest RingNaturalRecovery (Talent)speed up",
+    "Desc": "Forest RingNaturalRecovery (Talent)speed up",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90198": {
+    "Id": 90198,
+    "Name": "【Iaido】ConsumeThunder SigilofSkillsDMGincrease",
+    "Desc": "【Iaido】ConsumeThunder SigilofSkillsDMGincrease",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90199": {
+    "Id": 90199,
+    "Name": "【Guardblade】RevengeConsume",
+    "Desc": "【Guardblade】RevengeConsume",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      1937
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90200": {
+    "Id": 90200,
+    "Name": "StaffFrostbeam DMG Amp",
+    "Desc": "StaffFrostbeam DMG Amp",
+    "AttrType": 102,
+    "LogicType": 1,
+    "AttrParams": [
+      1241
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90201": {
+    "Id": 90201,
+    "Name": "Maximum OutputCooldown",
+    "Desc": "Maximum OutputCooldown",
+    "AttrType": 100,
+    "LogicType": 1,
+    "AttrParams": [
+      1705
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90202": {
+    "Id": 90202,
+    "Name": "GuitarHandEffectResourceManagement",
+    "Desc": "GuitarHandEffectResourceManagement",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 2,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90203": {
+    "Id": 90203,
+    "Name": "GuitarHandSpecial AttacknotConsumeEnergy",
+    "Desc": "GuitarHandSpecial AttacknotConsumeEnergy",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      2306,
+      2307
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90204": {
+    "Id": 90204,
+    "Name": "GuitarHand5Chain PlaynotConsumeEnergy",
+    "Desc": "GuitarHand5Chain PlaynotConsumeEnergy",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      2312
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90205": {
+    "Id": 90205,
+    "Name": "GuitarHandRhapsody of FlameNoneConsume",
+    "Desc": "GuitarHandRhapsody of FlamenotConsumeEnergy",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      2309,
+      230801,
+      230901,
+      231001
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90206": {
+    "Id": 90206,
+    "Name": "Center StageChargeCap",
+    "Desc": "Center StageChargeCap",
+    "AttrType": 352,
+    "LogicType": 1,
+    "AttrParams": [
+      2316
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 2,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90207": {
+    "Id": 90207,
+    "Name": "Upgrade·Infinite RhapsodyCD Reduction",
+    "Desc": "Upgrade·Infinite RhapsodyCD Reduction",
+    "AttrType": 100,
+    "LogicType": 1,
+    "AttrParams": [
+      2335
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90208": {
+    "Id": 90208,
+    "Name": "DamageTurnHealEfficiency",
+    "Desc": "DamageTurnHealEfficiency",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": -99999,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90209": {
+    "Id": 90209,
+    "Name": "Center StageSoundTalismanHeatWave",
+    "Desc": "Center StageSoundTalismanHeatWave",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 1,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90210": {
+    "Id": 90210,
+    "Name": "GuitarEnergySpeed",
+    "Desc": "GuitarEnergySpeed",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90211": {
+    "Id": 90211,
+    "Name": "SpiritCondensationTime",
+    "Desc": "SpiritCondensationTime",
+    "AttrType": 502,
+    "LogicType": 4,
+    "AttrParams": [
+      55223
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90212": {
+    "Id": 90212,
+    "Name": "GuitarDamageTurnHealEfficiency",
+    "Desc": "GuitarDamageTurnHealEfficiency",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90213": {
+    "Id": 90213,
+    "Name": "GuitarHP RegenSongConsume",
+    "Desc": "GuitarHP RegenSongConsume",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90214": {
+    "Id": 90214,
+    "Name": "GuitarHeatEmotionRecovery (Talent)Speed",
+    "Desc": "GuitarHeatEmotionRecovery (Talent)Speed",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90215": {
+    "Id": 90215,
+    "Name": "StaffMeteor StormEnergy Consumption",
+    "Desc": "StaffMeteor StormEnergy Consumption",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      1239
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90216": {
+    "Id": 90216,
+    "Name": "ScytheAttack SpeedTemporaryAttribute",
+    "Desc": "ScytheAttack SpeedTemporaryAttribute",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90217": {
+    "Id": 90217,
+    "Name": "Thunder ComboResourceManagement",
+    "Desc": "Thunder ComboResourceManagement",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 5,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90218": {
+    "Id": 90218,
+    "Name": "Double ArrowCooldown",
+    "Desc": "Double ArrowCooldown",
+    "AttrType": 103,
+    "LogicType": 1,
+    "AttrParams": [
+      2222
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90219": {
+    "Id": 90219,
+    "Name": "GaleformbuffTime",
+    "Desc": "GaleformbuffTime",
+    "AttrType": 502,
+    "LogicType": 4,
+    "AttrParams": [
+      31201
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90220": {
+    "Id": 90220,
+    "Name": "LifebindMelodyResourceConsumeManagement",
+    "Desc": "LifebindMelodyResourceConsumeManagement",
+    "AttrType": 302,
+    "LogicType": 4,
+    "AttrParams": [
+      55332
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90221": {
+    "Id": 90221,
+    "Name": "Moon ShadowTemporaryAttributeManagement",
+    "Desc": "Moon ShadowTemporaryAttributeManagement",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 3,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90222": {
+    "Id": 90222,
+    "Name": "FactorMind's EyeCooldown",
+    "Desc": "FactorMind's EyeCooldown",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      1744
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90223": {
+    "Id": 90223,
+    "Name": "FactorAegis GaleCooldown",
+    "Desc": "FactorAegis GaleCooldown",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      1437
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90224": {
+    "Id": 90224,
+    "Name": "UltimateCD Acceleration",
+    "Desc": "UltimateCD Acceleration",
+    "AttrType": 103,
+    "LogicType": 3,
+    "AttrParams": [
+      5
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90225": {
+    "Id": 90225,
+    "Name": "Food、MaterialPrincipleTime",
+    "Desc": "Food、MaterialPrincipleTime",
+    "AttrType": 501,
+    "LogicType": 3,
+    "AttrParams": [
+      100
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90226": {
+    "Id": 90226,
+    "Name": "【FinalExtremeSkills】CooldownHaste",
+    "Desc": "【FinalExtremeSkills】CooldownHaste",
+    "AttrType": 103,
+    "LogicType": 3,
+    "AttrParams": [
+      5
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90227": {
+    "Id": 90227,
+    "Name": "SmiteTurnHealMultiplyCalculate",
+    "Desc": "SmiteTurnHealMultiplyCalculate",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90228": {
+    "Id": 90228,
+    "Name": "NaturalSanctuaryDuration",
+    "Desc": "NaturalSanctuaryDuration",
+    "AttrType": 502,
+    "LogicType": 4,
+    "AttrParams": [
+      21422
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90229": {
+    "Id": 90229,
+    "Name": "Divine PunishmentScytheEffectResourceManagement",
+    "Desc": "Divine PunishmentScytheEffectResourceManagement",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 2,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90230": {
+    "Id": 90230,
+    "Name": "Wild SeedCooldown",
+    "Desc": "Wild SeedCooldown",
+    "AttrType": 100,
+    "LogicType": 1,
+    "AttrParams": [
+      1519
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 5000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90231": {
+    "Id": 90231,
+    "Name": "CombatPhantomRhapsodycd",
+    "Desc": "CombatPhantomRhapsodycd",
+    "AttrType": 100,
+    "LogicType": 3,
+    "AttrParams": [
+      8
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90232": {
+    "Id": 90232,
+    "Name": "【Roguelike】DreamResistance",
+    "Desc": "【Roguelike】DreamResistance",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90233": {
+    "Id": 90233,
+    "Name": "RhapsodyFactorVortex StrikeAmount",
+    "Desc": "RhapsodyFactorVortex StrikeAmount",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 2,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90234": {
+    "Id": 90234,
+    "Name": "FactorIaidoCooldown",
+    "Desc": "FactorIaidoCooldown",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      1714
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90235": {
+    "Id": 90235,
+    "Name": "FactorMoon ShadownotConsumeBean",
+    "Desc": "FactorMoon ShadownotConsumeBean",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      1715
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90236": {
+    "Id": 90236,
+    "Name": "FactorWindPostureCooldown",
+    "Desc": "FactorWindPostureCooldown",
+    "AttrType": 100,
+    "LogicType": 1,
+    "AttrParams": [
+      1420
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90237": {
+    "Id": 90237,
+    "Name": "FactorWindRageStacks",
+    "Desc": "FactorWindRageStacks",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      2205161
+    ],
+    "LowerLimit": -999,
+    "UpperLimit": 999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90238": {
+    "Id": 90238,
+    "Name": "RoguelikeFactorGuitarSprayFireAmount",
+    "Desc": "RhapsodyFactorGuitarSprayFireAmount",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 2,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90239": {
+    "Id": 90239,
+    "Name": "RoguelikeFactorLifebindBeatConsume",
+    "Desc": "RoguelikeFactorLifebindBeatConsume",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      2307
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90240": {
+    "Id": 90240,
+    "Name": "RoguelikeFactorFiveHeavyPlayConsume",
+    "Desc": "RoguelikeFactorFiveHeavyPlayConsume",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      2312
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90241": {
+    "Id": 90241,
+    "Name": "Grove WishCD Acceleration",
+    "Desc": "Grove WishCD Acceleration",
+    "AttrType": 103,
+    "LogicType": 1,
+    "AttrParams": [
+      1521
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90300": {
+    "Id": 90300,
+    "Name": "【Radiance】ChargeUpLimit Change",
+    "Desc": "【Radiance】ChargeUpLimit Change",
+    "AttrType": 352,
+    "LogicType": 1,
+    "AttrParams": [
+      2420
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 2,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90301": {
+    "Id": 90301,
+    "Name": "【SandstoneofGrip】ChargeUpLimit Change",
+    "Desc": "【SandstoneofGrip】ChargeUpLimit Change",
+    "AttrType": 352,
+    "LogicType": 1,
+    "AttrParams": [
+      1926
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 2,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90302": {
+    "Id": 90302,
+    "Name": "Forest RingSpecializationSkillsSecondSing",
+    "Desc": "Forest RingSpecializationSkillsSecondSing",
+    "AttrType": 710,
+    "LogicType": 1,
+    "AttrParams": [
+      1523
+    ],
+    "LowerLimit": -9999,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90303": {
+    "Id": 90303,
+    "Name": "【Sword and Shield】JudgmentConsume",
+    "Desc": "【Sword and Shield】JudgmentConsume",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      2410
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90304": {
+    "Id": 90304,
+    "Name": "PhantomDreamofArrowStacksAdd",
+    "Desc": "PhantomDreamofArrowStacksAdd",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      3002411
+    ],
+    "LowerLimit": -999,
+    "UpperLimit": 999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90305": {
+    "Id": 90305,
+    "Name": "Aegis Ward、RadianceCD",
+    "Desc": "Aegis Ward、RadianceCD",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      2415,
+      2420
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90306": {
+    "Id": 90306,
+    "Name": "S2SetEquipEffectVortex StrikebuffStacks",
+    "Desc": "Vortex StrikebuffStacksAdd",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      2205134
+    ],
+    "LowerLimit": -999,
+    "UpperLimit": 999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90307": {
+    "Id": 90307,
+    "Name": "【Forest Ring】Special AttackConsume",
+    "Desc": "【Forest Ring】Special AttackConsume",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      1507,
+      1518,
+      1530,
+      1541
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90308": {
+    "Id": 90308,
+    "Name": "【Forest Ring】DisableFinalExtremeSkills",
+    "Desc": "【Forest Ring】DisableFinalExtremeSkills",
+    "AttrType": 509,
+    "LogicType": 1,
+    "AttrParams": [
+      1509,
+      1527,
+      1528
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90309": {
+    "Id": 90309,
+    "Name": "【Sword and Shield】Scorching HeatReckoningHaste",
+    "Desc": "【Sword and Shield】Scorching HeatReckoningHaste",
+    "AttrType": 700,
+    "LogicType": 1,
+    "AttrParams": [
+      2413,
+      2426
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90310": {
+    "Id": 90310,
+    "Name": "【Sword and Shield】Sacred BladeConsume",
+    "Desc": "【Sword and Shield】Sacred BladeConsume",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      2421
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90311": {
+    "Id": 90311,
+    "Name": "【Guardblade】RhapsodyFactorConsume",
+    "Desc": "【Guardblade】RhapsodyFactorConsume",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      1922,
+      1932,
+      1925,
+      1940
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90312": {
+    "Id": 90312,
+    "Name": "【Forest Ring】notBindCD",
+    "Desc": "【Forest Ring】notBindCD",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      1519
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90313": {
+    "Id": 90313,
+    "Name": "LikeRiverFlowHuaSlashCombat ResourceConsume",
+    "Desc": "LikeRiverFlowHuaSlashCombat ResourceConsume",
+    "AttrType": 302,
+    "LogicType": 1,
+    "AttrParams": [
+      1616
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 10000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90314": {
+    "Id": 90314,
+    "Name": "HPSlotAccumulateAccumulateEfficiency",
+    "Desc": "HPSlotAccumulateAccumulateEfficiency",
+    "AttrType": 301,
+    "LogicType": 2,
+    "AttrParams": [
+      13011
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90315": {
+    "Id": 90315,
+    "Name": "【Dual Axes】SpecializationSkillsAttack Speed",
+    "Desc": "【Dual Axes】SpecializationSkillsAttack Speed",
+    "AttrType": 700,
+    "LogicType": 1,
+    "AttrParams": [
+      1615,
+      1612,
+      1608,
+      1607,
+      1617,
+      1613,
+      1614,
+      1616,
+      1621
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90316": {
+    "Id": 90316,
+    "Name": "【Dual Axes】LostMadFlameDanceAttack Speed",
+    "Desc": "【Dual Axes】LostMadFlameDanceAttack Speed",
+    "AttrType": 700,
+    "LogicType": 1,
+    "AttrParams": [
+      1613
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90317": {
+    "Id": 90317,
+    "Name": "Blazing FlameRaid/RageChopSlash/Whirlwind SlashCD",
+    "Desc": "Blazing FlameRaid/RageChopSlash/Whirlwind SlashCD",
+    "AttrType": 103,
+    "LogicType": 1,
+    "AttrParams": [
+      1607,
+      1608,
+      1609,
+      1610,
+      1611,
+      1612
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90318": {
+    "Id": 90318,
+    "Name": "HPSlotConsumeReturn0",
+    "Desc": "HPSlotConsumeReturn0",
+    "AttrType": 302,
+    "LogicType": 2,
+    "AttrParams": [
+      13021
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90319": {
+    "Id": 90319,
+    "Name": "LikeRiverFlowHuaSlashCharge Stack",
+    "Desc": "LikeRiverFlowHuaSlashCharge Stack、",
+    "AttrType": 352,
+    "LogicType": 1,
+    "AttrParams": [
+      1616
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 2,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "90320": {
+    "Id": 90320,
+    "Name": "RedRedAccumulateAccumulateEfficiency",
+    "Desc": "RedRedAccumulateAccumulateEfficiency",
+    "AttrType": 301,
+    "LogicType": 2,
+    "AttrParams": [
+      13021
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92000": {
+    "Id": 92000,
+    "Name": "AllMovement SpeedBonus",
+    "Desc": "AllMovement SpeedBonus",
+    "AttrType": 3,
+    "LogicType": 5,
+    "AttrParams": [
+      10202,
+      10212,
+      10222
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "",
+    "AttrIcon": "ui/atlas/weaponhero/new/common_icon21"
+  },
+  "92001": {
+    "Id": 92001,
+    "Name": "UltimateCooldownPercent",
+    "Desc": "UltimateCooldownPercent",
+    "AttrType": 100,
+    "LogicType": 3,
+    "AttrParams": [
+      5
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 5000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92002": {
+    "Id": 92002,
+    "Name": "SpecializationSkillsCD Acceleration",
+    "Desc": "SpecializationSkillsCD Acceleration",
+    "AttrType": 103,
+    "LogicType": 3,
+    "AttrParams": [
+      4
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92003": {
+    "Id": 92003,
+    "Name": "OnGateEventGoodsCoinCapModify",
+    "Desc": "OnGateEventGoodsCoinCapModify",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      997003
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92004": {
+    "Id": 92004,
+    "Name": "Special AttackCD Acceleration",
+    "Desc": "Special AttackCD Acceleration",
+    "AttrType": 103,
+    "LogicType": 3,
+    "AttrParams": [
+      3
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92020": {
+    "Id": 92020,
+    "Name": "PurpleQualityrefreshChanceraise",
+    "Desc": "PurpleQualityrefreshChanceraise",
+    "AttrType": 853,
+    "LogicType": 9,
+    "AttrParams": [
+      3
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92021": {
+    "Id": 92021,
+    "Name": "OrangeQualityrefreshChanceraise",
+    "Desc": "OrangeQualityrefreshChanceraise",
+    "AttrType": 853,
+    "LogicType": 9,
+    "AttrParams": [
+      4
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92022": {
+    "Id": 92022,
+    "Name": "RedQualityrefreshChanceraise",
+    "Desc": "RedQualityrefreshChanceraise",
+    "AttrType": 853,
+    "LogicType": 9,
+    "AttrParams": [
+      5
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92023": {
+    "Id": 92023,
+    "Name": "BurstAbuserefreshChanceraise",
+    "Desc": "BurstAbuserefreshChanceraise",
+    "AttrType": 851,
+    "LogicType": 9,
+    "AttrParams": [
+      1
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92024": {
+    "Id": 92024,
+    "Name": "LuckyrefreshChanceraise",
+    "Desc": "LuckyrefreshChanceraise",
+    "AttrType": 851,
+    "LogicType": 9,
+    "AttrParams": [
+      5
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92025": {
+    "Id": 92025,
+    "Name": "PhantomRhapsodyrefreshChanceraise",
+    "Desc": "PhantomRhapsodyrefreshChanceraise",
+    "AttrType": 851,
+    "LogicType": 9,
+    "AttrParams": [
+      7
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92026": {
+    "Id": 92026,
+    "Name": "RaidrefreshChanceraise",
+    "Desc": "RaidrefreshChanceraise",
+    "AttrType": 851,
+    "LogicType": 9,
+    "AttrParams": [
+      8
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92027": {
+    "Id": 92027,
+    "Name": "IaidoSlashFlowWordItemrefreshChanceraise",
+    "Desc": "IaidoSlashFlowWordItemrefreshChanceraise",
+    "AttrType": 851,
+    "LogicType": 9,
+    "AttrParams": [
+      20
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92028": {
+    "Id": 92028,
+    "Name": "MoonstrikeSummonFlowWordItemrefreshChanceraise",
+    "Desc": "MoonstrikeSummonFlowWordItemrefreshChanceraise",
+    "AttrType": 851,
+    "LogicType": 9,
+    "AttrParams": [
+      21
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92029": {
+    "Id": 92029,
+    "Name": "Frostbeam SpecWordItemrefreshChanceraise",
+    "Desc": "Frostbeam SpecWordItemrefreshChanceraise",
+    "AttrType": 851,
+    "LogicType": 9,
+    "AttrParams": [
+      22
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92030": {
+    "Id": 92030,
+    "Name": "Icicle SpecWordItemrefreshChanceraise",
+    "Desc": "Icicle SpecWordItemrefreshChanceraise",
+    "AttrType": 851,
+    "LogicType": 9,
+    "AttrParams": [
+      23
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92031": {
+    "Id": 92031,
+    "Name": "ControlBeastFlowWordItemrefreshChanceraise",
+    "Desc": "ControlBeastFlowWordItemrefreshChanceraise",
+    "AttrType": 851,
+    "LogicType": 9,
+    "AttrParams": [
+      24
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92032": {
+    "Id": 92032,
+    "Name": "TameEagleFlowWordItemrefreshChanceraise",
+    "Desc": "TameEagleFlowWordItemrefreshChanceraise",
+    "AttrType": 851,
+    "LogicType": 9,
+    "AttrParams": [
+      25
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92033": {
+    "Id": 92033,
+    "Name": "Smite SpecWordItemrefreshChanceraise",
+    "Desc": "Smite SpecWordItemrefreshChanceraise",
+    "AttrType": 851,
+    "LogicType": 9,
+    "AttrParams": [
+      26
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92034": {
+    "Id": 92034,
+    "Name": "LifebindFlowWordItemrefreshChanceraise",
+    "Desc": "LifebindFlowWordItemrefreshChanceraise",
+    "AttrType": 851,
+    "LogicType": 9,
+    "AttrParams": [
+      27
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92035": {
+    "Id": 92035,
+    "Name": "VanguardFlowWordItemrefreshChanceraise",
+    "Desc": "VanguardFlowWordItemrefreshChanceraise",
+    "AttrType": 851,
+    "LogicType": 9,
+    "AttrParams": [
+      28
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92036": {
+    "Id": 92036,
+    "Name": "EmptyBattleFlowWordItemrefreshChanceraise",
+    "Desc": "EmptyBattleFlowWordItemrefreshChanceraise",
+    "AttrType": 851,
+    "LogicType": 9,
+    "AttrParams": [
+      29
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92037": {
+    "Id": 92037,
+    "Name": "DefenseProtectRecovery (Talent)FlowWordItemrefreshChanceraise",
+    "Desc": "DefenseProtectRecovery (Talent)FlowWordItemrefreshChanceraise",
+    "AttrType": 851,
+    "LogicType": 9,
+    "AttrParams": [
+      30
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92038": {
+    "Id": 92038,
+    "Name": "ShieldRecovery (Talent)FlowWordItemrefreshChanceraise",
+    "Desc": "ShieldRecovery (Talent)FlowWordItemrefreshChanceraise",
+    "AttrType": 851,
+    "LogicType": 9,
+    "AttrParams": [
+      31
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92039": {
+    "Id": 92039,
+    "Name": "EarthfortFlowWordItemrefreshChanceraise",
+    "Desc": "EarthfortFlowWordItemrefreshChanceraise",
+    "AttrType": 851,
+    "LogicType": 9,
+    "AttrParams": [
+      32
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92040": {
+    "Id": 92040,
+    "Name": "BlockFlowWordItemrefreshChanceraise",
+    "Desc": "BlockFlowWordItemrefreshChanceraise",
+    "AttrType": 851,
+    "LogicType": 9,
+    "AttrParams": [
+      33
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92041": {
+    "Id": 92041,
+    "Name": "DissonanceFlowWordItemrefreshChanceraise",
+    "Desc": "DissonanceFlowWordItemrefreshChanceraise",
+    "AttrType": 851,
+    "LogicType": 9,
+    "AttrParams": [
+      34
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92042": {
+    "Id": 92042,
+    "Name": "ConcertoFlowWordItemrefreshChanceraise",
+    "Desc": "ConcertoFlowWordItemrefreshChanceraise",
+    "AttrType": 851,
+    "LogicType": 9,
+    "AttrParams": [
+      35
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92101": {
+    "Id": 92101,
+    "Name": "【DownloadTool】StaminaRunSystemHasteCooldown",
+    "Desc": "【DownloadTool】StaminaRunSystemHasteCooldown",
+    "AttrType": 103,
+    "LogicType": 1,
+    "AttrParams": [
+      4542,
+      4543,
+      4544,
+      4545,
+      4546,
+      4547
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92102": {
+    "Id": 92102,
+    "Name": "【DownloadTool】BubbleAirborneSystemHasteCooldown",
+    "Desc": "【DownloadTool】BubbleAirborneSystemHasteCooldown",
+    "AttrType": 103,
+    "LogicType": 1,
+    "AttrParams": [
+      4529,
+      4527
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92103": {
+    "Id": 92103,
+    "Name": "【DownloadTool】SlideBoardSystemHasteCooldown",
+    "Desc": "【DownloadTool】SlideBoardSystemHasteCooldown",
+    "AttrType": 103,
+    "LogicType": 1,
+    "AttrParams": [
+      4531
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92104": {
+    "Id": 92104,
+    "Name": "【DownloadTool】MachineMechanicalSystemHasteCooldown",
+    "Desc": "【DownloadTool】MachineMechanicalSystemHasteCooldown",
+    "AttrType": 103,
+    "LogicType": 1,
+    "AttrParams": [
+      4601,
+      4512
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92105": {
+    "Id": 92105,
+    "Name": "【DownloadTool】EmbroideryBallStagnantEmptyDuration",
+    "Desc": "【DownloadTool】EmbroideryBallStagnantEmptyDuration",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 100,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92106": {
+    "Id": 92106,
+    "Name": "【DownloadTool】EmbroideryBallHasteCooldown",
+    "Desc": "【DownloadTool】EmbroideryBallHasteCooldown",
+    "AttrType": 103,
+    "LogicType": 1,
+    "AttrParams": [
+      4527
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "92107": {
+    "Id": 92107,
+    "Name": "【DownloadTool】SmallUglyHasteCooldown",
+    "Desc": "【DownloadTool】SmallUglyHasteCooldown",
+    "AttrType": 103,
+    "LogicType": 1,
+    "AttrParams": [
+      4641,
+      4643
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "93000": {
+    "Id": 93000,
+    "Name": "【Shadow Fortress】LimitControlVoid-ErodedStacks",
+    "Desc": "【Shadow Fortress】LimitControlVoid-ErodedStacks",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      880700
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "93001": {
+    "Id": 93001,
+    "Name": "【Hidden Mist Hunting Ground】ForbiddenUnleashHealSkills",
+    "Desc": "【Hidden Mist Hunting Ground】ForbiddenUnleashHealSkills",
+    "AttrType": 509,
+    "LogicType": 3,
+    "AttrParams": [
+      1003
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 1,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "94000": {
+    "Id": 94000,
+    "Name": "【S2Season】LostPhantomDreamEnvironmentStacks",
+    "Desc": "【S2Season】LostPhantomDreamEnvironmentStacks",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      3002611
+    ],
+    "LowerLimit": -999,
+    "UpperLimit": 999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "95001": {
+    "Id": 95001,
+    "Name": "Guild HuntTransportFireSeedcanUnleashSkills",
+    "Desc": "Guild HuntTransportFireSeedcanUnleashSkills",
+    "AttrType": 509,
+    "LogicType": 1,
+    "AttrParams": [
+      6002
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "96001": {
+    "Id": 96001,
+    "Name": "LargeWorld-ShieldFloatGlidePhantomChargeSkills",
+    "Desc": "LargeWorld-ShieldFloatGlidePhantomChargeSkills",
+    "AttrType": 509,
+    "LogicType": 1,
+    "AttrParams": [
+      1222,
+      1223
+    ],
+    "LowerLimit": -1,
+    "UpperLimit": 1,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "97000": {
+    "Id": 97000,
+    "Name": "MedicineItemRoundHP",
+    "Desc": "MedicineItemRoundHP",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "97001": {
+    "Id": 97001,
+    "Name": "GatherObjectDropDropAdd",
+    "Desc": "GatherObjectDropDropAdd",
+    "AttrType": 600,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "97002": {
+    "Id": 97002,
+    "Name": "EliteBattleLootKeyeachWeekObtainAmount",
+    "Desc": "AmountAdd",
+    "AttrType": 521,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "97003": {
+    "Id": 97003,
+    "Name": "BossBattleLootKeyeachWeekObtainAmount",
+    "Desc": "AmountAdd",
+    "AttrType": 522,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "97004": {
+    "Id": 97004,
+    "Name": "FleshTypeDropDropAdd",
+    "Desc": "FleshTypeDropDropAdd",
+    "AttrType": 601,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "97005": {
+    "Id": 97005,
+    "Name": "Tina·OuterView",
+    "Desc": "Tina·OuterView",
+    "AttrType": 602,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "97006": {
+    "Id": 97006,
+    "Name": "Giant TowerOuterView",
+    "Desc": "Giant TowerOuterView",
+    "AttrType": 602,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "97007": {
+    "Id": 97007,
+    "Name": "CardNimanOuterView",
+    "Desc": "CardNimanOuterView",
+    "AttrType": 602,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "97008": {
+    "Id": 97008,
+    "Name": "GoblinOuterView",
+    "Desc": "GoblinOuterView",
+    "AttrType": 602,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "97009": {
+    "Id": 97009,
+    "Name": "DragonClawOuterView",
+    "Desc": "DragonClawOuterView",
+    "AttrType": 602,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "97010": {
+    "Id": 97010,
+    "Name": "ShadowFortressOuterView",
+    "Desc": "ShadowFortressOuterView",
+    "AttrType": 602,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "97011": {
+    "Id": 97011,
+    "Name": "ExtremeInstanceMultipleDropDropMarker",
+    "Desc": "ExtremeInstanceMultipleDropDropMarker",
+    "AttrType": 603,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 10,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "98000": {
+    "Id": 98000,
+    "Name": "UniversalEffectResourceManagement",
+    "Desc": "UniversalEffectResourceManagement",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 1000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "98001": {
+    "Id": 98001,
+    "Name": "TaurusHeavy AttackHit Pointzoom in",
+    "Desc": "TaurusHeavy AttackHit Pointzoom in",
+    "AttrType": 505,
+    "LogicType": 1,
+    "AttrParams": [
+      1805,
+      1852,
+      2900441
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "98002": {
+    "Id": 98002,
+    "Name": "TaurusHeavy AttackDMGraise",
+    "Desc": "TaurusHeavy AttackDMGraise",
+    "AttrType": 102,
+    "LogicType": 1,
+    "AttrParams": [
+      1805,
+      1852,
+      2900441
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 50000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "98003": {
+    "Id": 98003,
+    "Name": "TaurusEffectResourceManagement",
+    "Desc": "TaurusEffectResourceManagement",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 5,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "98004": {
+    "Id": 98004,
+    "Name": "TaurusResourceDeductCompareRate",
+    "Desc": "TaurusResourceDeductCompareRate",
+    "AttrType": 302,
+    "LogicType": 2,
+    "AttrParams": [
+      18001
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "98005": {
+    "Id": 98005,
+    "Name": "Taurus1SkillsChargeCap",
+    "Desc": "",
+    "AttrType": 352,
+    "LogicType": 1,
+    "AttrParams": [
+      1806
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 3,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "98006": {
+    "Id": 98006,
+    "Name": "Bow1SkillsChargeCap",
+    "Desc": "",
+    "AttrType": 352,
+    "LogicType": 1,
+    "AttrParams": [
+      2220
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 5,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "98007": {
+    "Id": 98007,
+    "Name": "BowSpecial AttackCD Reduction",
+    "Desc": "",
+    "AttrType": 100,
+    "LogicType": 1,
+    "AttrParams": [
+      2220,
+      2222
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "98008": {
+    "Id": 98008,
+    "Name": "Explosive ArrowForbidden",
+    "Desc": "Explosive ArrowForbidden",
+    "AttrType": 509,
+    "LogicType": 1,
+    "AttrParams": [
+      2238
+    ],
+    "LowerLimit": -1,
+    "UpperLimit": 1,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "98981": {
+    "Id": 98981,
+    "Name": "S1Season Strength",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "98982": {
+    "Id": 98982,
+    "Name": "S2Season Strength-PhantomDreamStrongDegree",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "",
+    "AttrIcon": "ui/atlas/weaponhero/new/common_icon01"
+  },
+  "98983": {
+    "Id": 98983,
+    "Name": "S3Season Strength",
+    "Desc": "",
+    "AttrType": 3,
+    "LogicType": 5,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "",
+    "AttrIcon": "ui/atlas/weaponhero/new/common_icon01"
+  },
+  "98984": {
+    "Id": 98984,
+    "Name": "S4Season Strength",
+    "Desc": "",
+    "AttrType": 3,
+    "LogicType": 5,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "",
+    "AttrIcon": "ui/atlas/weaponhero/new/common_icon01"
+  },
+  "98985": {
+    "Id": 98985,
+    "Name": "S5Season Strength",
+    "Desc": "",
+    "AttrType": 3,
+    "LogicType": 5,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "",
+    "AttrIcon": "ui/atlas/weaponhero/new/common_icon01"
+  },
+  "98986": {
+    "Id": 98986,
+    "Name": "S6Season Strength",
+    "Desc": "",
+    "AttrType": 3,
+    "LogicType": 5,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "",
+    "AttrIcon": "ui/atlas/weaponhero/new/common_icon01"
+  },
+  "98987": {
+    "Id": 98987,
+    "Name": "S7Season Strength",
+    "Desc": "",
+    "AttrType": 3,
+    "LogicType": 5,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "",
+    "AttrIcon": "ui/atlas/weaponhero/new/common_icon01"
+  },
+  "98988": {
+    "Id": 98988,
+    "Name": "S8Season Strength",
+    "Desc": "",
+    "AttrType": 3,
+    "LogicType": 5,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "",
+    "AttrIcon": "ui/atlas/weaponhero/new/common_icon01"
+  },
+  "98989": {
+    "Id": 98989,
+    "Name": "S9Season Strength",
+    "Desc": "",
+    "AttrType": 3,
+    "LogicType": 5,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "",
+    "AttrIcon": "ui/atlas/weaponhero/new/common_icon01"
+  },
+  "98991": {
+    "Id": 98991,
+    "Name": "S1SeasonRaiseSuccessMonsterMarkConsciousnessAttribute",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "98992": {
+    "Id": 98992,
+    "Name": "S2SeasonRaiseSuccessMonsterMarkConsciousnessAttribute（Placeholder）",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "98993": {
+    "Id": 98993,
+    "Name": "S3SeasonRaiseSuccessMonsterMarkConsciousnessAttribute（Placeholder）",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "98994": {
+    "Id": 98994,
+    "Name": "S4SeasonRaiseSuccessMonsterMarkConsciousnessAttribute（Placeholder）",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "98995": {
+    "Id": 98995,
+    "Name": "S5SeasonRaiseSuccessMonsterMarkConsciousnessAttribute（Placeholder）",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "98996": {
+    "Id": 98996,
+    "Name": "S6SeasonRaiseSuccessMonsterMarkConsciousnessAttribute（Placeholder）",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "98997": {
+    "Id": 98997,
+    "Name": "S7SeasonRaiseSuccessMonsterMarkConsciousnessAttribute（Placeholder）",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "98998": {
+    "Id": 98998,
+    "Name": "S8SeasonRaiseSuccessMonsterMarkConsciousnessAttribute（Placeholder）",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "98999": {
+    "Id": 98999,
+    "Name": "S9SeasonRaiseSuccessMonsterMarkConsciousnessAttribute（Placeholder）",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99000": {
+    "Id": 99000,
+    "Name": "AllCombat ResourceObtainEfficiency",
+    "Desc": "AllCombat ResourceObtainEfficiency",
+    "AttrType": 301,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 1000000,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99001": {
+    "Id": 99001,
+    "Name": "SmallMonster[Rainbow Bridge]ProgressTierOneBladeNo",
+    "Desc": "SmallMonster[Rainbow Bridge]ProgressTierOneBladeNo",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99002": {
+    "Id": 99002,
+    "Name": "Elite[Rainbow Bridge]ProgressTierDMG Boost",
+    "Desc": "Elite[Rainbow Bridge]ProgressTierDMG Boost",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99003": {
+    "Id": 99003,
+    "Name": "boss[Rainbow Bridge]ProgressTierDMG Boost",
+    "Desc": "boss[Rainbow Bridge]ProgressTierDMG Boost",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99004": {
+    "Id": 99004,
+    "Name": "Weapon1Strength/2Intelligence/3AgilityMarker（Deprecated）",
+    "Desc": "",
+    "AttrType": 0,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99005": {
+    "Id": 99005,
+    "Name": "SelfSuitableResponseStrength/Intelligence/Agility",
+    "Desc": "SelfSuitableResponseStrength/Intelligence/Agility",
+    "AttrType": 760,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "Adaptive Strength/Intellect/Agility +{*tempAttr.un*}",
+    "AttrIcon": ""
+  },
+  "99006": {
+    "Id": 99006,
+    "Name": "SelfSuitableResponsePhysical ATK/Magic ATK",
+    "Desc": "SelfSuitableResponsePhysical ATK/Magic ATK",
+    "AttrType": 761,
+    "LogicType": 0,
+    "AttrParams": [],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "Adaptive ATK/MATK +{*tempAttr.un*}",
+    "AttrIcon": ""
+  },
+  "99010": {
+    "Id": 99010,
+    "Name": "SeasonStrength",
+    "Desc": "SeasonStrength",
+    "AttrType": 750,
+    "LogicType": 3,
+    "AttrParams": [
+      84
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99011": {
+    "Id": 99011,
+    "Name": "SeasonAgility",
+    "Desc": "SeasonAgility",
+    "AttrType": 751,
+    "LogicType": 3,
+    "AttrParams": [
+      84
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99012": {
+    "Id": 99012,
+    "Name": "SeasonIntelligence",
+    "Desc": "SeasonIntelligence",
+    "AttrType": 752,
+    "LogicType": 3,
+    "AttrParams": [
+      84
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99013": {
+    "Id": 99013,
+    "Name": "GatherExperienceAddTen ThousandDivideCompare",
+    "Desc": "GatherExperienceAddTen ThousandDivideCompare",
+    "AttrType": 375,
+    "LogicType": 8,
+    "AttrParams": [
+      101
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99014": {
+    "Id": 99014,
+    "Name": "GatherTimeReduceTen ThousandDivideCompare",
+    "Desc": "GatherTimeReduceTen ThousandDivideCompare",
+    "AttrType": 371,
+    "LogicType": 8,
+    "AttrParams": [
+      101
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99015": {
+    "Id": 99015,
+    "Name": "ConsumeSpiritPowerReduceTen ThousandDivideCompare",
+    "Desc": "ConsumeSpiritPowerReduceTen ThousandDivideCompare",
+    "AttrType": 373,
+    "LogicType": 8,
+    "AttrParams": [
+      101
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99016": {
+    "Id": 99016,
+    "Name": "GatherTimeReducePinValue",
+    "Desc": "GatherTimeReducePinValue",
+    "AttrType": 370,
+    "LogicType": 8,
+    "AttrParams": [
+      101
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99017": {
+    "Id": 99017,
+    "Name": "PlantLearnHangMachineSpiritPowerReducePinValue",
+    "Desc": "PlantLearnHangMachineSpiritPowerReducePinValue",
+    "AttrType": 376,
+    "LogicType": 8,
+    "AttrParams": [
+      101
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99018": {
+    "Id": 99018,
+    "Name": "PlantLearnHangMachineSpiritPowerReduceTen ThousandDivideCompare",
+    "Desc": "PlantLearnHangMachineSpiritPowerReduceTen ThousandDivideCompare",
+    "AttrType": 377,
+    "LogicType": 8,
+    "AttrParams": [
+      101
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99019": {
+    "Id": 99019,
+    "Name": "PlantLearnHangMachineTimeReduceTen ThousandDivideCompare",
+    "Desc": "PlantLearnHangMachineTimeReduceTen ThousandDivideCompare",
+    "AttrType": 378,
+    "LogicType": 8,
+    "AttrParams": [
+      101
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99020": {
+    "Id": 99020,
+    "Name": "MiningTimeReduceTen ThousandDivideCompare",
+    "Desc": "MiningTimeReduceTen ThousandDivideCompare",
+    "AttrType": 371,
+    "LogicType": 8,
+    "AttrParams": [
+      102
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99021": {
+    "Id": 99021,
+    "Name": "GatherCrystalStoneTimeReduceTen ThousandDivideCompare",
+    "Desc": "GatherCrystalStoneTimeReduceTen ThousandDivideCompare",
+    "AttrType": 371,
+    "LogicType": 8,
+    "AttrParams": [
+      103
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99022": {
+    "Id": 99022,
+    "Name": "【Nature Ward】ChargeCap",
+    "Desc": "【Nature Ward】ChargeCap",
+    "AttrType": 352,
+    "LogicType": 1,
+    "AttrParams": [
+      1531
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 2,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99023": {
+    "Id": 99023,
+    "Name": "【Nature Ward】ChargeTime",
+    "Desc": "【Nature Ward】ChargeTime",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      1531
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99024": {
+    "Id": 99024,
+    "Name": "CookingTimeReduceTen ThousandDivideCompare",
+    "Desc": "CookingTimeReduceTen ThousandDivideCompare",
+    "AttrType": 371,
+    "LogicType": 8,
+    "AttrParams": [
+      201
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99025": {
+    "Id": 99025,
+    "Name": "AlchemyTimeReduceTen ThousandDivideCompare",
+    "Desc": "AlchemyTimeReduceTen ThousandDivideCompare",
+    "AttrType": 371,
+    "LogicType": 8,
+    "AttrParams": [
+      202
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99026": {
+    "Id": 99026,
+    "Name": "ForgingTimeReduceTen ThousandDivideCompare",
+    "Desc": "ForgingTimeReduceTen ThousandDivideCompare",
+    "AttrType": 371,
+    "LogicType": 8,
+    "AttrParams": [
+      203
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99027": {
+    "Id": 99027,
+    "Name": "WorkArtTimeReduceTen ThousandDivideCompare",
+    "Desc": "WorkArtTimeReduceTen ThousandDivideCompare",
+    "AttrType": 371,
+    "LogicType": 8,
+    "AttrParams": [
+      204
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99028": {
+    "Id": 99028,
+    "Name": "WoodMakeTimeReduceTen ThousandDivideCompare",
+    "Desc": "WoodMakeTimeReduceTen ThousandDivideCompare",
+    "AttrType": 371,
+    "LogicType": 8,
+    "AttrParams": [
+      205
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99029": {
+    "Id": 99029,
+    "Name": "WeaveMakeTimeReduceTen ThousandDivideCompare",
+    "Desc": "WeaveMakeTimeReduceTen ThousandDivideCompare",
+    "AttrType": 371,
+    "LogicType": 8,
+    "AttrParams": [
+      206
+    ],
+    "LowerLimit": 0,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99040": {
+    "Id": 99040,
+    "Name": "NoneEndThinkMaintainBUFFStacks",
+    "Desc": "NoneEndThinkMaintainBUFFStacks",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      3003411
+    ],
+    "LowerLimit": -2,
+    "UpperLimit": 2,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99041": {
+    "Id": 99041,
+    "Name": "PhotonObtainEfficiency",
+    "Desc": "PhotonObtainEfficiency",
+    "AttrType": 301,
+    "LogicType": 2,
+    "AttrParams": [
+      22001
+    ],
+    "LowerLimit": -10000,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99042": {
+    "Id": 99042,
+    "Name": "Frost ShelterStacks",
+    "Desc": "Frost ShelterStacks",
+    "AttrType": 352,
+    "LogicType": 1,
+    "AttrParams": [
+      1245
+    ],
+    "LowerLimit": -2,
+    "UpperLimit": 2,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99043": {
+    "Id": 99043,
+    "Name": "Frost ShelterCD",
+    "Desc": "Frost ShelterCD",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      1245
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99044": {
+    "Id": 99044,
+    "Name": "Intimidating ShotCD",
+    "Desc": "Intimidating ShotCD",
+    "AttrType": 101,
+    "LogicType": 1,
+    "AttrParams": [
+      2235
+    ],
+    "LowerLimit": -99999,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99045": {
+    "Id": 99045,
+    "Name": "HasteMasteryBullForceStacks",
+    "Desc": "HasteMasteryBullForceStacks",
+    "AttrType": 503,
+    "LogicType": 4,
+    "AttrParams": [
+      3210191
+    ],
+    "LowerLimit": -2,
+    "UpperLimit": 99999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  },
+  "99178": {
+    "Id": 99178,
+    "Name": "StaffIcicleCasting Timezoom out",
+    "Desc": "StaffIcicleCasting Timezoom out",
+    "AttrType": 710,
+    "LogicType": 1,
+    "AttrParams": [
+      1242
+    ],
+    "LowerLimit": -9999,
+    "UpperLimit": 9999999,
+    "IsSyncClient": true,
+    "AttrDesc": "AllSubBulletSize",
+    "AttrIcon": ""
+  }
+}

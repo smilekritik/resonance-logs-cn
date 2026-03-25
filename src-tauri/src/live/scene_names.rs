@@ -1,14 +1,15 @@
+use crate::data_i18n;
 use log::warn;
 use parking_lot::RwLock;
 use serde_json::Value;
 use std::collections::HashMap;
 use std::fs;
-use std::path::PathBuf;
 use std::sync::LazyLock;
 
 /// Stores cached scene names to minimize JSON reloads.
 #[derive(Default)]
 struct SceneNameCache {
+    language: String,
     names: HashMap<i32, String>,
 }
 
@@ -19,6 +20,7 @@ static SCENE_NAME_CACHE: LazyLock<RwLock<SceneNameCache>> = LazyLock::new(|| {
 
 /// Returns the name for the given scene id, or a default string if not found.
 pub fn lookup(scene_id: i32) -> String {
+    ensure_scene_names_current();
     let cache = SCENE_NAME_CACHE.read();
     cache
         .names
@@ -38,30 +40,30 @@ pub fn lookup_with_difficulty(scene_id: i32, difficulty: Option<i32>) -> String 
 
 /// Returns true if a scene id exists in the loaded scene map.
 pub fn contains(scene_id: i32) -> bool {
+    ensure_scene_names_current();
     let cache = SCENE_NAME_CACHE.read();
     cache.names.contains_key(&scene_id)
 }
 
+fn ensure_scene_names_current() {
+    let current_language = data_i18n::current_language();
+    if SCENE_NAME_CACHE.read().language == current_language {
+        return;
+    }
+
+    *SCENE_NAME_CACHE.write() = load_scene_names();
+}
+
 /// Loads the scene names JSON file and builds a lookup map from id to display name.
 fn load_scene_names() -> SceneNameCache {
-    // Try to find the SceneName.json file in meter-data folder
-    let mut path = PathBuf::from("meter-data/SceneName.json");
-
-    // If not found, try from src-tauri directory (development)
-    if !path.exists() {
-        path = PathBuf::from("src-tauri/meter-data/SceneName.json");
-    }
-
-    // If still not found, try from current exe directory (production)
-    if !path.exists() {
-        if let Ok(mut exe_dir) = std::env::current_exe() {
-            exe_dir.pop();
-            exe_dir.push("meter-data");
-            exe_dir.push("SceneName.json");
-            path = exe_dir;
-        }
-    }
-
+    let language = data_i18n::current_language();
+    let Some(path) = data_i18n::locate_localized_json("meter-data", "SceneName.json") else {
+        warn!("Failed to locate localized SceneName.json");
+        return SceneNameCache {
+            language,
+            names: HashMap::new(),
+        };
+    };
     let mut names = HashMap::new();
 
     match fs::read_to_string(&path) {
@@ -95,5 +97,5 @@ fn load_scene_names() -> SceneNameCache {
         }
     }
 
-    SceneNameCache { names }
+    SceneNameCache { language, names }
 }

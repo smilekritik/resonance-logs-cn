@@ -1,5 +1,5 @@
-import recountTableRaw from "./RecountTable.json";
-import damageAttrIdNamesRaw from "./DamageAttrIdName.json";
+import { resolvedLanguage } from "$lib/i18n/index.svelte";
+import { getLocalizedConfigJson } from "./localized-json";
 
 export type RawSkillStatsLike = {
   totalValue: number;
@@ -47,15 +47,47 @@ type RecountEntry = {
   DamageId: number[];
 };
 
-const recountTable = recountTableRaw as Record<string, RecountEntry>;
-const damageAttrIdNames = damageAttrIdNamesRaw as Record<string, string>;
+type RecountLookup = {
+  recountTable: Record<string, RecountEntry>;
+  damageAttrIdNames: Record<string, string>;
+  damageToRecount: Map<number, { recountId: number; recountName: string }>;
+};
 
-const DAMAGE_TO_RECOUNT = new Map<number, { recountId: number; recountName: string }>();
+const recountLookupCache = new Map<string, RecountLookup>();
 
-for (const entry of Object.values(recountTable)) {
-  for (const did of entry.DamageId) {
-    DAMAGE_TO_RECOUNT.set(did, { recountId: entry.Id, recountName: entry.RecountName });
+function getRecountLookup(): RecountLookup {
+  const language = resolvedLanguage();
+  const cached = recountLookupCache.get(language);
+  if (cached) {
+    return cached;
   }
+
+  const recountTable = getLocalizedConfigJson<Record<string, RecountEntry>>(
+    "RecountTable.json",
+    language,
+  );
+  const damageAttrIdNames = getLocalizedConfigJson<Record<string, string>>(
+    "DamageAttrIdName.json",
+    language,
+  );
+  const damageToRecount = new Map<number, { recountId: number; recountName: string }>();
+
+  for (const entry of Object.values(recountTable)) {
+    for (const did of entry.DamageId) {
+      damageToRecount.set(did, {
+        recountId: entry.Id,
+        recountName: entry.RecountName,
+      });
+    }
+  }
+
+  const next = {
+    recountTable,
+    damageAttrIdNames,
+    damageToRecount,
+  };
+  recountLookupCache.set(language, next);
+  return next;
 }
 
 function pct(numerator: number, denominator: number): number {
@@ -74,12 +106,14 @@ function perMinute(value: number, elapsedSecs: number): number {
 }
 
 export function lookupDamageIdName(damageId: number): string {
-  const recount = DAMAGE_TO_RECOUNT.get(damageId);
+  const { damageToRecount, damageAttrIdNames } = getRecountLookup();
+  const recount = damageToRecount.get(damageId);
   if (recount) return recount.recountName;
   return damageAttrIdNames[String(damageId)] ?? `Unknown (${damageId})`;
 }
 
 export function lookupChildDamageIdName(damageId: number): string {
+  const { damageAttrIdNames } = getRecountLookup();
   const individual = damageAttrIdNames[String(damageId)];
   if (individual) return individual;
   return lookupDamageIdName(damageId);
@@ -114,6 +148,7 @@ export function groupSkillsByRecount(
   elapsedSecs: number,
   parentTotal: number,
 ): { groups: RecountGroup[]; ungrouped: SkillDisplayRow[] } {
+  const { damageToRecount } = getRecountLookup();
   const groupMap = new Map<number, RecountGroup>();
   const ungrouped: SkillDisplayRow[] = [];
 
@@ -123,7 +158,7 @@ export function groupSkillsByRecount(
     if (!Number.isFinite(skillId)) continue;
 
     const row = buildSkillDisplayRow(skillId, stats, elapsedSecs, parentTotal);
-    const mapping = DAMAGE_TO_RECOUNT.get(skillId);
+    const mapping = damageToRecount.get(skillId);
     if (!mapping) {
       ungrouped.push(row);
       continue;

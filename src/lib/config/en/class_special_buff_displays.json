@@ -1,0 +1,14 @@
+{
+  "wind_knight": [
+    {
+      "buffBaseId": 2205211,
+      "layerImages": [
+        ["/images/wind_knight/res/fightres_frame_icon_9_-986767875632501895.png"],
+        [
+          "/images/wind_knight/res/fightres_frame_icon_9_-986767875632501895.png",
+          "/images/wind_knight/res/fightres_frame_icon_8_4967649399692836557.png"
+        ]
+      ]
+    }
+  ]
+}

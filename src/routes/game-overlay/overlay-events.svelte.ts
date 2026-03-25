@@ -1,5 +1,6 @@
 import { listen } from "@tauri-apps/api/event";
 import { getCurrentWindow } from "@tauri-apps/api/window";
+import { resolvedLanguage } from "$lib/i18n/index.svelte";
 import { findAnySkillByBaseId } from "$lib/skill-mappings";
 import {
   onBuffCounterUpdate,
@@ -144,6 +145,12 @@ export function initOverlay() {
 
   return overlayRuntime.cleanup;
 }
+
+$effect(() => {
+  resolvedLanguage();
+  if (!overlayRuntime.isInitialized) return;
+  loadAvailableBuffs();
+});
 
 function loadAvailableBuffs() {
   const next = new Map<number, BuffDefinition>();

@@ -15,16 +15,18 @@
   type SearchTarget = "global" | "self";
   type MonsterMonitorTab = "buff" | "hate";
 
-  const availableBuffDefinitions = getAvailableBuffDefinitions();
-  const availableBuffMap = new Map<number, BuffDefinition>(
-    availableBuffDefinitions.map((buff) => [buff.baseId, buff]),
-  );
-
   let searchKeyword = $state("");
   let searchTarget = $state<SearchTarget>("self");
   let activeTab = $state<MonsterMonitorTab>("buff");
 
   const monsterMonitor = $derived(SETTINGS.monsterMonitor.state);
+  const availableBuffDefinitions = $derived(getAvailableBuffDefinitions());
+  const availableBuffMap = $derived.by(
+    () =>
+      new Map<number, BuffDefinition>(
+        availableBuffDefinitions.map((buff) => [buff.baseId, buff]),
+      ),
+  );
   const buffAliases = $derived.by(() =>
     ensureBuffAliases(monsterMonitor.buffAliases),
   );

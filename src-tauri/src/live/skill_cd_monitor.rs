@@ -1,4 +1,5 @@
 use crate::database::now_ms;
+use crate::data_i18n;
 use crate::live::commands_models::SkillCdState;
 use crate::live::entity_attr_store::EntityAttrStore;
 use crate::live::opcodes_process::ParsedSkillCd;
@@ -6,11 +7,7 @@ use log::{info, warn};
 use serde::Deserialize;
 use std::collections::{HashMap, HashSet};
 use std::fs;
-use std::path::PathBuf;
 use std::sync::LazyLock;
-
-const TEMP_ATTR_TABLE_RELATIVE: &str = "meter-data/TempAttrTable.json";
-const SKILL_EFFECT_TABLE_RELATIVE: &str = "meter-data/SkillEffectTable.json";
 const TAG_NO_CD_REDUCE: i32 = 103;
 
 #[derive(Debug, Clone, Deserialize)]
@@ -38,19 +35,32 @@ struct RawSkillEffectEntry {
     tags: Vec<i32>,
 }
 
-static CD_TEMP_ATTR_DEFS: LazyLock<HashMap<i32, CdTempAttrDef>> = LazyLock::new(|| {
-    load_cd_temp_attr_defs().unwrap_or_else(|err| {
+#[derive(Default)]
+struct CdTempAttrCache {
+    language: String,
+    defs: HashMap<i32, CdTempAttrDef>,
+}
+
+#[derive(Default)]
+struct SkillEffectTagCache {
+    language: String,
+    tags: HashMap<i32, Vec<i32>>,
+}
+
+static CD_TEMP_ATTR_DEFS: LazyLock<parking_lot::RwLock<CdTempAttrCache>> = LazyLock::new(|| {
+    parking_lot::RwLock::new(load_cd_temp_attr_defs().unwrap_or_else(|err| {
         warn!("[skill-cd] failed to load TempAttrTable.json: {}", err);
-        HashMap::new()
-    })
+        CdTempAttrCache::default()
+    }))
 });
 
-static SKILL_EFFECT_TAGS: LazyLock<HashMap<i32, Vec<i32>>> = LazyLock::new(|| {
-    load_skill_effect_tags().unwrap_or_else(|err| {
-        warn!("[skill-cd] failed to load SkillEffectTable.json: {}", err);
-        HashMap::new()
-    })
-});
+static SKILL_EFFECT_TAGS: LazyLock<parking_lot::RwLock<SkillEffectTagCache>> =
+    LazyLock::new(|| {
+        parking_lot::RwLock::new(load_skill_effect_tags().unwrap_or_else(|err| {
+            warn!("[skill-cd] failed to load SkillEffectTable.json: {}", err);
+            SkillEffectTagCache::default()
+        }))
+    });
 
 #[derive(Debug, Default)]
 pub struct SkillCdMonitor {
@@ -154,31 +164,36 @@ impl SkillCdMonitor {
     }
 }
 
-fn locate_meter_data_file(relative_path: &str) -> Option<PathBuf> {
-    let mut p = PathBuf::from(relative_path);
-    if p.exists() {
-        return Some(p);
+fn ensure_cd_temp_attr_defs_current() {
+    let current_language = data_i18n::current_language();
+    if CD_TEMP_ATTR_DEFS.read().language == current_language {
+        return;
     }
 
-    p = PathBuf::from(format!("src-tauri/{}", relative_path));
-    if p.exists() {
-        return Some(p);
-    }
-
-    if let Ok(mut exe_dir) = std::env::current_exe() {
-        exe_dir.pop();
-        let candidate = exe_dir.join(relative_path);
-        if candidate.exists() {
-            return Some(candidate);
-        }
-    }
-
-    None
+    let next = load_cd_temp_attr_defs().unwrap_or_else(|err| {
+        warn!("[skill-cd] failed to reload TempAttrTable.json: {}", err);
+        CdTempAttrCache::default()
+    });
+    *CD_TEMP_ATTR_DEFS.write() = next;
 }
 
-fn load_cd_temp_attr_defs() -> Result<HashMap<i32, CdTempAttrDef>, Box<dyn std::error::Error>> {
-    let path = locate_meter_data_file(TEMP_ATTR_TABLE_RELATIVE)
-        .ok_or_else(|| format!("{} not found in known locations", TEMP_ATTR_TABLE_RELATIVE))?;
+fn ensure_skill_effect_tags_current() {
+    let current_language = data_i18n::current_language();
+    if SKILL_EFFECT_TAGS.read().language == current_language {
+        return;
+    }
+
+    let next = load_skill_effect_tags().unwrap_or_else(|err| {
+        warn!("[skill-cd] failed to reload SkillEffectTable.json: {}", err);
+        SkillEffectTagCache::default()
+    });
+    *SKILL_EFFECT_TAGS.write() = next;
+}
+
+fn load_cd_temp_attr_defs() -> Result<CdTempAttrCache, Box<dyn std::error::Error>> {
+    let language = data_i18n::current_language();
+    let path = data_i18n::locate_localized_json("meter-data", "TempAttrTable.json")
+        .ok_or_else(|| "meter-data/TempAttrTable.json not found in known locations".to_string())?;
     let contents = fs::read_to_string(path)?;
     let raw_map: HashMap<String, RawTempAttrDef> = serde_json::from_str(&contents)?;
 
@@ -197,16 +212,16 @@ fn load_cd_temp_attr_defs() -> Result<HashMap<i32, CdTempAttrDef>, Box<dyn std::
             },
         );
     }
-    Ok(result)
+    Ok(CdTempAttrCache {
+        language,
+        defs: result,
+    })
 }
 
-fn load_skill_effect_tags() -> Result<HashMap<i32, Vec<i32>>, Box<dyn std::error::Error>> {
-    let path = locate_meter_data_file(SKILL_EFFECT_TABLE_RELATIVE).ok_or_else(|| {
-        format!(
-            "{} not found in known locations",
-            SKILL_EFFECT_TABLE_RELATIVE
-        )
-    })?;
+fn load_skill_effect_tags() -> Result<SkillEffectTagCache, Box<dyn std::error::Error>> {
+    let language = data_i18n::current_language();
+    let path = data_i18n::locate_localized_json("meter-data", "SkillEffectTable.json")
+        .ok_or_else(|| "meter-data/SkillEffectTable.json not found in known locations".to_string())?;
     let contents = fs::read_to_string(path)?;
     let raw_map: HashMap<String, RawSkillEffectEntry> = serde_json::from_str(&contents)?;
 
@@ -216,7 +231,10 @@ fn load_skill_effect_tags() -> Result<HashMap<i32, Vec<i32>>, Box<dyn std::error
             result.insert(skill_level_id, value.tags);
         }
     }
-    Ok(result)
+    Ok(SkillEffectTagCache {
+        language,
+        tags: result,
+    })
 }
 
 fn temp_attr_matches(def: &CdTempAttrDef, skill_id: i32, skill_tags: &HashSet<i32>) -> bool {
@@ -236,6 +254,10 @@ fn calculate_skill_cd(
     attr_skill_cd_pct: f32,
     attr_cd_accelerate_pct: f32,
 ) -> (f32, f32) {
+    ensure_cd_temp_attr_defs_current();
+    ensure_skill_effect_tags_current();
+    let cd_temp_attr_defs = CD_TEMP_ATTR_DEFS.read();
+    let skill_effect_tags = SKILL_EFFECT_TAGS.read();
     let temp_attrs_nonzero: Vec<(i32, i32)> = temp_attr_values
         .iter()
         .filter(|(_, v)| **v != 0)
@@ -258,7 +280,8 @@ fn calculate_skill_cd(
 
     let skill_id = skill_level_id / 100;
     let tag_lookup_skill_level_id = skill_id * 100 + 1;
-    let skill_tags_vec = SKILL_EFFECT_TAGS
+    let skill_tags_vec = skill_effect_tags
+        .tags
         .get(&tag_lookup_skill_level_id)
         .cloned()
         .unwrap_or_default();
@@ -288,7 +311,7 @@ fn calculate_skill_cd(
         if *value == 0 {
             continue;
         }
-        let Some(def) = CD_TEMP_ATTR_DEFS.get(temp_attr_id) else {
+        let Some(def) = cd_temp_attr_defs.defs.get(temp_attr_id) else {
             info!(
                 "[skill-cd]   temp_attr {} value={} def_found=false (not in CD_TEMP_ATTR_DEFS), skip",
                 temp_attr_id, value

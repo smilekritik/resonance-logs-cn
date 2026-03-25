@@ -1,4 +1,5 @@
 mod build_app;
+mod data_i18n;
 mod live;
 pub mod module_optimizer;
 mod packets;
@@ -58,6 +59,7 @@ pub fn run() {
             live::commands::start_training_dummy,
             live::commands::stop_training_dummy,
             live::commands::save_and_apply_monitor_runtime_snapshot,
+            set_data_language,
             database::commands::get_recent_encounters,
             database::commands::get_unique_scene_names,
             database::commands::get_unique_boss_names,
@@ -302,6 +304,13 @@ mod debug_commands {
     ) -> Result<String, String> {
         crate::create_diagnostics_bundle(&app_handle, destination_path)
     }
+}
+
+#[tauri::command]
+#[specta::specta]
+fn set_data_language(language: String) -> Result<(), String> {
+    crate::data_i18n::set_language(&language);
+    Ok(())
 }
 
 /// Starts the WinDivert driver.

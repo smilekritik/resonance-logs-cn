@@ -1,9 +1,9 @@
 use anyhow::{Context, Result};
+use crate::data_i18n;
 use log::warn;
 use serde::Deserialize;
 use std::collections::{HashMap, HashSet};
 use std::fs;
-use std::path::PathBuf;
 use std::sync::LazyLock;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -22,7 +22,23 @@ pub struct MonsterInfo {
 
 const EXTRA_BUFF_MONITORED_MONSTERS_RELATIVE: &str = "meter-data/ExtraBuffMonitoredMonsters.json";
 
-static MONSTER_REGISTRY: LazyLock<HashMap<i32, MonsterInfo>> = LazyLock::new(|| {
+#[derive(Default)]
+struct MonsterRegistryCache {
+    language: String,
+    registry: HashMap<i32, MonsterInfo>,
+}
+
+static MONSTER_REGISTRY: LazyLock<parking_lot::RwLock<MonsterRegistryCache>> = LazyLock::new(|| {
+    parking_lot::RwLock::new(load_monster_registry().unwrap_or_else(|err| {
+        warn!(
+            "[monster-registry] failed to load MonsterIdNameType.json: {}",
+            err
+        );
+        MonsterRegistryCache::default()
+    }))
+});
+
+fn load_monster_registry() -> Result<MonsterRegistryCache> {
     #[derive(Deserialize)]
     struct RawMonsterInfo {
         #[serde(rename = "Name")]
@@ -31,9 +47,13 @@ static MONSTER_REGISTRY: LazyLock<HashMap<i32, MonsterInfo>> = LazyLock::new(|| 
         monster_type: u8,
     }
 
-    let data = include_str!("../../meter-data/MonsterIdNameType.json");
+    let language = data_i18n::current_language();
+    let path = data_i18n::locate_localized_json("meter-data", "MonsterIdNameType.json")
+        .context("MonsterIdNameType.json not found in known locations")?;
+    let data =
+        fs::read_to_string(&path).with_context(|| format!("failed to read {}", path.display()))?;
     let raw: HashMap<String, RawMonsterInfo> =
-        serde_json::from_str(data).expect("invalid MonsterIdNameType.json");
+        serde_json::from_str(&data).context("invalid MonsterIdNameType.json")?;
 
     let mut registry = HashMap::with_capacity(raw.len());
     for (key, info) in raw {
@@ -54,8 +74,8 @@ static MONSTER_REGISTRY: LazyLock<HashMap<i32, MonsterInfo>> = LazyLock::new(|| 
         }
     }
 
-    registry
-});
+    Ok(MonsterRegistryCache { language, registry })
+}
 
 static EXTRA_BUFF_MONITORED_MONSTER_IDS: LazyLock<HashSet<i32>> = LazyLock::new(|| {
     load_extra_buff_monitored_monster_ids().unwrap_or_else(|err| {
@@ -73,28 +93,6 @@ struct RawExtraBuffMonitoredMonsters {
     monster_ids: Vec<i32>,
 }
 
-fn locate_meter_data_file(relative_path: &str) -> Option<PathBuf> {
-    let mut path = PathBuf::from(relative_path);
-    if path.exists() {
-        return Some(path);
-    }
-
-    path = PathBuf::from(format!("src-tauri/{}", relative_path));
-    if path.exists() {
-        return Some(path);
-    }
-
-    if let Ok(mut exe_dir) = std::env::current_exe() {
-        exe_dir.pop();
-        let candidate = exe_dir.join(relative_path);
-        if candidate.exists() {
-            return Some(candidate);
-        }
-    }
-
-    None
-}
-
 fn parse_extra_buff_monitored_monster_ids(
     contents: &str,
 ) -> Result<HashSet<i32>, serde_json::Error> {
@@ -104,7 +102,7 @@ fn parse_extra_buff_monitored_monster_ids(
 
 fn load_extra_buff_monitored_monster_ids() -> Result<HashSet<i32>> {
     let path =
-        locate_meter_data_file(EXTRA_BUFF_MONITORED_MONSTERS_RELATIVE).with_context(|| {
+        data_i18n::locate_relative_file(EXTRA_BUFF_MONITORED_MONSTERS_RELATIVE).with_context(|| {
             format!(
                 "{} not found in known locations",
                 EXTRA_BUFF_MONITORED_MONSTERS_RELATIVE
@@ -116,12 +114,34 @@ fn load_extra_buff_monitored_monster_ids() -> Result<HashSet<i32>> {
         .with_context(|| format!("failed to parse {}", path.display()))
 }
 
-pub fn monster_name(id: i32) -> Option<&'static str> {
-    MONSTER_REGISTRY.get(&id).map(|info| info.name.as_str())
+fn ensure_monster_registry_current() {
+    let current_language = data_i18n::current_language();
+    if MONSTER_REGISTRY.read().language == current_language {
+        return;
+    }
+
+    let next = load_monster_registry().unwrap_or_else(|err| {
+        warn!(
+            "[monster-registry] failed to reload MonsterIdNameType.json: {}",
+            err
+        );
+        MonsterRegistryCache::default()
+    });
+    *MONSTER_REGISTRY.write() = next;
+}
+
+pub fn monster_name(id: i32) -> Option<String> {
+    ensure_monster_registry_current();
+    MONSTER_REGISTRY.read().registry.get(&id).map(|info| info.name.clone())
 }
 
 pub fn monster_type(id: i32) -> Option<MonsterType> {
-    MONSTER_REGISTRY.get(&id).map(|info| info.monster_type)
+    ensure_monster_registry_current();
+    MONSTER_REGISTRY
+        .read()
+        .registry
+        .get(&id)
+        .map(|info| info.monster_type)
 }
 
 pub fn is_extra_buff_monitored_monster(id: i32) -> bool {

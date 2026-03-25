@@ -47,8 +47,6 @@
     searchResonanceSkills,
   } from "$lib/skill-mappings";
 
-  const availableBuffs = getAvailableBuffDefinitions();
-  const buffCategoryDefinitions = getBuffCategoryDefinitions();
   let buffSearch = $state("");
   let buffSearchResults = $state<BuffNameInfo[]>([]);
   let globalPrioritySearch = $state("");
@@ -69,6 +67,8 @@
 
   const classConfigs = $derived(getClassConfigs());
   const counterRules = $derived(getCounterRules());
+  const availableBuffs = $derived(getAvailableBuffDefinitions());
+  const buffCategoryDefinitions = $derived(getBuffCategoryDefinitions());
   const buffAliases = $derived.by(() =>
     ensureBuffAliases(SETTINGS.skillMonitor.state.buffAliases),
   );

@@ -1,0 +1,2761 @@
+{
+  "1": {
+    "Id": 1,
+    "RecountName": "Lethal Skill: Blade S Pin Counter Attack",
+    "DamageId": []
+  },
+  "2": {
+    "Id": 2,
+    "RecountName": "Lucky Strike",
+    "DamageId": [
+      2203110403,
+      2203110404
+    ]
+  },
+  "3": {
+    "Id": 3,
+    "RecountName": "Windborne Grace",
+    "DamageId": [
+      114010101,
+      114010104,
+      114010105,
+      114020101,
+      114020103,
+      114030101,
+      114030102,
+      114030103,
+      114040101
+    ]
+  },
+  "4": {
+    "Id": 4,
+    "RecountName": "Gale Thrust",
+    "DamageId": [
+      114180101,
+      114180102,
+      114180103,
+      114180106,
+      114180107,
+      114180108,
+      114180109
+    ]
+  },
+  "5": {
+    "Id": 5,
+    "RecountName": "Skyfall",
+    "DamageId": [
+      114190102
+    ]
+  },
+  "6": {
+    "Id": 6,
+    "RecountName": "Wind God·Formation Breaking Wind",
+    "DamageId": [
+      114260104,
+      114090104
+    ]
+  },
+  "7": {
+    "Id": 7,
+    "RecountName": "Galeform",
+    "DamageId": [
+      114200103,
+      114200106
+    ]
+  },
+  "8": {
+    "Id": 8,
+    "RecountName": "Spiral Thrust",
+    "DamageId": [
+      114210102,
+      114210103
+    ]
+  },
+  "9": {
+    "Id": 9,
+    "RecountName": "Breach Pursuit",
+    "DamageId": [
+      114220103,
+      114270104
+    ]
+  },
+  "10": {
+    "Id": 10,
+    "RecountName": "Falcon Toss (Leap)",
+    "DamageId": [
+      114250107,
+      11499050101
+    ]
+  },
+  "11": {
+    "Id": 11,
+    "RecountName": "Instant Edge",
+    "DamageId": [
+      114240101,
+      114240102,
+      11499040101
+    ]
+  },
+  "12": {
+    "Id": 12,
+    "RecountName": "Valor Cyclone",
+    "DamageId": [
+      114320101,
+      23190103,
+      23190105,
+      2220545004
+    ]
+  },
+  "13": {
+    "Id": 13,
+    "RecountName": "Sharp Impact (Crash Down)",
+    "DamageId": [
+      114310106,
+      114310108,
+      11499070101
+    ]
+  },
+  "14": {
+    "Id": 14,
+    "RecountName": "Aegis Gale",
+    "DamageId": [
+      114230101,
+      114370101
+    ]
+  },
+  "15": {
+    "Id": 15,
+    "RecountName": "Drake Cannon",
+    "DamageId": [
+      114350101,
+      314040100
+    ]
+  },
+  "16": {
+    "Id": 16,
+    "RecountName": "Vortex Strike",
+    "DamageId": [
+      114340102,
+      314030100
+    ]
+  },
+  "17": {
+    "Id": 17,
+    "RecountName": "Azure Sever (Leap)",
+    "DamageId": [
+      114330107,
+      11499060101
+    ]
+  },
+  "18": {
+    "Id": 18,
+    "RecountName": "Swift Blade Rush",
+    "DamageId": [
+      114110101,
+      114110102
+    ]
+  },
+  "19": {
+    "Id": 19,
+    "RecountName": "Spear Pierce",
+    "DamageId": [
+      11499020101
+    ]
+  },
+  "20": {
+    "Id": 20,
+    "RecountName": "Tornado",
+    "DamageId": [
+      11499030102,
+      314050100
+    ]
+  },
+  "21": {
+    "Id": 21,
+    "RecountName": "Wind Spiral",
+    "DamageId": [
+      11499010101
+    ]
+  },
+  "22": {
+    "Id": 22,
+    "RecountName": "Tear",
+    "DamageId": [
+      2220507103
+    ]
+  },
+  "23": {
+    "Id": 23,
+    "RecountName": "Wind Split Spread",
+    "DamageId": [
+      2220506003
+    ]
+  },
+  "24": {
+    "Id": 24,
+    "RecountName": "Lethal Skill: Blade S Pin Counter Attack",
+    "DamageId": [
+      112940102
+    ]
+  },
+  "25": {
+    "Id": 25,
+    "RecountName": "Lucky Strike",
+    "DamageId": [
+      2203110203,
+      2203110204
+    ]
+  },
+  "26": {
+    "Id": 26,
+    "RecountName": "Rain Surge",
+    "DamageId": [
+      312040100,
+      112030101,
+      312050100,
+      312020100,
+      312030100
+    ]
+  },
+  "27": {
+    "Id": 27,
+    "RecountName": "Frost Lance",
+    "DamageId": [
+      312090200
+    ]
+  },
+  "28": {
+    "Id": 28,
+    "RecountName": "Frost Frostbeam",
+    "DamageId": [
+      112410104
+    ]
+  },
+  "29": {
+    "Id": 29,
+    "RecountName": "Glacier Hymn",
+    "DamageId": [
+      112480102,
+      112630101
+    ]
+  },
+  "30": {
+    "Id": 30,
+    "RecountName": "Meteor Storm",
+    "DamageId": [
+      112600101,
+      112600102,
+      112600103,
+      112620101,
+      112620103,
+      112620104,
+      112620105
+    ]
+  },
+  "31": {
+    "Id": 31,
+    "RecountName": "Crystal Veil",
+    "DamageId": [
+      312150100,
+      112160101
+    ]
+  },
+  "32": {
+    "Id": 32,
+    "RecountName": "Blizzard",
+    "DamageId": [
+      112570101,
+      112610101
+    ]
+  },
+  "33": {
+    "Id": 33,
+    "RecountName": "Maelstrom",
+    "DamageId": [
+      112500101,
+      112500104
+    ]
+  },
+  "34": {
+    "Id": 34,
+    "RecountName": "Frozen Gale",
+    "DamageId": [
+      112400101,
+      112400102
+    ]
+  },
+  "35": {
+    "Id": 35,
+    "RecountName": "Permafrost",
+    "DamageId": []
+  },
+  "36": {
+    "Id": 36,
+    "RecountName": "Tidepool",
+    "DamageId": [
+      112560101,
+      112560102
+    ]
+  },
+  "37": {
+    "Id": 37,
+    "RecountName": "Frost Shelter",
+    "DamageId": [
+      112450105,
+      22700903
+    ]
+  },
+  "38": {
+    "Id": 38,
+    "RecountName": "Ice Crystal Fall",
+    "DamageId": [
+      112580101
+    ]
+  },
+  "39": {
+    "Id": 39,
+    "RecountName": "Frost Comet (Talent)",
+    "DamageId": [
+      112590101
+    ]
+  },
+  "40": {
+    "Id": 40,
+    "RecountName": "Frost Explosion (Talent)",
+    "DamageId": [
+      2220408101
+    ]
+  },
+  "41": {
+    "Id": 41,
+    "RecountName": "Frost Shock (Talent)",
+    "DamageId": [
+      2220424101
+    ]
+  },
+  "42": {
+    "Id": 42,
+    "RecountName": "Cold Pulse (Talent)",
+    "DamageId": [
+      2220432004
+    ]
+  },
+  "43": {
+    "Id": 43,
+    "RecountName": "Ice Arrow",
+    "DamageId": [
+      312130100,
+      312130200
+    ]
+  },
+  "44": {
+    "Id": 44,
+    "RecountName": "Pierce Icicle",
+    "DamageId": [
+      312090100,
+      312090103
+    ]
+  },
+  "45": {
+    "Id": 45,
+    "RecountName": "Ice Magic G11-Blizzard",
+    "DamageId": [
+      2305211201
+    ]
+  },
+  "46": {
+    "Id": 46,
+    "RecountName": "Lethal Skill: Blade S Pin Counter Attack",
+    "DamageId": [
+      117950102
+    ]
+  },
+  "47": {
+    "Id": 47,
+    "RecountName": "Lucky Strike",
+    "DamageId": [
+      2203110103,
+      2203110104
+    ]
+  },
+  "48": {
+    "Id": 48,
+    "RecountName": "Personal Sword Style·Evil Slayer",
+    "DamageId": [
+      117010101,
+      117020101,
+      117020103,
+      117030101,
+      117030103,
+      117030104,
+      117040102
+    ]
+  },
+  "49": {
+    "Id": 49,
+    "RecountName": "Iaido Slash",
+    "DamageId": [
+      117140101,
+      117140102,
+      117140105,
+      117140106,
+      117140107,
+      117140111
+    ]
+  },
+  "50": {
+    "Id": 50,
+    "RecountName": "Moon Shadow",
+    "DamageId": [
+      117150102,
+      117150103,
+      117150105,
+      117150110,
+      117150112,
+      117150107,
+      117150109,
+      117150115
+    ]
+  },
+  "51": {
+    "Id": 51,
+    "RecountName": "Ultimate Mastery·Large Destruction Combo",
+    "DamageId": [
+      117130102,
+      117130108,
+      117280102,
+      117280108
+    ]
+  },
+  "52": {
+    "Id": 52,
+    "RecountName": "Maximum Output",
+    "DamageId": [
+      117050101,
+      117050103,
+      117050104,
+      117050105,
+      117050106,
+      117050108
+    ]
+  },
+  "53": {
+    "Id": 53,
+    "RecountName": "Flash",
+    "DamageId": [
+      117170101
+    ]
+  },
+  "54": {
+    "Id": 54,
+    "RecountName": "Raijin Dash",
+    "DamageId": [
+      117180102
+    ]
+  },
+  "55": {
+    "Id": 55,
+    "RecountName": "Scythe Wheel",
+    "DamageId": [
+      117190104,
+      117190105
+    ]
+  },
+  "56": {
+    "Id": 56,
+    "RecountName": "Moon Shadow",
+    "DamageId": [
+      24460103,
+      24470103
+    ]
+  },
+  "57": {
+    "Id": 57,
+    "RecountName": "Moonstrike S Pin",
+    "DamageId": [
+      11799060101
+    ]
+  },
+  "58": {
+    "Id": 58,
+    "RecountName": "Thunder Combo",
+    "DamageId": [
+      117240103,
+      117240104,
+      117240106,
+      117240107,
+      117240108,
+      117240120,
+      117240121,
+      117240126,
+      117240127,
+      117240128,
+      117240129,
+      117240130,
+      117240131,
+      117240132,
+      117240133,
+      117240134,
+      117240135,
+      117240136,
+      117240137,
+      117240138,
+      117240139,
+      117240140,
+      117240141,
+      117240142,
+      117240143
+    ]
+  },
+  "59": {
+    "Id": 59,
+    "RecountName": "Infinite Thunder Power",
+    "DamageId": []
+  },
+  "60": {
+    "Id": 60,
+    "RecountName": "Thousand Thunder Flash Intent",
+    "DamageId": [
+      117320101
+    ]
+  },
+  "61": {
+    "Id": 61,
+    "RecountName": "Mind's Eye",
+    "DamageId": [
+      117200103,
+      117200105,
+      117440103,
+      117440105
+    ]
+  },
+  "62": {
+    "Id": 62,
+    "RecountName": "Thunder Cut",
+    "DamageId": [
+      315510100,
+      315510200
+    ]
+  },
+  "63": {
+    "Id": 63,
+    "RecountName": "Dragon Fall Flash",
+    "DamageId": [
+      117350103,
+      117350105,
+      117350106
+    ]
+  },
+  "64": {
+    "Id": 64,
+    "RecountName": "Divine Shadow Slash",
+    "DamageId": [
+      117360102,
+      11799040101
+    ]
+  },
+  "65": {
+    "Id": 65,
+    "RecountName": "Divine Punishment Scythe",
+    "DamageId": [
+      117370101,
+      117370112,
+      11799110101,
+      117370106
+    ]
+  },
+  "66": {
+    "Id": 66,
+    "RecountName": "Thunder Scythe",
+    "DamageId": [
+      117330104,
+      117330106,
+      117400101,
+      117410101
+    ]
+  },
+  "67": {
+    "Id": 67,
+    "RecountName": "Thunder Rising Dragon Slash",
+    "DamageId": [
+      117420101,
+      117420102,
+      117420103,
+      117420108
+    ]
+  },
+  "68": {
+    "Id": 68,
+    "RecountName": "Chaotic Helm Splitter",
+    "DamageId": [
+      117380101,
+      117380105
+    ]
+  },
+  "69": {
+    "Id": 69,
+    "RecountName": "Look Break Slash",
+    "DamageId": [
+      11799020101,
+      117390101
+    ]
+  },
+  "70": {
+    "Id": 70,
+    "RecountName": "Bladewind Domain",
+    "DamageId": [
+      11799070101,
+      11799070102,
+      11799070103,
+      11799070104
+    ]
+  },
+  "71": {
+    "Id": 71,
+    "RecountName": "Lightning Strike",
+    "DamageId": [
+      11799080101
+    ]
+  },
+  "72": {
+    "Id": 72,
+    "RecountName": "Thunder Blast",
+    "DamageId": [
+      11799100101
+    ]
+  },
+  "73": {
+    "Id": 73,
+    "RecountName": "Lethal Skill: Blade S Pin Counter Attack",
+    "DamageId": [
+      122110102
+    ]
+  },
+  "74": {
+    "Id": 74,
+    "RecountName": "Lucky Strike(Bow Arrow）",
+    "DamageId": [
+      2203110903,
+      2203110904
+    ]
+  },
+  "75": {
+    "Id": 75,
+    "RecountName": "Perfect Shot",
+    "DamageId": [
+      322010100,
+      322010300
+    ]
+  },
+  "76": {
+    "Id": 76,
+    "RecountName": "Storm Arrow",
+    "DamageId": [
+      322010400
+    ]
+  },
+  "77": {
+    "Id": 77,
+    "RecountName": "Double Arrow",
+    "DamageId": [
+      322010600
+    ]
+  },
+  "78": {
+    "Id": 78,
+    "RecountName": "​Light Intent·Quad Arrow​",
+    "DamageId": [
+      322011100,
+      322020300,
+      122940101,
+      25523501
+    ]
+  },
+  "79": {
+    "Id": 79,
+    "RecountName": "Sharp Eye·Photon Giant Arrow",
+    "DamageId": [
+      322030100,
+      322030200,
+      122950102
+    ]
+  },
+  "80": {
+    "Id": 80,
+    "RecountName": "Photon Explosion",
+    "DamageId": [
+      122910101
+    ]
+  },
+  "81": {
+    "Id": 81,
+    "RecountName": "Raging Wave Shot",
+    "DamageId": [
+      322010200
+    ]
+  },
+  "82": {
+    "Id": 82,
+    "RecountName": "Light Intent·Raging Wave Shot",
+    "DamageId": [
+      122400103
+    ]
+  },
+  "83": {
+    "Id": 83,
+    "RecountName": "Arrow Rain",
+    "DamageId": [
+      122890101
+    ]
+  },
+  "84": {
+    "Id": 84,
+    "RecountName": "Energy Shot",
+    "DamageId": [
+      122330103
+    ]
+  },
+  "85": {
+    "Id": 85,
+    "RecountName": "Photon Bombardment",
+    "DamageId": [
+      25524003,
+      25524004
+    ]
+  },
+  "86": {
+    "Id": 86,
+    "RecountName": "Spirit Condensation",
+    "DamageId": []
+  },
+  "87": {
+    "Id": 87,
+    "RecountName": "Explosion Shooting",
+    "DamageId": [
+      322011000,
+      25523102
+    ]
+  },
+  "88": {
+    "Id": 88,
+    "RecountName": "Intimidating Shot",
+    "DamageId": [
+      322010900
+    ]
+  },
+  "89": {
+    "Id": 89,
+    "RecountName": "Wild Wolf Normal Attack",
+    "DamageId": [
+      117008270101
+    ]
+  },
+  "90": {
+    "Id": 90,
+    "RecountName": "Wild Wolf Cooperative Attack",
+    "DamageId": [
+      117008200102
+    ]
+  },
+  "91": {
+    "Id": 91,
+    "RecountName": "Wild Wolf Finishing",
+    "DamageId": [
+      117008240102
+    ]
+  },
+  "92": {
+    "Id": 92,
+    "RecountName": "Wild Wolf Pounce",
+    "DamageId": [
+      117008250102,
+      117008260102
+    ]
+  },
+  "93": {
+    "Id": 93,
+    "RecountName": "Hunt Eagle Dive Attack",
+    "DamageId": [
+      11011120101
+    ]
+  },
+  "94": {
+    "Id": 94,
+    "RecountName": "Hunt Eagle Strike Out",
+    "DamageId": [
+      2220329107
+    ]
+  },
+  "95": {
+    "Id": 95,
+    "RecountName": "Hunt Eagle Lightning Impact",
+    "DamageId": [
+      2220329109
+    ]
+  },
+  "96": {
+    "Id": 96,
+    "RecountName": "Phantom Falcon",
+    "DamageId": [
+      122960102,
+      322011300
+    ]
+  },
+  "97": {
+    "Id": 97,
+    "RecountName": "Celestial Eagle",
+    "DamageId": [
+      123520101,
+      123520103
+    ]
+  },
+  "98": {
+    "Id": 98,
+    "RecountName": "Phantom Direwolf",
+    "DamageId": [
+      122920102
+    ]
+  },
+  "99": {
+    "Id": 99,
+    "RecountName": "Wolf Dancer",
+    "DamageId": [
+      2220309102,
+      2220310102,
+      2220310202,
+      2220314102,
+      2220330202
+    ]
+  },
+  "100": {
+    "Id": 100,
+    "RecountName": "Trample",
+    "DamageId": [
+      2220351201
+    ]
+  },
+  "101": {
+    "Id": 101,
+    "RecountName": "Inner Burst",
+    "DamageId": [
+      2220352105
+    ]
+  },
+  "102": {
+    "Id": 102,
+    "RecountName": "Light Edge",
+    "DamageId": [
+      2220362101,
+      2220362105,
+      2220362204,
+      2220362207
+    ]
+  },
+  "103": {
+    "Id": 103,
+    "RecountName": "Light Tracking Arrow",
+    "DamageId": [
+      322010500
+    ]
+  },
+  "104": {
+    "Id": 104,
+    "RecountName": "Photon Arrow",
+    "DamageId": [
+      322011200
+    ]
+  },
+  "105": {
+    "Id": 105,
+    "RecountName": "Magic Arrow",
+    "DamageId": [
+      322010700
+    ]
+  },
+  "106": {
+    "Id": 106,
+    "RecountName": "Explosive Arrow",
+    "DamageId": [
+      322010800,
+      2220331101
+    ]
+  },
+  "107": {
+    "Id": 107,
+    "RecountName": "Lethal Skill: Blade S Pin Counter Attack",
+    "DamageId": [
+      119120102
+    ]
+  },
+  "108": {
+    "Id": 108,
+    "RecountName": "Lucky Strike(Giant Blade)",
+    "DamageId": [
+      2203110703,
+      2203110704
+    ]
+  },
+  "109": {
+    "Id": 109,
+    "RecountName": "War-Ending Edge",
+    "DamageId": [
+      119010102,
+      119020102,
+      119030102,
+      119030103,
+      119040102,
+      119330102
+    ]
+  },
+  "110": {
+    "Id": 110,
+    "RecountName": "Nature Ward Slam",
+    "DamageId": [
+      119220102
+    ]
+  },
+  "111": {
+    "Id": 111,
+    "RecountName": "Shield Combo (Talent)",
+    "DamageId": [
+      119320102,
+      119320103
+    ]
+  },
+  "112": {
+    "Id": 112,
+    "RecountName": "Countercrush (Talent)",
+    "DamageId": [
+      119300101,
+      119300104,
+      119300107,
+      119300108,
+      119300109,
+      119300110
+    ]
+  },
+  "113": {
+    "Id": 113,
+    "RecountName": "Rock Defense·Shatter Loop",
+    "DamageId": [
+      119070103
+    ]
+  },
+  "114": {
+    "Id": 114,
+    "RecountName": "Star Shatter Rush",
+    "DamageId": [
+      119240102
+    ]
+  },
+  "115": {
+    "Id": 115,
+    "RecountName": "Sandstone Cloak",
+    "DamageId": [
+      119270102,
+      25004904
+    ]
+  },
+  "116": {
+    "Id": 116,
+    "RecountName": "Giant Rock Body",
+    "DamageId": []
+  },
+  "117": {
+    "Id": 117,
+    "RecountName": "Sandstoneof Grip",
+    "DamageId": [
+      25003301
+    ]
+  },
+  "118": {
+    "Id": 118,
+    "RecountName": "Rock Fury Strike",
+    "DamageId": [
+      119370102,
+      119390102
+    ]
+  },
+  "119": {
+    "Id": 119,
+    "RecountName": "Rage Burst",
+    "DamageId": [
+      119250101,
+      119400101
+    ]
+  },
+  "120": {
+    "Id": 120,
+    "RecountName": "Hero Barrier",
+    "DamageId": []
+  },
+  "121": {
+    "Id": 121,
+    "RecountName": "Sandstone Guard",
+    "DamageId": [
+      119230112,
+      119230113
+    ]
+  },
+  "122": {
+    "Id": 122,
+    "RecountName": "Rage Strike",
+    "DamageId": [
+      119350101
+    ]
+  },
+  "123": {
+    "Id": 123,
+    "RecountName": "Starfall (Talent)",
+    "DamageId": [
+      119410102
+    ]
+  },
+  "124": {
+    "Id": 124,
+    "RecountName": "Shatter",
+    "DamageId": [
+      119420102
+    ]
+  },
+  "125": {
+    "Id": 125,
+    "RecountName": "Earth Collapse Mountain Destroy",
+    "DamageId": [
+      11999020101,
+      11999020102,
+      2220157003
+    ]
+  },
+  "126": {
+    "Id": 126,
+    "RecountName": "Giant Rock Blast Strike",
+    "DamageId": [
+      11999030101
+    ]
+  },
+  "127": {
+    "Id": 127,
+    "RecountName": "Weakness Strike Triggered",
+    "DamageId": [
+      25003601
+    ]
+  },
+  "128": {
+    "Id": 128,
+    "RecountName": "Block Recovery",
+    "DamageId": [
+      2220108003
+    ]
+  },
+  "129": {
+    "Id": 129,
+    "RecountName": "Countercrush (Talent)",
+    "DamageId": [
+      25003703,
+      25006703,
+      25006704,
+      25006803,
+      25006804,
+      25006805
+    ]
+  },
+  "130": {
+    "Id": 130,
+    "RecountName": "Shield Echo (Talent)",
+    "DamageId": [
+      2220124003,
+      2220124004,
+      2220124005
+    ]
+  },
+  "131": {
+    "Id": 131,
+    "RecountName": "Sandstone Revival",
+    "DamageId": [
+      2220141005
+    ]
+  },
+  "132": {
+    "Id": 132,
+    "RecountName": "Recovery (Talent)",
+    "DamageId": [
+      2220149103
+    ]
+  },
+  "133": {
+    "Id": 133,
+    "RecountName": "Rock Heal (Talent)",
+    "DamageId": [
+      2220164103,
+      2220164104
+    ]
+  },
+  "134": {
+    "Id": 134,
+    "RecountName": "Sand Crystal Shock",
+    "DamageId": [
+      2220136203
+    ]
+  },
+  "135": {
+    "Id": 135,
+    "RecountName": "Rock Bullet",
+    "DamageId": [
+      3190100,
+      3190200
+    ]
+  },
+  "136": {
+    "Id": 136,
+    "RecountName": "Breath of Fortitude",
+    "DamageId": [
+      119090102,
+      2220117203
+    ]
+  },
+  "137": {
+    "Id": 137,
+    "RecountName": "Lethal Skill: Blade S Pin Counter Attack",
+    "DamageId": [
+      124240102
+    ]
+  },
+  "138": {
+    "Id": 138,
+    "RecountName": "Lucky Strike",
+    "DamageId": [
+      2203111003,
+      2203111004
+    ]
+  },
+  "139": {
+    "Id": 139,
+    "RecountName": "Sword of Justice",
+    "DamageId": [
+      124010102,
+      124020102,
+      124030102,
+      124040102
+    ]
+  },
+  "140": {
+    "Id": 140,
+    "RecountName": "Heroic Shield Bash",
+    "DamageId": [
+      124050104,
+      124050107,
+      124050108
+    ]
+  },
+  "141": {
+    "Id": 141,
+    "RecountName": "Vanguard Strike",
+    "DamageId": [
+      124060101
+    ]
+  },
+  "142": {
+    "Id": 142,
+    "RecountName": "Vanguard Pursuit Strike",
+    "DamageId": [
+      124060104,
+      124060105,
+      124060108,
+      2220654103,
+      2220656103
+    ]
+  },
+  "143": {
+    "Id": 143,
+    "RecountName": "Imposing Might·Holy Light Infusion",
+    "DamageId": [
+      124070103
+    ]
+  },
+  "144": {
+    "Id": 144,
+    "RecountName": "Judgment",
+    "DamageId": [
+      124100101,
+      124100104,
+      25542103
+    ]
+  },
+  "145": {
+    "Id": 145,
+    "RecountName": "Scorching Judgment",
+    "DamageId": [
+      124520101,
+      124520102,
+      124520103
+    ]
+  },
+  "146": {
+    "Id": 146,
+    "RecountName": "Auto Judgment",
+    "DamageId": [
+      124510101
+    ]
+  },
+  "147": {
+    "Id": 147,
+    "RecountName": "Reckoning",
+    "DamageId": [
+      124120102,
+      124120103,
+      124120104
+    ]
+  },
+  "148": {
+    "Id": 148,
+    "RecountName": "Shield Toss",
+    "DamageId": [
+      324010100
+    ]
+  },
+  "149": {
+    "Id": 149,
+    "RecountName": "Sacred Blade",
+    "DamageId": [
+      124210101
+    ]
+  },
+  "150": {
+    "Id": 150,
+    "RecountName": "Radiance",
+    "DamageId": [
+      324010200
+    ]
+  },
+  "151": {
+    "Id": 151,
+    "RecountName": "Aegis Ward",
+    "DamageId": [
+      25540502,
+      25540504
+    ]
+  },
+  "152": {
+    "Id": 152,
+    "RecountName": "Zeal Crusade",
+    "DamageId": [
+      25541203,
+      25541205,
+      25541206,
+      25541703,
+      25541705,
+      25541706,
+      25541209,
+      25541709,
+      25543201,
+      25543101
+    ]
+  },
+  "153": {
+    "Id": 153,
+    "RecountName": "Holy Ring",
+    "DamageId": [
+      25540404,
+      25540403
+    ]
+  },
+  "154": {
+    "Id": 154,
+    "RecountName": "Condemn",
+    "DamageId": [
+      124160102
+    ]
+  },
+  "155": {
+    "Id": 155,
+    "RecountName": "Enhanced Condemn",
+    "DamageId": [
+      124170102
+    ]
+  },
+  "156": {
+    "Id": 156,
+    "RecountName": "Scorching Heat Reckoning",
+    "DamageId": [
+      124130102,
+      124130103,
+      124130104,
+      124130105
+    ]
+  },
+  "157": {
+    "Id": 157,
+    "RecountName": "Radiant Impact",
+    "DamageId": [
+      124500101
+    ]
+  },
+  "158": {
+    "Id": 158,
+    "RecountName": "Holy Seal Record",
+    "DamageId": [
+      2220624103,
+      2220624105,
+      2220625006,
+      2220624301
+    ]
+  },
+  "159": {
+    "Id": 159,
+    "RecountName": "Holyof Strike",
+    "DamageId": [
+      2220640103
+    ]
+  },
+  "160": {
+    "Id": 160,
+    "RecountName": "Shield Guard (Talent)",
+    "DamageId": [
+      2220646003
+    ]
+  },
+  "161": {
+    "Id": 161,
+    "RecountName": "Radiant Core (Talent)",
+    "DamageId": [
+      2220655203,
+      2220655204
+    ]
+  },
+  "162": {
+    "Id": 162,
+    "RecountName": "Recovery (Talent)",
+    "DamageId": [
+      2220149303
+    ]
+  },
+  "163": {
+    "Id": 163,
+    "RecountName": "Holy Radiance",
+    "DamageId": [
+      2220624004
+    ]
+  },
+  "164": {
+    "Id": 164,
+    "RecountName": "Lethal Skill: Blade S Pin Counter Attack",
+    "DamageId": [
+      115170102
+    ]
+  },
+  "165": {
+    "Id": 165,
+    "RecountName": "Lucky Strike",
+    "DamageId": [
+      2203110503,
+      2203110504
+    ]
+  },
+  "166": {
+    "Id": 166,
+    "RecountName": "Vine Control",
+    "DamageId": [
+      115010102,
+      115020102,
+      115020103,
+      115030102,
+      115030103,
+      115030104,
+      115040102,
+      115040104
+    ]
+  },
+  "167": {
+    "Id": 167,
+    "RecountName": "Wild Bloom",
+    "DamageId": [
+      115180102,
+      115410102,
+      115300102,
+      22140201,
+      22140203
+    ]
+  },
+  "168": {
+    "Id": 168,
+    "RecountName": "Life Bloom",
+    "DamageId": [
+      22030104,
+      22110101
+    ]
+  },
+  "169": {
+    "Id": 169,
+    "RecountName": "Flourish·Hope Barrier",
+    "DamageId": [
+      115090101,
+      22141404,
+      22141405
+    ]
+  },
+  "170": {
+    "Id": 170,
+    "RecountName": "Floral Recovery",
+    "DamageId": [
+      115270106,
+      115270108,
+      115560101
+    ]
+  },
+  "171": {
+    "Id": 171,
+    "RecountName": "Floral Recovery",
+    "DamageId": []
+  },
+  "172": {
+    "Id": 172,
+    "RecountName": "Wild Seed",
+    "DamageId": [
+      315010300,
+      315010400,
+      115500101
+    ]
+  },
+  "173": {
+    "Id": 173,
+    "RecountName": "Nourish",
+    "DamageId": [
+      22140403
+    ]
+  },
+  "174": {
+    "Id": 174,
+    "RecountName": "Regeneration Pulse",
+    "DamageId": [
+      22142501,
+      115600101,
+      115600102,
+      115600103,
+      115610101,
+      115610102,
+      115610103,
+      115610105,
+      115610106,
+      115610107,
+      115610108,
+      115610109,
+      115610110,
+      115610111,
+      115610112,
+      115610113,
+      315011200
+    ]
+  },
+  "175": {
+    "Id": 175,
+    "RecountName": "Infusion",
+    "DamageId": [
+      315010500,
+      315010600,
+      315010700,
+      315011000
+    ]
+  },
+  "176": {
+    "Id": 176,
+    "RecountName": "Forest Voice G10-Grove Wish",
+    "DamageId": [
+      22140601
+    ]
+  },
+  "177": {
+    "Id": 177,
+    "RecountName": "Forest Voice G10-Grove Wish",
+    "DamageId": [
+      22140604
+    ]
+  },
+  "178": {
+    "Id": 178,
+    "RecountName": "Natural Sanctuary",
+    "DamageId": []
+  },
+  "179": {
+    "Id": 179,
+    "RecountName": "Bloom Infusion",
+    "DamageId": [
+      115290101,
+      115290102,
+      2220258103,
+      2220258104,
+      2220258203,
+      2220258204
+    ]
+  },
+  "180": {
+    "Id": 180,
+    "RecountName": "Haste Alive Long",
+    "DamageId": []
+  },
+  "181": {
+    "Id": 181,
+    "RecountName": "Stag Charge (Talent)",
+    "DamageId": [
+      315010100,
+      22141804
+    ]
+  },
+  "182": {
+    "Id": 182,
+    "RecountName": "Feral Seed",
+    "DamageId": [
+      115510101
+    ]
+  },
+  "183": {
+    "Id": 183,
+    "RecountName": "Together Alive Seal Record",
+    "DamageId": [
+      22142303
+    ]
+  },
+  "184": {
+    "Id": 184,
+    "RecountName": "Nourishof Seed",
+    "DamageId": [
+      2220231103,
+      2220231104
+    ]
+  },
+  "185": {
+    "Id": 185,
+    "RecountName": "Nature Shield (Talent)",
+    "DamageId": [
+      2220212004
+    ]
+  },
+  "186": {
+    "Id": 186,
+    "RecountName": "Healing Breath",
+    "DamageId": [
+      2220209101
+    ]
+  },
+  "187": {
+    "Id": 187,
+    "RecountName": "Return Revive",
+    "DamageId": [
+      2220226203
+    ]
+  },
+  "188": {
+    "Id": 188,
+    "RecountName": "Natural Bloom Release",
+    "DamageId": [
+      2220227101
+    ]
+  },
+  "189": {
+    "Id": 189,
+    "RecountName": "Heal Pulse",
+    "DamageId": [
+      315010200,
+      315010201
+    ]
+  },
+  "190": {
+    "Id": 190,
+    "RecountName": "Heal Ball",
+    "DamageId": [
+      2220229101
+    ]
+  },
+  "191": {
+    "Id": 191,
+    "RecountName": "Thorns",
+    "DamageId": [
+      22142403
+    ]
+  },
+  "192": {
+    "Id": 192,
+    "RecountName": "Restofcure",
+    "DamageId": [
+      25535501,
+      25535601,
+      25535701
+    ]
+  },
+  "193": {
+    "Id": 193,
+    "RecountName": "Lethal Skill: Blade S Pin Counter Attack",
+    "DamageId": [
+      123370101
+    ]
+  },
+  "194": {
+    "Id": 194,
+    "RecountName": "Lucky Strike(Guitar）",
+    "DamageId": [
+      2203111103,
+      2203111104
+    ]
+  },
+  "195": {
+    "Id": 195,
+    "RecountName": "String Strike",
+    "DamageId": [
+      123210102,
+      123210103,
+      123220102,
+      123220103,
+      123230102,
+      123230103,
+      123240102,
+      123240103
+    ]
+  },
+  "196": {
+    "Id": 196,
+    "RecountName": "String Pluck",
+    "DamageId": [
+      123010102,
+      123020102,
+      123030102,
+      123040102
+    ]
+  },
+  "197": {
+    "Id": 197,
+    "RecountName": "Amplified Beat",
+    "DamageId": [
+      123060101,
+      123060103,
+      123060104
+    ]
+  },
+  "198": {
+    "Id": 198,
+    "RecountName": "Lifebind Beat",
+    "DamageId": [
+      25530201,
+      25530203,
+      25530204
+    ]
+  },
+  "199": {
+    "Id": 199,
+    "RecountName": "Upgrade·Rock the Stage/Upgrade·Infinite Rhapsody",
+    "DamageId": [
+      123140106,
+      123140107,
+      123140108,
+      123350102,
+      25534401,
+      25534601,
+      123640104,
+      123640105,
+      123640106,
+      123650102
+    ]
+  },
+  "200": {
+    "Id": 200,
+    "RecountName": "Upgrade·Concert Circuit",
+    "DamageId": [
+      123360101,
+      25533901,
+      123660102
+    ]
+  },
+  "201": {
+    "Id": 201,
+    "RecountName": "Harmonic Anthem",
+    "DamageId": [
+      12301010101,
+      12301020101,
+      12301020102,
+      12301030101,
+      12301030102,
+      12301030103,
+      12301040101,
+      12301040102,
+      12301040103,
+      12301040104,
+      323010100
+    ]
+  },
+  "202": {
+    "Id": 202,
+    "RecountName": "Rhapsody of Flame",
+    "DamageId": [
+      323080100,
+      323090100,
+      323100100,
+      25530101,
+      25530103
+    ]
+  },
+  "203": {
+    "Id": 203,
+    "RecountName": "Rhapsody of Flame - Flame's Rampage",
+    "DamageId": [
+      12301050101,
+      2220743103
+    ]
+  },
+  "204": {
+    "Id": 204,
+    "RecountName": "Flame Note Damage",
+    "DamageId": [
+      12301060101
+    ]
+  },
+  "205": {
+    "Id": 205,
+    "RecountName": "Resonance·Heroic Melody",
+    "DamageId": [
+      25534101
+    ]
+  },
+  "206": {
+    "Id": 206,
+    "RecountName": "Fierce Strike",
+    "DamageId": [
+      123170104
+    ]
+  },
+  "207": {
+    "Id": 207,
+    "RecountName": "Resonance·Lifebind Melody",
+    "DamageId": [
+      25534201
+    ]
+  },
+  "208": {
+    "Id": 208,
+    "RecountName": "Fivefold Crescendo",
+    "DamageId": [
+      123120123,
+      123120124,
+      123120125,
+      123120126,
+      123120127,
+      25530401,
+      25530403,
+      123620111,
+      123620112,
+      123620113,
+      123620114,
+      123620115
+    ]
+  },
+  "209": {
+    "Id": 209,
+    "RecountName": "Passion Burst",
+    "DamageId": [
+      123130106,
+      123130107,
+      123130108
+    ]
+  },
+  "210": {
+    "Id": 210,
+    "RecountName": "Exaltation·Passion Burst",
+    "DamageId": [
+      123320102,
+      123320103
+    ]
+  },
+  "211": {
+    "Id": 211,
+    "RecountName": "Safe Can",
+    "DamageId": [
+      323040100,
+      323050100,
+      25531401,
+      25531403
+    ]
+  },
+  "212": {
+    "Id": 212,
+    "RecountName": "Center Stage",
+    "DamageId": []
+  },
+  "213": {
+    "Id": 213,
+    "RecountName": "Safeand Song",
+    "DamageId": [
+      25531105
+    ]
+  },
+  "214": {
+    "Id": 214,
+    "RecountName": "Active Power Release Release",
+    "DamageId": [
+      2220762007,
+      2220762008
+    ]
+  },
+  "215": {
+    "Id": 215,
+    "RecountName": "Blazing Heal (Heal)",
+    "DamageId": [
+      2220715103
+    ]
+  },
+  "216": {
+    "Id": 216,
+    "RecountName": "Fire Pillar Impact",
+    "DamageId": [
+      123290101,
+      123300101,
+      123300102
+    ]
+  },
+  "217": {
+    "Id": 217,
+    "RecountName": "Fierce Fire Impact",
+    "DamageId": [
+      123310102
+    ]
+  },
+  "218": {
+    "Id": 218,
+    "RecountName": "Sound Talisman",
+    "DamageId": [
+      2220741101,
+      2220714102,
+      2220714103
+    ]
+  },
+  "219": {
+    "Id": 219,
+    "RecountName": "Flame Shock",
+    "DamageId": [
+      123200101
+    ]
+  },
+  "220": {
+    "Id": 220,
+    "RecountName": "Sound Talisman Heat Wave",
+    "DamageId": [
+      2220768103
+    ]
+  },
+  "221": {
+    "Id": 221,
+    "RecountName": "Restofcure",
+    "DamageId": [
+      22142701,
+      22142801,
+      22142901,
+      22143001
+    ]
+  },
+  "222": {
+    "Id": 222,
+    "RecountName": "Lethal Skill: Blade S Pin Counter Attack",
+    "DamageId": [
+      116240101
+    ]
+  },
+  "223": {
+    "Id": 223,
+    "RecountName": "Battle Axe-Lucky",
+    "DamageId": [
+      2203110303,
+      2203110304
+    ]
+  },
+  "224": {
+    "Id": 224,
+    "RecountName": "Scorching Heat Swing Strike",
+    "DamageId": [
+      116010101,
+      116020101,
+      116020102,
+      116030101,
+      116030102,
+      116040101
+    ]
+  },
+  "225": {
+    "Id": 225,
+    "RecountName": "Scorching Heat Ascend",
+    "DamageId": [
+      116050102,
+      116050103,
+      116190102,
+      116190103
+    ]
+  },
+  "226": {
+    "Id": 226,
+    "RecountName": "Fly Flame Ascend Second Hit",
+    "DamageId": [
+      116200103
+    ]
+  },
+  "227": {
+    "Id": 227,
+    "RecountName": "Frenzy Slash Strike",
+    "DamageId": [
+      116060102
+    ]
+  },
+  "228": {
+    "Id": 228,
+    "RecountName": "Frenzy Slash Strike HP Regen",
+    "DamageId": [
+      23510401
+    ]
+  },
+  "229": {
+    "Id": 229,
+    "RecountName": "Ember Eliminate！Prison Flamenot Know Fire",
+    "DamageId": [
+      116180104,
+      116180105,
+      116180106,
+      116180107
+    ]
+  },
+  "230": {
+    "Id": 230,
+    "RecountName": "Blazing Flame Raid",
+    "DamageId": [
+      116070102,
+      116070103,
+      116070105,
+      116070106
+    ]
+  },
+  "231": {
+    "Id": 231,
+    "RecountName": "Rage Chop Slash",
+    "DamageId": [
+      116080101,
+      116080102,
+      116090101,
+      116090102,
+      116100101,
+      116110101
+    ]
+  },
+  "232": {
+    "Id": 232,
+    "RecountName": "Axe Wind",
+    "DamageId": [
+      116120101
+    ]
+  },
+  "233": {
+    "Id": 233,
+    "RecountName": "Lost Mad Flame Dance",
+    "DamageId": [
+      116130101,
+      116130103
+    ]
+  },
+  "234": {
+    "Id": 234,
+    "RecountName": "None Bound Fall Star",
+    "DamageId": [
+      116140103,
+      11601010101
+    ]
+  },
+  "235": {
+    "Id": 235,
+    "RecountName": "Arakawaof Silent Eliminate（Exist Doubt）",
+    "DamageId": []
+  },
+  "236": {
+    "Id": 236,
+    "RecountName": "Like River Flow Hua Slash",
+    "DamageId": [
+      116160102
+    ]
+  },
+  "237": {
+    "Id": 237,
+    "RecountName": "Like River Flow Hua Slash- Skills Main Body Lifesteal",
+    "DamageId": [
+      23510503
+    ]
+  },
+  "238": {
+    "Id": 238,
+    "RecountName": "None Endof Flame Magic（Exist Doubt）",
+    "DamageId": []
+  },
+  "239": {
+    "Id": 239,
+    "RecountName": "Flame Danceof Last One Slash",
+    "DamageId": [
+      116220101
+    ]
+  },
+  "240": {
+    "Id": 240,
+    "RecountName": "Flame Magic Sky Drop Kill",
+    "DamageId": [
+      116210103,
+      116210105,
+      116210106,
+      116210107,
+      11601030101,
+      11601030102,
+      11601030103
+    ]
+  },
+  "241": {
+    "Id": 241,
+    "RecountName": "Earth Fire Flow Star",
+    "DamageId": [
+      11601020101
+    ]
+  },
+  "242": {
+    "Id": 242,
+    "RecountName": "Burning",
+    "DamageId": [
+      2220817203,
+      2220817204
+    ]
+  },
+  "243": {
+    "Id": 243,
+    "RecountName": "Flame Burst",
+    "DamageId": [
+      2220818103
+    ]
+  },
+  "244": {
+    "Id": 244,
+    "RecountName": "Large Crimson Lotus",
+    "DamageId": [
+      116230101
+    ]
+  },
+  "245": {
+    "Id": 245,
+    "RecountName": "None Phase Fire Slash",
+    "DamageId": [
+      23510703,
+      23510803,
+      23510903
+    ]
+  },
+  "246": {
+    "Id": 246,
+    "RecountName": "Special Move！Roar Command",
+    "DamageId": [
+      2211006203
+    ]
+  },
+  "247": {
+    "Id": 247,
+    "RecountName": "Special Move！Shatter Star Fall",
+    "DamageId": [
+      120028530101
+    ]
+  },
+  "248": {
+    "Id": 248,
+    "RecountName": "Stunt! Blink Ambush",
+    "DamageId": [
+      120017400103,
+      120017400104,
+      120017400105
+    ]
+  },
+  "249": {
+    "Id": 249,
+    "RecountName": "Stunt! Predator Slash",
+    "DamageId": [
+      110052400101,
+      110052400102,
+      110052400105,
+      110052400106
+    ]
+  },
+  "250": {
+    "Id": 250,
+    "RecountName": "Ultimate！Blazing Battle Axe",
+    "DamageId": [
+      2321005102
+    ]
+  },
+  "251": {
+    "Id": 251,
+    "RecountName": "Ultimate！Poison Burst",
+    "DamageId": [
+      110077410101,
+      2211009903
+    ]
+  },
+  "252": {
+    "Id": 252,
+    "RecountName": "Stunt! Super Critical",
+    "DamageId": [
+      110024400103,
+      2321006101
+    ]
+  },
+  "253": {
+    "Id": 253,
+    "RecountName": "Special Move! Chaos Shot",
+    "DamageId": [
+      11007300102,
+      11007300104,
+      31007080100,
+      339100700
+    ]
+  },
+  "254": {
+    "Id": 254,
+    "RecountName": "Stunt! Thunder Suppress",
+    "DamageId": [
+      110104400101,
+      110104400102,
+      2321008101
+    ]
+  },
+  "255": {
+    "Id": 255,
+    "RecountName": "Ultimate! Heavy Hammer Mad Raid",
+    "DamageId": [
+      117004400103,
+      117004400105
+    ]
+  },
+  "256": {
+    "Id": 256,
+    "RecountName": "Ultimate! Flow Star Meteor Drop",
+    "DamageId": [
+      136990101,
+      136980101,
+      2321002103,
+      2321002203
+    ]
+  },
+  "257": {
+    "Id": 257,
+    "RecountName": "Arcane! Azure Gale",
+    "DamageId": [
+      110084400101
+    ]
+  },
+  "258": {
+    "Id": 258,
+    "RecountName": "Arcane! Cocoon Tech",
+    "DamageId": [
+      110069400101
+    ]
+  },
+  "259": {
+    "Id": 259,
+    "RecountName": "Special Move！Still Silentof Water",
+    "DamageId": [
+      139360010101
+    ]
+  },
+  "260": {
+    "Id": 260,
+    "RecountName": "Special Move！Thunder Light Ball",
+    "DamageId": [
+      31000200,
+      31000201
+    ]
+  },
+  "261": {
+    "Id": 261,
+    "RecountName": "Special Move! Whirlwind Slash",
+    "DamageId": [
+      110086410103
+    ]
+  },
+  "262": {
+    "Id": 262,
+    "RecountName": "Special Move！Spiral Break Realm",
+    "DamageId": [
+      110059400101
+    ]
+  },
+  "263": {
+    "Id": 263,
+    "RecountName": "Stunt! Boarrier Rush",
+    "DamageId": [
+      11026400101,
+      11026400108
+    ]
+  },
+  "264": {
+    "Id": 264,
+    "RecountName": "Special Move！EMP Bomb",
+    "DamageId": [
+      139130010101,
+      339130100
+    ]
+  },
+  "265": {
+    "Id": 265,
+    "RecountName": "Special Move！Chaotic Chaos Missile",
+    "DamageId": [
+      339100100,
+      339100200,
+      339100300,
+      339100400,
+      339100500,
+      339100600,
+      2211009003,
+      2211009103
+    ]
+  },
+  "266": {
+    "Id": 266,
+    "RecountName": "Special Move！Blade Sweep",
+    "DamageId": [
+      139140102,
+      139140103,
+      31004010200
+    ]
+  },
+  "267": {
+    "Id": 267,
+    "RecountName": "Special Move！Shrink Shell Defense",
+    "DamageId": []
+  },
+  "268": {
+    "Id": 268,
+    "RecountName": "Special Move！Large Earthof Shield",
+    "DamageId": [
+      2211006603
+    ]
+  },
+  "269": {
+    "Id": 269,
+    "RecountName": "Ultimate！Thunder Thunder Roar",
+    "DamageId": [
+      2211009601,
+      2211009604
+    ]
+  },
+  "270": {
+    "Id": 270,
+    "RecountName": "Ultimate！Pulse Prayer",
+    "DamageId": [
+      2211001203,
+      2321010102
+    ]
+  },
+  "271": {
+    "Id": 271,
+    "RecountName": "Arcane! Thunderfall Grasp",
+    "DamageId": [
+      120024400102,
+      2321003101
+    ]
+  },
+  "272": {
+    "Id": 272,
+    "RecountName": "Ultimate！Earth Prison Thrust",
+    "DamageId": [
+      110081400101
+    ]
+  },
+  "273": {
+    "Id": 273,
+    "RecountName": "Ultimate！Glaze Fire Roar",
+    "DamageId": [
+      139010101,
+      2211008304
+    ]
+  },
+  "274": {
+    "Id": 274,
+    "RecountName": "Special Move！Super Heavy Slash",
+    "DamageId": [
+      130810230101,
+      130810230102,
+      130810230103
+    ]
+  },
+  "275": {
+    "Id": 275,
+    "RecountName": "Stunt! Invisible Impact",
+    "DamageId": [
+      139250102
+    ]
+  },
+  "276": {
+    "Id": 276,
+    "RecountName": "Special Move！Transform Honey Bee",
+    "DamageId": [
+      11411040101,
+      339100800,
+      3100760100,
+      110076020101
+    ]
+  },
+  "277": {
+    "Id": 277,
+    "RecountName": "Arcane! Silent Tide",
+    "DamageId": [
+      110085400101,
+      2321009201
+    ]
+  },
+  "278": {
+    "Id": 278,
+    "RecountName": "Arcane! Frostquake",
+    "DamageId": [
+      110028300103,
+      110028300104
+    ]
+  },
+  "279": {
+    "Id": 279,
+    "RecountName": "Arcane! Flash Execution",
+    "DamageId": [
+      129005400101,
+      129005400102,
+      129005400103,
+      129005400104,
+      129005400105,
+      129005400106,
+      2211008503
+    ]
+  },
+  "280": {
+    "Id": 280,
+    "RecountName": "Ultimate！Blaze Heart",
+    "DamageId": []
+  },
+  "281": {
+    "Id": 281,
+    "RecountName": "Arcane! Blessing of Life",
+    "DamageId": []
+  },
+  "282": {
+    "Id": 282,
+    "RecountName": "Arcane! Time Decree",
+    "DamageId": []
+  },
+  "283": {
+    "Id": 283,
+    "RecountName": "Ultimate！Goblin Large Row Army",
+    "DamageId": []
+  },
+  "284": {
+    "Id": 284,
+    "RecountName": "Arcane! Divine Reliance (Active)",
+    "DamageId": [
+      129008400103,
+      129008400105,
+      129008400107,
+      129008400108,
+      129008400109,
+      2211011104
+    ]
+  },
+  "285": {
+    "Id": 285,
+    "RecountName": "Ultimate！Ten Thousand Elephant Sublimation",
+    "DamageId": [
+      129007400101
+    ]
+  },
+  "286": {
+    "Id": 286,
+    "RecountName": "Ultimate！Bless World Edge Realm",
+    "DamageId": [
+      2211011803
+    ]
+  },
+  "287": {
+    "Id": 287,
+    "RecountName": "Ultimate！Phantom Resonance",
+    "DamageId": [
+      24530001,
+      24530005,
+      318030100,
+      318050100,
+      129004410109,
+      129004410110,
+      129004410111,
+      318010100,
+      118510101,
+      339100900,
+      339101000,
+      318060100,
+      118500101
+    ]
+  },
+  "288": {
+    "Id": 288,
+    "RecountName": "Arcane! Blazing Flames",
+    "DamageId": [
+      110119060102
+    ]
+  },
+  "289": {
+    "Id": 289,
+    "RecountName": "Ultimate！None Double Thrust",
+    "DamageId": [
+      111014400101
+    ]
+  },
+  "290": {
+    "Id": 290,
+    "RecountName": "Ultimate！Charm Shadow Strange Raid",
+    "DamageId": [
+      117008290102
+    ]
+  },
+  "291": {
+    "Id": 291,
+    "RecountName": "Ultimate！Scroll Heart Dish Heavy Hammer",
+    "DamageId": [
+      110118060101
+    ]
+  },
+  "292": {
+    "Id": 292,
+    "RecountName": "Arcane! Flame Spirit's Fortune (Active)",
+    "DamageId": [
+      111023060101,
+      111023060102,
+      111023060103
+    ]
+  },
+  "293": {
+    "Id": 293,
+    "RecountName": "Ultimate！Absolute Life Spiral",
+    "DamageId": [
+      111007400103
+    ]
+  },
+  "294": {
+    "Id": 294,
+    "RecountName": "Special Move！Cold Frost Spray Spit",
+    "DamageId": [
+      111005040101
+    ]
+  },
+  "295": {
+    "Id": 295,
+    "RecountName": "Special Move！Lightning Fall Smite",
+    "DamageId": [
+      110110110101,
+      2211013003
+    ]
+  },
+  "296": {
+    "Id": 296,
+    "RecountName": "Special Move! Sword Blade Storm",
+    "DamageId": [
+      139600101
+    ]
+  },
+  "297": {
+    "Id": 297,
+    "RecountName": "Stunt! Healing Bomb (Active)",
+    "DamageId": [
+      111013040101,
+      111013040102,
+      2320003403,
+      2211013103
+    ]
+  },
+  "298": {
+    "Id": 298,
+    "RecountName": "Special Move！All Field Blast Explode",
+    "DamageId": [
+      111012040101,
+      111012040102,
+      2321016101
+    ]
+  },
+  "299": {
+    "Id": 299,
+    "RecountName": "Special Move！Spirit Move Strike Out",
+    "DamageId": [
+      117007180101,
+      117007180102
+    ]
+  },
+  "300": {
+    "Id": 300,
+    "RecountName": "Special Move！Scroll Heart Dish S Pin Blade",
+    "DamageId": [
+      110113120103
+    ]
+  },
+  "301": {
+    "Id": 301,
+    "RecountName": "Special Move！Scroll Heart Dish Thunder Flash",
+    "DamageId": [
+      110112150101,
+      110112150102,
+      110112150103,
+      110112160101,
+      110112160102,
+      110112170102,
+      2321017103
+    ]
+  },
+  "302": {
+    "Id": 302,
+    "RecountName": "Special Move！Double Heavy Tooth",
+    "DamageId": [
+      111022050102
+    ]
+  },
+  "303": {
+    "Id": 303,
+    "RecountName": "Ultimate！Void-Eroded Calamity Blade",
+    "DamageId": [
+      11701120104
+    ]
+  },
+  "304": {
+    "Id": 304,
+    "RecountName": "Ultimate！Split Empty Counter Charge",
+    "DamageId": [
+      11401450102
+    ]
+  },
+  "305": {
+    "Id": 305,
+    "RecountName": "Ultimate！Command Elephant Limit",
+    "DamageId": [
+      133401900101,
+      133401900102,
+      3321000,
+      133401150101,
+      133401150102,
+      133401150103,
+      133401150106,
+      133401160101,
+      133401160102,
+      133401160103
+    ]
+  },
+  "306": {
+    "Id": 306,
+    "RecountName": "Ultimate！Superconductive Wave",
+    "DamageId": [
+      11110690101
+    ]
+  },
+  "307": {
+    "Id": 307,
+    "RecountName": "Ultimate！Shuttle Row Poison Tooth",
+    "DamageId": [
+      111203100101,
+      111203100103
+    ]
+  },
+  "308": {
+    "Id": 308,
+    "RecountName": "Ultimate！Instant Empty Trample",
+    "DamageId": [
+      117010400102
+    ]
+  },
+  "309": {
+    "Id": 309,
+    "RecountName": "Ultimate！Spirit Accurate Point Shot",
+    "DamageId": [
+      110097020102,
+      110097030102,
+      3100970300,
+      2321021003
+    ]
+  },
+  "310": {
+    "Id": 310,
+    "RecountName": "Ultimate！Penetration Roar",
+    "DamageId": [
+      111211050102
+    ]
+  },
+  "311": {
+    "Id": 311,
+    "RecountName": "Ultimate！Swift Wind Chain Devour",
+    "DamageId": [
+      111215080107,
+      111215080108,
+      111215080109,
+      111215080110,
+      2321023101
+    ]
+  },
+  "312": {
+    "Id": 312,
+    "RecountName": "Special Move！Hide Hide Strike",
+    "DamageId": [
+      111202200103,
+      3190300,
+      3190400
+    ]
+  },
+  "313": {
+    "Id": 313,
+    "RecountName": "Special Move！Absoluteto Zero Degree",
+    "DamageId": [
+      11026640101
+    ]
+  },
+  "314": {
+    "Id": 314,
+    "RecountName": "Special Move！Deep Abyss Spit Breath",
+    "DamageId": [
+      111214060102,
+      111214060103,
+      111214060104
+    ]
+  },
+  "315": {
+    "Id": 315,
+    "RecountName": "Special Move！Pound Earth Slam",
+    "DamageId": [
+      111206100101,
+      111206100102,
+      111206100103
+    ]
+  },
+  "316": {
+    "Id": 316,
+    "RecountName": "Special Move！Lock-on Shooting",
+    "DamageId": [
+      111218100101,
+      111218100102
+    ]
+  },
+  "317": {
+    "Id": 317,
+    "RecountName": "Extreme·First Aid",
+    "DamageId": [
+      2230232103
+    ]
+  },
+  "318": {
+    "Id": 318,
+    "RecountName": "Extreme·HP Absorb Take",
+    "DamageId": [
+      2230008003
+    ]
+  },
+  "319": {
+    "Id": 319,
+    "RecountName": "Void-Eroded Burst",
+    "DamageId": [
+      17010010101
+    ]
+  },
+  "320": {
+    "Id": 320,
+    "RecountName": "Void-Eroded Pulse（Original Void-Eroded Condense Divine）",
+    "DamageId": [
+      339140100
+    ]
+  },
+  "321": {
+    "Id": 321,
+    "RecountName": "Void-Eroded Fluctuation",
+    "DamageId": [
+      17010020101,
+      2300117006
+    ]
+  },
+  "322": {
+    "Id": 322,
+    "RecountName": "Void-Eroded Light Ring",
+    "DamageId": [
+      2300103103,
+      2300103104
+    ]
+  },
+  "323": {
+    "Id": 323,
+    "RecountName": "Phantom Dream Execute",
+    "DamageId": [
+      2300221501,
+      2300221503
+    ]
+  },
+  "324": {
+    "Id": 324,
+    "RecountName": "Lost Phantom Dream Environment-not Eliminate Battle Posture",
+    "DamageId": [
+      2300267103
+    ]
+  },
+  "325": {
+    "Id": 325,
+    "RecountName": "Silent Eliminateof Dream-HP Limit Charge Domain",
+    "DamageId": [
+      2300302301,
+      2300302501
+    ]
+  },
+  "326": {
+    "Id": 326,
+    "RecountName": "Void False Trial Fixed",
+    "DamageId": [
+      2300325003,
+      2300321301
+    ]
+  },
+  "327": {
+    "Id": 327,
+    "RecountName": "Void False Trial Fixed-Judge Fixed·Heal",
+    "DamageId": [
+      2300326003
+    ]
+  },
+  "328": {
+    "Id": 328,
+    "RecountName": "Phantom Arrow",
+    "DamageId": [
+      179970101,
+      179970102,
+      179970103,
+      179970104,
+      179970105,
+      179970106,
+      179970107,
+      179970108,
+      179970109,
+      179970110
+    ]
+  },
+  "329": {
+    "Id": 329,
+    "RecountName": "Stable G8",
+    "DamageId": [
+      2305908003
+    ]
+  },
+  "330": {
+    "Id": 330,
+    "RecountName": "Thunder Shadow Stable G1",
+    "DamageId": [
+      2305910103
+    ]
+  },
+  "331": {
+    "Id": 331,
+    "RecountName": "Stable G8",
+    "DamageId": [
+      2305921003
+    ]
+  },
+  "333": {
+    "Id": 333,
+    "RecountName": "Divine Shield True Factor X5",
+    "DamageId": [
+      2305444006
+    ]
+  }
+}

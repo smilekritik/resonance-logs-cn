@@ -1,0 +1,187 @@
+{
+  "wind_knight": {
+    "classKey": "wind_knight",
+    "className": "Wind Knight",
+    "classId": 4,
+    "defaultMonitoredBuffIds": [510072, 2205561, 31201, 2205211, 2205401, 2205134, 2205521, 31901],
+    "derivations": [
+      {
+        "sourceSkillId": 1425,
+        "derivedSkillId": 1433,
+        "triggerBuffBaseId": 2205561,
+        "derivedName": "Azure Sever (Leap)",
+        "derivedImagePath": "/images/wind_knight/skill/weapon_cq-01_tf01_-1316877155940038893.png"
+      },
+      {
+        "sourceSkillId": 1418,
+        "derivedSkillId": 1418,
+        "triggerBuffBaseId": 2205401,
+        "derivedName": "Gale Thrust (Free)",
+        "derivedImagePath": "/images/wind_knight/skill/weapon_cq-01_tg01_-2586550948717895893.png"
+      },
+      {
+        "sourceSkillId": 1421,
+        "derivedSkillId": 1434,
+        "triggerBuffBaseId": 2205134,
+        "derivedName": "Vortex Strike",
+        "derivedImagePath": "/images/wind_knight/skill/weapon_cq-01_tf02_7523168108073174119.png"
+      },
+      {
+        "sourceSkillId": 1401,
+        "derivedSkillId": 1435,
+        "triggerBuffBaseId": 2205521,
+        "derivedName": "Drake Cannon",
+        "derivedImagePath": "/images/wind_knight/skill/weapon_cq-01_tf03_6517484585993130536.png"
+      },
+      {
+        "sourceSkillId": 1430,
+        "derivedSkillId": 1430,
+        "triggerBuffBaseId": 31901,
+        "derivedName": "Valor Cyclone (Sustain)",
+        "derivedImagePath": "/images/wind_knight/skill/weapon_cq_skill_passive_-4587170372366891142.png"
+      }
+    ],
+    "skills": [
+      {
+        "skillId": 1420,
+        "name": "Galeform",
+        "imagePath": "/images/wind_knight/skill/weapon_cq-01_kx01_-8358011576239105760.png",
+        "maxCharges": 2
+      },
+      {
+        "skillId": 1426,
+        "name": "Typhoon Cleave (No Battle Cry)",
+        "imagePath": "/images/wind_knight/skill/weapon_cq-01_ult_01_9050689552264825112.png"
+      },
+      {
+        "skillId": 1410,
+        "name": "Typhoon Cleave",
+        "imagePath": "/images/wind_knight/skill/weapon_cq-01_ult_02_-7515185664632347258.png"
+      },
+      {
+        "skillId": 1419,
+        "name": "Skyfall",
+        "imagePath": "/images/wind_knight/skill/weapon_cq-01_tg02_-133786615417471994.png",
+        "resourceRequirement": { "resourceIndex": 4, "amount": 35 }
+      },
+      {
+        "skillId": 1421,
+        "name": "Spiral Thrust",
+        "imagePath": "/images/wind_knight/skill/weapon_cq-01_kx02_-1800090862594513853.png"
+      },
+      {
+        "skillId": 1422,
+        "name": "Breach Pursuit",
+        "imagePath": "/images/wind_knight/skill/weapon_cq-01_kx03_4124089693214742787.png"
+      },
+      {
+        "skillId": 1425,
+        "name": "Falcon Toss (Leap)",
+        "imagePath": "/images/wind_knight/skill/weapon_cq_skill_02ex_-5338755465175740072.png",
+        "maxCharges": 2
+      },
+      {
+        "skillId": 1424,
+        "name": "Instant Edge",
+        "imagePath": "/images/wind_knight/skill/weapon_cq-01_kx05_-4769613798753072914.png",
+        "resourceRequirement": { "resourceIndex": 6, "amount": 3 }
+      },
+      {
+        "skillId": 1401,
+        "name": "Boar Basic Attack",
+        "imagePath": "/images/wind_knight/skill/weapon_cq_skill_atk_-7208739400043910585.png"
+      },
+      {
+        "skillId": 1418,
+        "name": "Gale Thrust",
+        "imagePath": "/images/wind_knight/skill/weapon_cq-01_tg01_-2586550948717895893.png"
+      },
+      {
+        "skillId": 1423,
+        "name": "Aegis Gale",
+        "imagePath": "/images/wind_knight/skill/weapon_cq-01_kx04_-7456099577516937621.png"
+      },
+      {
+        "skillId": 1430,
+        "name": "Valor Cyclone",
+        "imagePath": "/images/wind_knight/skill/weapon_cq-01_kx07_-8968489817801649529.png"
+      },
+      {
+        "skillId": 1431,
+        "name": "Sharp Impact (Crash Down)",
+        "imagePath": "/images/wind_knight/skill/weapon_cq-01_kx08_-5400252487671298175.png",
+        "maxValidCdTime": 10000
+      }
+    ]
+  },
+  "frost_mage": {
+    "classKey": "frost_mage",
+    "className": "Frost Mage",
+    "classId": 2,
+    "defaultMonitoredBuffIds": [510072, 27007, 2204191],
+    "derivations": [
+      {
+        "sourceSkillId": 1244,
+        "derivedSkillId": 1244,
+        "triggerBuffBaseId": 2204191,
+        "derivedName": "Blizzard (Instant)",
+        "derivedImagePath": "/images/frost_mage/skill/weapon_mz-01_kx03_-5346524802378145274.png",
+        "keepCdWhenDerived": true
+      }
+    ],
+    "skills": [
+      {
+        "skillId": 1239,
+        "name": "Meteor Storm",
+        "imagePath": "/images/frost_mage/skill/weapon_mz-01_kx07_-8948074613709733940.png",
+        "maxCharges": 2
+      },
+      {
+        "skillId": 1211,
+        "name": "Crystal Veil",
+        "imagePath": "/images/frost_mage/skill/weapon_mz-01_kx05_-3747281467355150039.png",
+        "maxCharges": 2
+      },
+      {
+        "skillId": 1242,
+        "name": "Frost Lance",
+        "imagePath": "/images/frost_mage/skill/weapon_mz-01_tg02_4654006341741505144.png"
+      },
+      {
+        "skillId": 1210,
+        "name": "Maelstrom",
+        "imagePath": "/images/frost_mage/skill/weapon_mz-01_kx06_-674373002471455789.png"
+      },
+      {
+        "skillId": 1246,
+        "name": "Tidepool",
+        "imagePath": "/images/frost_mage/skill/weapon_mz-01_kx04_7233443487415579343.png"
+      },
+      {
+        "skillId": 1245,
+        "name": "Frost Shelter",
+        "imagePath": "/images/frost_mage/skill/weapon_mz-01_kx02_7577393985859312091.png"
+      },
+      {
+        "skillId": 1243,
+        "name": "Permafrost",
+        "imagePath": "/images/frost_mage/skill/weapon_mz-01_kx01_-8852182945774833470.png"
+      },
+      {
+        "skillId": 1244,
+        "name": "Blizzard",
+        "imagePath": "/images/frost_mage/skill/weapon_mz-01_kx03_-5346524802378145274.png"
+      },
+      {
+        "skillId": 1240,
+        "name": "Frozen Gale",
+        "imagePath": "/images/frost_mage/skill/weapon_mz-01_kx08_6659465293341352126.png"
+      },
+      {
+        "skillId": 1248,
+        "name": "Glacier Hymn",
+        "imagePath": "/images/frost_mage/skill/weapon_mz-01_ult_6019181098229944913.png"
+      }
+    ]
+  }
+}

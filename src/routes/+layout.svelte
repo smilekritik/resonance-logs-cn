@@ -4,6 +4,7 @@
    * It imports the global stylesheet and disables the context menu.
    */
   import { browser } from "$app/environment";
+  import { invoke } from "@tauri-apps/api/core";
   import "../app.css";
   import {
     initI18n,
@@ -93,6 +94,10 @@
     document.title = tw(titleKeyForPath(window.location.pathname));
   }
 
+  async function syncBackendDataLanguage() {
+    await invoke("set_data_language", { language: resolvedLanguage() });
+  }
+
   let lastLanguage = $state<string | null>(null);
 
   $effect(() => {
@@ -109,6 +114,7 @@
         await initI18n(SETTINGS.app.state.language);
         if (disposed) return;
         lastLanguage = SETTINGS.app.state.language;
+        await syncBackendDataLanguage();
         syncLanguageDocumentState();
       } catch (error) {
         console.error("Failed to initialize i18n:", error);
@@ -133,7 +139,8 @@
     
     lastLanguage = selectedLanguage;
     void setLanguage(selectedLanguage)
-      .then(() => {
+      .then(async () => {
+        await syncBackendDataLanguage();
         syncLanguageDocumentState();
       })
       .catch((error) => {

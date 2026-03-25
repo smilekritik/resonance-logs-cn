@@ -113,6 +113,7 @@
                     />
                 {/if}
             {/if}
+        </div>
     </div>
 </div>
 </Tabs.Content>

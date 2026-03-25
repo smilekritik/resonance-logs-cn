@@ -1,5 +1,7 @@
-import buffNameRaw from "./BuffName.json";
+import { resolvedLanguage } from "$lib/i18n/index.svelte";
 import zhBuffData from "$lib/i18n/locales/zh-CN/buff-data";
+import enBuffData from "$lib/i18n/locales/en/buff-data";
+import { getLocalizedConfigJson } from "./localized-json";
 
 export type BuffAliasMap = Record<string, string>;
 export type BuffCategoryKey = "food" | "alchemy";
@@ -40,75 +42,118 @@ type RawBuffEntry = {
   SpriteFile?: string | null;
 };
 
-const rawBuffEntries = buffNameRaw as RawBuffEntry[];
-
-const BUFF_META_MAP = new Map<number, BuffMeta>();
-const AVAILABLE_BUFF_DEFINITIONS: BuffDefinition[] = [];
-const BUFF_CATEGORY_CATALOG: Record<
+type BuffCategoryCatalog = Record<
   BuffCategoryKey,
   { label: string; buffIds: number[] }
-> = {
-  food: { label: zhBuffData.categories.food.label, buffIds: [] },
-  alchemy: { label: zhBuffData.categories.alchemy.label, buffIds: [] },
+>;
+
+type BuffCatalog = {
+  metaMap: Map<number, BuffMeta>;
+  availableDefinitions: BuffDefinition[];
+  categoryCatalog: BuffCategoryCatalog;
 };
+
+const buffDataByLanguage = {
+  "zh-CN": zhBuffData,
+  en: enBuffData,
+} as const;
+
+const buffCatalogCache = new Map<string, BuffCatalog>();
+
+function getCurrentBuffData(language: string) {
+  return buffDataByLanguage[language as keyof typeof buffDataByLanguage] ?? zhBuffData;
+}
 
 function resolveBuffCategories(
   defaultName: string,
   iconKey: string | null,
+  language: string,
 ): BuffCategoryKey[] {
   const categories: BuffCategoryKey[] = [];
-  if (
-    iconKey?.startsWith("buff_food_up") &&
-    zhBuffData.categories.food.keywords.some((keyword) => defaultName.includes(keyword))
-  ) {
-    categories.push("food");
-  }
-  if (
-    iconKey?.startsWith("buff_agentia_up") &&
-    zhBuffData.categories.alchemy.keywords.some((keyword) =>
+  const buffData = getCurrentBuffData(language);
+  if (iconKey?.startsWith("buff_food_up")) {
+    const hasKeywordMatch = buffData.categories.food.keywords.some((keyword) =>
       defaultName.includes(keyword),
-    )
-  ) {
-    categories.push("alchemy");
+    );
+    if (hasKeywordMatch || language !== "zh-CN") {
+      categories.push("food");
+    }
+  }
+  if (iconKey?.startsWith("buff_agentia_up")) {
+    const hasKeywordMatch = buffData.categories.alchemy.keywords.some((keyword) =>
+      defaultName.includes(keyword),
+    );
+    if (hasKeywordMatch || language !== "zh-CN") {
+      categories.push("alchemy");
+    }
   }
   return categories;
 }
 
-for (const entry of rawBuffEntries) {
-  const defaultName = entry.NameDesign?.trim() ?? "";
-  if (!defaultName) continue;
-
-  const iconKey = entry.Icon?.trim() || null;
-  const spriteFile = entry.SpriteFile?.trim() || null;
-  const categories = resolveBuffCategories(defaultName, iconKey);
-  const searchKeywords = [defaultName];
-  const meta: BuffMeta = {
-    baseId: entry.Id,
-    defaultName,
-    hasSpriteFile: Boolean(spriteFile),
-    spriteFile,
-    iconKey,
-    categories,
-    searchKeywords,
+function buildBuffCatalog(language: string): BuffCatalog {
+  const rawBuffEntries = getLocalizedConfigJson<RawBuffEntry[]>("BuffName.json", language);
+  const buffData = getCurrentBuffData(language);
+  const metaMap = new Map<number, BuffMeta>();
+  const availableDefinitions: BuffDefinition[] = [];
+  const categoryCatalog: BuffCategoryCatalog = {
+    food: { label: buffData.categories.food.label, buffIds: [] },
+    alchemy: { label: buffData.categories.alchemy.label, buffIds: [] },
   };
-  BUFF_META_MAP.set(entry.Id, meta);
-  for (const category of categories) {
-    BUFF_CATEGORY_CATALOG[category].buffIds.push(entry.Id);
+
+  for (const entry of rawBuffEntries) {
+    const defaultName = entry.NameDesign?.trim() ?? "";
+    if (!defaultName) continue;
+
+    const iconKey = entry.Icon?.trim() || null;
+    const spriteFile = entry.SpriteFile?.trim() || null;
+    const categories = resolveBuffCategories(defaultName, iconKey, language);
+    const searchKeywords = [defaultName];
+    const meta: BuffMeta = {
+      baseId: entry.Id,
+      defaultName,
+      hasSpriteFile: Boolean(spriteFile),
+      spriteFile,
+      iconKey,
+      categories,
+      searchKeywords,
+    };
+    metaMap.set(entry.Id, meta);
+    for (const category of categories) {
+      categoryCatalog[category].buffIds.push(entry.Id);
+    }
+
+    if (spriteFile) {
+      availableDefinitions.push({
+        baseId: entry.Id,
+        name: defaultName,
+        spriteFile,
+        searchKeywords,
+      });
+    }
   }
 
-  if (spriteFile) {
-    AVAILABLE_BUFF_DEFINITIONS.push({
-      baseId: entry.Id,
-      name: defaultName,
-      spriteFile,
-      searchKeywords,
-    });
+  availableDefinitions.sort((a, b) => a.baseId - b.baseId);
+  for (const category of Object.values(categoryCatalog)) {
+    category.buffIds.sort((a, b) => a - b);
   }
+
+  return {
+    metaMap,
+    availableDefinitions,
+    categoryCatalog,
+  };
 }
 
-AVAILABLE_BUFF_DEFINITIONS.sort((a, b) => a.baseId - b.baseId);
-for (const category of Object.values(BUFF_CATEGORY_CATALOG)) {
-  category.buffIds.sort((a, b) => a - b);
+function getBuffCatalog(): BuffCatalog {
+  const language = resolvedLanguage();
+  const cached = buffCatalogCache.get(language);
+  if (cached) {
+    return cached;
+  }
+
+  const next = buildBuffCatalog(language);
+  buffCatalogCache.set(language, next);
+  return next;
 }
 
 function normalizeText(value: string): string {
@@ -159,7 +204,7 @@ function getMatchRank(
 }
 
 export function lookupBuffMeta(baseId: number): BuffMeta | undefined {
-  return BUFF_META_MAP.get(baseId);
+  return getBuffCatalog().metaMap.get(baseId);
 }
 
 export function lookupDefaultBuffName(baseId: number): string | undefined {
@@ -167,11 +212,11 @@ export function lookupDefaultBuffName(baseId: number): string | undefined {
 }
 
 export function getAvailableBuffDefinitions(): BuffDefinition[] {
-  return AVAILABLE_BUFF_DEFINITIONS;
+  return getBuffCatalog().availableDefinitions;
 }
 
 export function getBuffCategoryDefinitions(): BuffCategoryDefinition[] {
-  return (Object.entries(BUFF_CATEGORY_CATALOG) as Array<
+  return (Object.entries(getBuffCatalog().categoryCatalog) as Array<
     [BuffCategoryKey, { label: string; buffIds: number[] }]
   >).map(([key, category]) => ({
     key,
@@ -181,11 +226,11 @@ export function getBuffCategoryDefinitions(): BuffCategoryDefinition[] {
 }
 
 export function getBuffIdsByCategory(category: BuffCategoryKey): number[] {
-  return [...(BUFF_CATEGORY_CATALOG[category]?.buffIds ?? [])];
+  return [...(getBuffCatalog().categoryCatalog[category]?.buffIds ?? [])];
 }
 
 export function getBuffCategoryLabel(category: BuffCategoryKey): string {
-  return BUFF_CATEGORY_CATALOG[category]?.label ?? category;
+  return getBuffCatalog().categoryCatalog[category]?.label ?? category;
 }
 
 export function resolveBuffCategoryKey(
@@ -240,7 +285,7 @@ export function searchBuffsByName(
   const normalizedAliases = normalizeAliasMap(aliases);
   const matches: Array<{ baseId: number; rank: number }> = [];
 
-  for (const meta of BUFF_META_MAP.values()) {
+  for (const meta of getBuffCatalog().metaMap.values()) {
     const alias = normalizedAliases[String(meta.baseId)] ?? null;
     const aliasRank = getMatchRank(alias, normalizedKeyword, 1, 2);
     const defaultRank = getMatchRank(meta.defaultName, normalizedKeyword, 3, 4);
