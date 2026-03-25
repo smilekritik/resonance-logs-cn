@@ -93,14 +93,22 @@
     document.title = tw(titleKeyForPath(window.location.pathname));
   }
 
+  let lastLanguage = $state<string | null>(null);
+
   $effect(() => {
     if (!browser) return;
     let disposed = false;
 
     void (async () => {
       try {
+        // Migrate old "system" setting to explicit language (only once)
+        if (SETTINGS.app.state.language === "system") {
+          SETTINGS.app.state.language = "zh-CN";
+        }
+        
         await initI18n(SETTINGS.app.state.language);
         if (disposed) return;
+        lastLanguage = SETTINGS.app.state.language;
         syncLanguageDocumentState();
       } catch (error) {
         console.error("Failed to initialize i18n:", error);
@@ -119,6 +127,11 @@
   $effect(() => {
     if (!browser || !i18nReady) return;
     const selectedLanguage = SETTINGS.app.state.language;
+    
+    // Only change language if it actually changed
+    if (selectedLanguage === lastLanguage) return;
+    
+    lastLanguage = selectedLanguage;
     void setLanguage(selectedLanguage)
       .then(() => {
         syncLanguageDocumentState();
