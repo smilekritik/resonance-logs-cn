@@ -1,3 +1,7 @@
+# ORIGINAL SOURCE DOCKERFILE
+# not working with updated version. (0.5.0-0.8.0 commit)
+
+
 # Use Ubuntu as base for building
 FROM ubuntu:24.04 AS builder
 ENV DEBIAN_FRONTEND=noninteractive

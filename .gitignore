@@ -32,6 +32,8 @@ handoff.md
 .opencode/
 .kilocodemodes
 .claude
+.vscode/
+.codex/
 CLAUDE.md
 .kilocode/
 openspec/
